@@ -1,0 +1,11 @@
+{
+  // package-lock.json npm tarafından üretilir. Otomatik JSON şema doğrulaması
+  // bu dosyada false-positive hata gösterebilir; aşağıdaki izin-veren (boş)
+  // şema o false-positive'i susturur.
+  "json.schemas": [
+    {
+      "fileMatch": ["package-lock.json", "**/package-lock.json"],
+      "schema": {}
+    }
+  ]
+}

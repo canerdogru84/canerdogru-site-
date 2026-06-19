@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #fbfbfd;
+  --ink: #0b1b3a;
+  --signal: #0d6efd;
+  --line: #e5e8ef;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: theme("colors.ink-soft");
+    font-family: theme("fontFamily.sans");
+    font-feature-settings: "ss01", "cv01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: theme("fontFamily.display");
+    color: theme("colors.ink");
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: theme("colors.signal");
+    color: white;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.signal");
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  /* Section + container rhythm */
+  .container-x {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8;
+  }
+
+  .section {
+    @apply py-20 sm:py-28;
+  }
+
+  /* Utility label — uppercase Poppins, hafif tracking */
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-label text-signal;
+  }
+
+  .eyebrow-muted {
+    @apply text-[11px] font-semibold uppercase tracking-label text-muted;
+  }
+
+  /* Display type scale */
+  .h1 {
+    font-family: theme("fontFamily.display");
+    font-weight: 800;
+    font-size: clamp(2.5rem, 1.6rem + 4.2vw, 5rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+  }
+
+  .h2 {
+    font-family: theme("fontFamily.display");
+    font-weight: 700;
+    font-size: clamp(1.9rem, 1.3rem + 2.4vw, 3.1rem);
+    line-height: 1.08;
+    letter-spacing: -0.028em;
+  }
+
+  .h3 {
+    font-family: theme("fontFamily.display");
+    font-weight: 600;
+    font-size: clamp(1.15rem, 1rem + 0.6vw, 1.4rem);
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+
+  .lead {
+    font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+    line-height: 1.6;
+    color: theme("colors.ink-soft");
+  }
+
+  .prose-body {
+    line-height: 1.7;
+    color: theme("colors.ink-soft");
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-signal px-6 py-3.5 text-[0.95rem] text-white shadow-[0_8px_24px_-8px_rgba(13,110,253,0.55)];
+  }
+  .btn-primary:hover {
+    @apply -translate-y-0.5 bg-signal-ink shadow-[0_14px_30px_-10px_rgba(13,110,253,0.6)];
+  }
+
+  .btn-ghost {
+    @apply btn border border-line-strong bg-white px-6 py-3.5 text-[0.95rem] text-ink;
+  }
+  .btn-ghost:hover {
+    @apply border-ink/30 bg-surface;
+  }
+
+  /* Blueprint card with corner ticks */
+  .bp-card {
+    @apply relative rounded-xl border border-line bg-white/80 backdrop-blur-sm;
+  }
+
+  .bp-grid {
+    background-image: linear-gradient(
+        to right,
+        rgba(11, 27, 58, 0.045) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(11, 27, 58, 0.045) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .bp-grid-fade {
+    -webkit-mask-image: radial-gradient(
+      120% 100% at 70% 0%,
+      black 30%,
+      transparent 80%
+    );
+    mask-image: radial-gradient(120% 100% at 70% 0%, black 30%, transparent 80%);
+  }
+
+  /* Hairline divider with a measurement tick feel */
+  .rule {
+    @apply h-px w-full bg-line;
+  }
+}
+
+/* Corner ticks — engineering-drawing signature, applied via ::before/::after */
+.tick-corners::before,
+.tick-corners::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: theme("colors.line-strong");
+  border-style: solid;
+  pointer-events: none;
+}
+.tick-corners::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+.tick-corners::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 1px 1px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
