@@ -23,7 +23,6 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
     const data = new FormData(form);
     const payload = {
       ad_soyad: String(data.get("ad_soyad") || "").trim(),
-      isletme_adi: String(data.get("isletme_adi") || "").trim(),
       telefon: String(data.get("telefon") || "").trim(),
       eposta: String(data.get("eposta") || "").trim(),
       web_sitesi: String(data.get("web_sitesi") || "").trim(),
@@ -89,36 +88,20 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
   return (
     <form onSubmit={handleSubmit} noValidate className="bp-card tick-corners p-6 sm:p-8">
       <div className="grid gap-4">
-        {/* Ad Soyad + İşletme Adı */}
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <label htmlFor="ad_soyad" className="eyebrow-muted mb-2 block">
-              Ad Soyad
-            </label>
-            <input
-              id="ad_soyad"
-              name="ad_soyad"
-              type="text"
-              required
-              autoComplete="name"
-              placeholder="Adınız Soyadınız"
-              className={fieldBase}
-            />
-          </div>
-          <div>
-            <label htmlFor="isletme_adi" className="eyebrow-muted mb-2 block">
-              İşletme Adı
-            </label>
-            <input
-              id="isletme_adi"
-              name="isletme_adi"
-              type="text"
-              required
-              autoComplete="organization"
-              placeholder="İşletmenizin adı"
-              className={fieldBase}
-            />
-          </div>
+        {/* Ad Soyad */}
+        <div>
+          <label htmlFor="ad_soyad" className="eyebrow-muted mb-2 block">
+            Ad Soyad
+          </label>
+          <input
+            id="ad_soyad"
+            name="ad_soyad"
+            type="text"
+            required
+            autoComplete="name"
+            placeholder="Adınız Soyadınız"
+            className={fieldBase}
+          />
         </div>
 
         {/* Telefon + E-posta */}

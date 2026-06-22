@@ -20,7 +20,6 @@ export async function POST(req: Request) {
   }
 
   const ad_soyad = clean(body.ad_soyad, 120);
-  const isletme_adi = clean(body.isletme_adi, 160);
   const telefon = clean(body.telefon, 40);
   const eposta = clean(body.eposta, 160);
   const web_sitesi = clean(body.web_sitesi, 200);
@@ -61,7 +60,6 @@ export async function POST(req: Request) {
 
   const { error } = await supabase.from("basvurular").insert({
     ad_soyad,
-    isletme_adi: isletme_adi || null,
     telefon,
     eposta,
     web_sitesi: web_sitesi || null,
