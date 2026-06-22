@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getSupabaseServer } from "@/lib/supabase";
+import { upsertContact, sendChecklistEmail } from "@/lib/brevo";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -31,8 +32,8 @@ export async function POST(req: Request) {
     );
   }
 
-  // NOT: E-posta gönderimi (Brevo) ayrı adımda bağlanacak.
-  // Şimdilik abone kaydını Supabase 'checklist_subscribers' tablosuna yazıyoruz.
+  // Asıl yedek: Supabase 'checklist_subscribers'. Brevo (liste + e-posta)
+  // bonus katman — aşağıda best-effort olarak tetiklenir.
   const supabase = getSupabaseServer();
   if (!supabase) {
     return NextResponse.json(
@@ -55,6 +56,17 @@ export async function POST(req: Request) {
       { status: 500 }
     );
   }
+
+  // Brevo: listeye ekle + hoş geldin e-postası. Hata olursa logla, akışı bozma.
+  const listId = Number(process.env.BREVO_LIST_CHECKLIST) || undefined;
+  const [contact, mail] = await Promise.all([
+    upsertContact({ email: eposta, firstName: isim, listId }),
+    sendChecklistEmail({ email: eposta, name: isim }),
+  ]);
+  if (!contact.ok && contact.error !== "disabled")
+    console.error("[checklist brevo contact]", contact.error);
+  if (!mail.ok && mail.error !== "disabled")
+    console.error("[checklist brevo email]", mail.error);
 
   return NextResponse.json({ ok: true }, { status: 201 });
 }

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getSupabaseServer } from "@/lib/supabase";
+import { upsertContact } from "@/lib/brevo";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -76,6 +77,19 @@ export async function POST(req: Request) {
       { status: 500 }
     );
   }
+
+  // Brevo: röntgen başvurusunu listeye ekle (e-posta gönderilmez). Best-effort.
+  const listId = Number(process.env.BREVO_LIST_RONTGEN) || undefined;
+  const [firstName, ...rest] = ad_soyad.split(" ");
+  const contact = await upsertContact({
+    email: eposta,
+    firstName,
+    lastName: rest.join(" ") || undefined,
+    phone: telefon,
+    listId,
+  });
+  if (!contact.ok && contact.error !== "disabled")
+    console.error("[lead brevo contact]", contact.error);
 
   return NextResponse.json({ ok: true }, { status: 201 });
 }
