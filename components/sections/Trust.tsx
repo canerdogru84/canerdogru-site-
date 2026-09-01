@@ -57,8 +57,9 @@ export default function Trust() {
               <p className="eyebrow">Güven</p>
               <blockquote className="mt-4">
                 <p className="font-display text-[1.6rem] font-semibold leading-snug tracking-tight text-ink sm:text-[2rem]">
-                  “İşi büyütmenin yolu daha çok reklam değil, reklamı müşteriye
-                  çeviren bir sistemdir. Ben o sistemi kuruyorum.”
+                  “İşi büyütmenin yolu daha çok bütçe değil, reklamı müşteriye
+                  çeviren bir sistemdir. Ben reklamı o sistemle birlikte
+                  yönetiyorum.”
                 </p>
               </blockquote>
               <p className="mt-4 text-sm text-muted">

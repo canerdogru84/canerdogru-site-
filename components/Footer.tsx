@@ -17,8 +17,8 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-              Hizmet işletmeleri için reklam değil, uçtan uca müşteri kazanım
-              sistemleri kuruyorum.
+              Hizmet işletmeleri için reklam yönetimini landing page, CRM ve
+              takiple birleştiren müşteri kazanım sistemleri kuruyorum.
             </p>
             <div className="mt-5 flex items-center gap-2.5">
               {socials.map(({ href, label, Icon }) => (

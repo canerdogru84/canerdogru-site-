@@ -19,7 +19,7 @@ const notFit = [
 const sectors = [
   "Koçluk & Danışmanlık",
   "Fitness & Stüdyo",
-  "Düğün & Organizasyon",
+  "Cilt Bakımı & Güzellik",
   "Dil Okulu & Eğitim",
   "Mobilya & Showroom",
 ];

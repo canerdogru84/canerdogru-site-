@@ -36,7 +36,7 @@ export default function Problem() {
               <br className="hidden sm:block" /> Sisteminiz çalışmıyor.
             </>
           }
-          lead="Sorun çoğu zaman reklam değil. Reklam ilgi getiriyor; ama o ilgi, müşteriye dönmeden yolda kayboluyor. İşte paranın sızdığı dört nokta:"
+          lead="Reklamın çalışmıyorsa sorun bütçe değil, sistemsizlik. Reklam ilgi getiriyor; ama o ilgi, müşteriye dönmeden yolda kayboluyor. İşte paranın sızdığı dört nokta:"
         />
 
         <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2">
@@ -59,7 +59,7 @@ export default function Problem() {
         <Reveal>
           <p className="mt-8 max-w-2xl text-[0.95rem] leading-relaxed text-muted">
             Her sızıntı, ödediğiniz reklam bütçesinin bir kısmını çöpe atıyor.
-            Çözüm daha fazla reklam değil —{" "}
+            Çözüm bütçeyi artırmak değil —{" "}
             <strong className="font-semibold text-ink">
               akan suyu tutan bir sistem.
             </strong>

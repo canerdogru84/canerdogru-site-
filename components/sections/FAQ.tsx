@@ -7,7 +7,7 @@ import SectionHeading from "../SectionHeading";
 const faqs = [
   {
     q: "Daha önce ajansla çalıştım, sonuç alamadım. Bu neden farklı?",
-    a: "Çoğu ajans sadece reklam yönetir. Ben uçtan uca sistem kuruyorum — reklam + dönüşüm sayfası + otomasyon + takip. Fark bu.",
+    a: "Çoğu hizmet sağlayıcı yalnızca reklam yönetir. Ben reklamı uçtan uca bir sistemin parçası olarak yönetiyorum — reklam + dönüşüm sayfası + otomasyon + takip. Fark bu.",
   },
   {
     q: "Sonuç garanti ediyor musunuz?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Hangi sektörlere hizmet veriyorsunuz?",
-    a: "Fitness, dil okulu, düğün/organizasyon, mobilya, koçluk/danışmanlık — ve diğer hizmet sektörleri.",
+    a: "Pilates/fitness, dil okulu, cilt bakımı/güzellik, mobilya, koçluk/danışmanlık — ve diğer hizmet sektörleri.",
   },
   {
     q: "Sözleşme süresi var mı?",
