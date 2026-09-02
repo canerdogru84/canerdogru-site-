@@ -40,6 +40,10 @@ export const site = {
   // --- YASAL ---
   legal: {
     kvkkHref: "/kvkk", // KVKK metniniz hazır olunca bu sayfaya bağlayın
+    // Meta uygulama incelemesi ikisini de zorunlu tutuyor:
+    // Terms of Service URL ve User Data Deletion URL alanlarına bunlar girilir.
+    kullanimSartlariHref: "/kullanim-sartlari",
+    veriSilmeHref: "/veri-silme",
     company: "Caner Doğru",
   },
 

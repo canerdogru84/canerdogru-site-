@@ -95,6 +95,22 @@ export default function Footer() {
                   KVKK Aydınlatma Metni
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={site.legal.kullanimSartlariHref}
+                  className="text-ink-soft transition-colors hover:text-signal"
+                >
+                  Kullanım Şartları
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={site.legal.veriSilmeHref}
+                  className="text-ink-soft transition-colors hover:text-signal"
+                >
+                  Veri Silme
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

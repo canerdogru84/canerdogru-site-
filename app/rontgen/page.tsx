@@ -142,8 +142,8 @@ export default function RontgenPage() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-4 text-center text-xs leading-relaxed text-muted">
-                Satış baskısı yok. Teşhis koyuyorum, karar sizin. Haftada sınırlı
-                sayıda röntgen yapıyorum.
+                Satış baskısı yok. Teşhis koyuyorum, karar sizin. Haftada 10 röntgen
+                yapıyorum.
               </p>
             </Reveal>
           </div>
