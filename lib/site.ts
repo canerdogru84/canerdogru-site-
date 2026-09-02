@@ -18,6 +18,11 @@ export const site = {
     phoneHref: "+905309919484",
     phoneLabel: "+90 530 991 94 84",
     email: "info@canerdogru.com",
+    // Giden otomatik postaların GÖNDEREN adresi. İletişim adresinden ayrı:
+    // Brevo yalnızca kendi panelinde "Verified" olan adresten göndermeye izin
+    // veriyor. Bu değeri değiştirirsen önce Brevo > Senders'ta doğrulat,
+    // yoksa checklist teslim maili sessizce gönderilemez.
+    senderEmail: "caner@canerdogru.com",
     instagram: "https://instagram.com/canerdogrucom",
     instagramLabel: "@canerdogrucom",
     // LinkedIn — gerçek profil URL'ni gir

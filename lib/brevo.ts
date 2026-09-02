@@ -30,7 +30,9 @@ export function isBrevoEnabled(): boolean {
 function sender() {
   return {
     name: process.env.BREVO_SENDER_NAME || site.name,
-    email: process.env.BREVO_SENDER_EMAIL || site.contact.email,
+    // site.contact.email DEĞİL: o iletişim adresi (info@) ve Brevo'da
+    // doğrulanmış gönderen değil. Doğrulanmamış adresten gönderim reddedilir.
+    email: process.env.BREVO_SENDER_EMAIL || site.contact.senderEmail,
   };
 }
 
