@@ -26,6 +26,10 @@ export async function POST(req: Request) {
   const instagram = clean(body.instagram, 80);
   const reklam_butcesi = clean(body.reklam_butcesi, 40);
   const kaynak = clean(body.kaynak, 40) || "rontgen";
+  // CAPI eşleştirme verisi: tarayıcıdaki fbq('track','Lead',...,{eventID}) ile aynı id.
+  // n8n [SABLON] 02 bu satırı okuyup Meta'ya sunucu tarafı olayını gönderiyor;
+  // aynı event_id sayesinde Meta ikisini tek olay sayar (çift sayım yok).
+  const event_id = clean(body.event_id, 64);
 
   // --- Doğrulama ---
   if (ad_soyad.length < 2) {
@@ -58,6 +62,17 @@ export async function POST(req: Request) {
     );
   }
 
+  // Meta'nın kişiyi eşleştirebilmesi için gereken sinyaller. Çerezler tarayıcıdan,
+  // IP ve user-agent istek başlıklarından gelir — bunlar hash'lenmeden gönderilir (Meta böyle ister).
+  // Vercel arkasında gerçek IP x-forwarded-for'un İLK değeridir; sonrakiler proxy zinciri.
+  const ip =
+    (req.headers.get("x-forwarded-for") || "").split(",")[0].trim() ||
+    req.headers.get("x-real-ip") ||
+    null;
+  const cookieHeader = req.headers.get("cookie") || "";
+  const cookieOku = (ad: string) =>
+    cookieHeader.match(new RegExp("(?:^|;\\s*)" + ad + "=([^;]+)"))?.[1] || null;
+
   const { error } = await supabase.from("basvurular").insert({
     ad_soyad,
     telefon,
@@ -66,6 +81,12 @@ export async function POST(req: Request) {
     instagram: instagram || null,
     reklam_butcesi,
     kaynak,
+    event_id: event_id || null,
+    event_source_url: req.headers.get("referer") || null,
+    client_ip_address: ip,
+    client_user_agent: req.headers.get("user-agent") || null,
+    fbp: cookieOku("_fbp"),
+    fbc: cookieOku("_fbc"),
   });
 
   if (error) {

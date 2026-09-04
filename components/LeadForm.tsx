@@ -21,7 +21,14 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    // Tarayıcı olayı ile sunucu olayının (CAPI) AYNI kimliği taşıması gerekiyor;
+    // Meta ikisini tek olay sayar, çift sayım olmaz. randomUUID yoksa yedek üretim.
+    const eventId =
+      typeof crypto !== "undefined" && "randomUUID" in crypto
+        ? crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
     const payload = {
+      event_id: eventId,
       ad_soyad: String(data.get("ad_soyad") || "").trim(),
       telefon: String(data.get("telefon") || "").trim(),
       eposta: String(data.get("eposta") || "").trim(),
@@ -41,12 +48,24 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
       if (!res.ok) {
         throw new Error(json?.error || "Gönderim başarısız oldu.");
       }
-      // Analytics: lead event (ID'ler sonra; güvenli no-op)
+      // Analytics: Röntgen başvurusu = "Lead". Checklist indirmesi AYRI bir olay
+      // (CompleteRegistration) — ikisi aynı adı taşırsa Meta ucuz olanı optimize eder,
+      // yani 50K bütçeli işletme yerine bedava PDF indireni getirir.
+      // eventID: sunucu tarafı CAPI olayıyla eşleşme anahtarı (çift sayım engeli).
+      // butce parametresi, Meta'da "nitelikli lead" özel dönüşümü tanımlamayı mümkün kılar.
       if (typeof window !== "undefined") {
         // @ts-expect-error fbq global yer tutucu
-        window.fbq?.("track", "Lead", { source });
+        window.fbq?.(
+          "track",
+          "Lead",
+          { source, butce: payload.reklam_butcesi },
+          { eventID: eventId }
+        );
         // @ts-expect-error gtag global yer tutucu
-        window.gtag?.("event", "generate_lead", { source });
+        window.gtag?.("event", "generate_lead", {
+          source,
+          butce: payload.reklam_butcesi,
+        });
       }
       setStatus("success");
       form.reset();

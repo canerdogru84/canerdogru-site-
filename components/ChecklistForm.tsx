@@ -48,10 +48,14 @@ export default function ChecklistForm() {
       const json = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(json?.error || "Gönderim başarısız oldu.");
       if (typeof window !== "undefined") {
+        // DİKKAT: burası "Lead" DEĞİL. Checklist ücretsiz bir PDF indirmesi;
+        // Röntgen başvurusu (50K bütçe filtresinden geçen gerçek satış lead'i) ile
+        // aynı olay adını taşırsa Meta ikisini karıştırır ve ucuz olanı — yani bedava
+        // içerik indireni — optimize eder. Kampanya "Lead"e göre optimize edilecek.
         // @ts-expect-error fbq global yer tutucu
-        window.fbq?.("track", "Lead", { source: "checklist" });
+        window.fbq?.("track", "CompleteRegistration", { source: "checklist" });
         // @ts-expect-error gtag global yer tutucu
-        window.gtag?.("event", "generate_lead", { source: "checklist" });
+        window.gtag?.("event", "sign_up", { source: "checklist" });
       }
       // Kayıt başarılı → checklist'i hemen indir (kullanıcı jesti hâlâ aktif).
       triggerDownload(site.assets.checklistPdf);
