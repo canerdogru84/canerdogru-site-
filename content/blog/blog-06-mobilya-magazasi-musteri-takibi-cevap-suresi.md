@@ -97,4 +97,6 @@ Ziyaret gününde kayıt açarak. Hangi ürüne baktığı, ölçüsü ve bütç
 Soğutan şey otomatik cevap değil, işe yaramayan cevap. "Mesajınız alınmıştır" soğutur; ölçü soran, teslim bölgesini teyit eden ve randevu saati öneren bir karşılama konuşmayı ilerletir. Kritik nokta, insana devir eşiğinin baştan tanımlanmış olmasıdır.
 
 ---
-**Sıradaki adım:** Mesaj kutunuzda kaç saat ve kaç fiş kaybettiğinizi dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [mobilya mağazası müşteri çekme](/sektorler/mobilya-showroom) sayfasında topladım.
+
+Mesaj kutunuzda kaç saat ve kaç fiş kaybettiğinizi dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

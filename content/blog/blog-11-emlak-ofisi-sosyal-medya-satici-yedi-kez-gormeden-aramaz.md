@@ -63,4 +63,6 @@ Kesmek değil, dengelemek. Portföy görünürlüğünüzün önemli bölümü h
 Yedi bir kural değil, bir büyüklük ölçüsü. Kimi kişi üçüncü temasta arar, kimi on ikinci temasta. Kesin olan yön: tek temasla arama beklemek gerçekçi değil ve temas sayısını artırmak, mesajı değiştirmeden önce denenecek en ucuz adımdır.
 
 ---
-**Sıradaki adım:** Sizi şu anda kaç kişinin, kaç kez gördüğünü bilmiyorsanız plan değil tahmin yapıyorsunuz demektir. Ücretsiz Dijital Büyüme Röntgeni için: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [emlak ofisi lead üretimi](/sektorler/gayrimenkul) sayfasında topladım.
+
+Sizi şu anda kaç kişinin, kaç kez gördüğünü bilmiyorsanız plan değil tahmin yapıyorsunuz demektir. Ücretsiz Dijital Büyüme Röntgeni için: [başvuru formu](/rontgen)

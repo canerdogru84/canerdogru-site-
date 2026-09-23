@@ -67,4 +67,6 @@ Bu, reklamın çalıştığının kanıtıdır — yanlış kişiyi bulmakta ça
 İndirim boş günün sebebini çözmez, sadece marjı düşürür. Aynı saate farklı bir teklif kurmak daha iyi sonuç verir: kısa süreli bakım seansı, ilk kez gelenler için taahhütsüz giriş ya da gündüz çalışmayan kişilere yönelik ayrı bir mesaj.
 
 ---
-**Sıradaki adım:** Bütçeyi artırmadan önce mesajın ve takip hattının nerede koptuğunu görmek gerekir. Ücretsiz Dijital Büyüme Röntgeni için: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [güzellik salonuna müşteri çekme](/sektorler/cilt-bakimi) sayfasında topladım.
+
+Bütçeyi artırmadan önce mesajın ve takip hattının nerede koptuğunu görmek gerekir. Ücretsiz Dijital Büyüme Röntgeni için: [başvuru formu](/rontgen)

@@ -85,4 +85,6 @@ Genellikle hayır. "Düşüneyim", çoğu görüşmede sonuç belirsizliğinin k
 Evet. ICF verisine göre danışanların yarıdan fazlası işveren sponsorlu ([ICF](https://coachingfederation.org/blog/coaching-industry-continues-global-growth-with-5-34-billion-usd-revenue-new-research-reveals/)). Kurumsal alıcı kapsam, takvim, ölçüm ve raporlama ister; bireysel danışanın teklif metni bu ihtiyacı karşılamaz.
 
 ---
-**Sıradaki adım:** Teklifinizin ve dijital vitrininizin saat mi yoksa varış noktası mı sattığını dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [koçluk danışan bulma](/sektorler/kocluk-danismanlik) sayfasında topladım.
+
+Teklifinizin ve dijital vitrininizin saat mi yoksa varış noktası mı sattığını dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

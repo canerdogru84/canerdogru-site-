@@ -107,4 +107,6 @@ Hayır. Süre ve seviye taahhüdü içeren ifadeler yanıltıcı reklam kapsamı
 Ölü sezon bir talep sorunu değil, teklif sorunudur. Eylül metnini Kasım'da yayınlamak sonuç vermiyor. Sezon dışına farklı bir kapı gerekiyor: sınav hazırlık, kurumsal grup, konuşma kulübü ya da yoğunlaştırılmış kısa program.
 
 ---
-**Sıradaki adım:** Bu dönem hangi kapıyı açtığınızı ve mesajın kimi durdurduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [dil kursuna öğrenci çekme](/sektorler/dil-okullari) sayfasında topladım.
+
+Bu dönem hangi kapıyı açtığınızı ve mesajın kimi durdurduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

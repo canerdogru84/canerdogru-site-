@@ -111,4 +111,6 @@ Mantıklı, ama "mesajınız alınmıştır" tipi bir cevap değil. İşe yaraya
 Yenileme konuşması paket bittiğinde değil, bitmeden önce başlar. Kalan ders sayısı ve son geliş tarihi kayıtlıysa, son üç ders bir temas noktasına dönüşür. Kayıt yoksa yenileme tamamen üyenin inisiyatifine bırakılmış olur.
 
 ---
-**Sıradaki adım:** Stüdyonuzun talebinin nerede biriktiğini ve hangi adımda kaybolduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [pilates stüdyosu müşteri bulma](/sektorler/pilates-fitness) sayfasında topladım.
+
+Stüdyonuzun talebinin nerede biriktiğini ve hangi adımda kaybolduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

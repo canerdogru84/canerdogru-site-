@@ -73,4 +73,6 @@ Ancak açık izinle ve kişinin kabul ettiği detay düzeyinde. İsim yerine ba�
 Çünkü giriş bariyeri düşük ve unvan enflasyonu yüksek; sözlüklerde bu açıkça yazılıyor. Güven üç şeyle kurulur: kurumsal geçmişin somut anlatımı, seans sayısı ve yazılı çıktı içeren net program yapısı, ve sonuç vaadi içermeyen gerçek danışan yorumları.
 
 ---
-**Sıradaki adım:** Sayfanızda kanıtın hangi anda gösterildiğini dışarıdan bir göz daha net görür. Ücretsiz Dijital Büyüme Röntgeni için: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [koçluk danışan bulma](/sektorler/kocluk-danismanlik) sayfasında topladım.
+
+Sayfanızda kanıtın hangi anda gösterildiğini dışarıdan bir göz daha net görür. Ücretsiz Dijital Büyüme Röntgeni için: [başvuru formu](/rontgen)

@@ -75,4 +75,6 @@ Hayır. Sorun paketin kendisi değil, paketin ilk temasta ve baskıyla satılmas
 Kullanabilirsiniz ama kişinin açık izniyle ve içeriği değiştirmeden. Yorum bir sonuç vaadi cümlesi içeriyorsa öne çıkarmayın; süreç ve ilgi anlatan yorumlar hem daha güvenli hem daha ikna edici. Uydurma yorum en hızlı güven kaybettiren yöntemdir.
 
 ---
-**Sıradaki adım:** Teklifinizin müşterinin asıl korkusuna cevap verip vermediği dışarıdan bakılınca daha net görülür. Ücretsiz Dijital Büyüme Röntgeni için: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [güzellik salonuna müşteri çekme](/sektorler/cilt-bakimi) sayfasında topladım.
+
+Teklifinizin müşterinin asıl korkusuna cevap verip vermediği dışarıdan bakılınca daha net görülür. Ücretsiz Dijital Büyüme Röntgeni için: [başvuru formu](/rontgen)

@@ -73,4 +73,6 @@ Fiyatı saklamayın ve tek soruyla bitirin. Net fiyat, süre ve iki alternatif s
 Takipçi ve etkileşim hedefleyen bir çalışma çoğu salonda randevuya dönmüyor; bu yüzden pek çok işletme bir kez deneyip vazgeçiyor. Bakılması gereken şey paylaşım sayısı değil, gelen ilginin kaç randevuya çevrildiğidir.
 
 ---
-**Sıradaki adım:** Siz müşterinize cilt analizi yapmadan bakıma başlamıyorsunuz. İşletmenize de aynısı gerekiyor. Ücretsiz Dijital Büyüme Röntgeni için: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [güzellik salonuna müşteri çekme](/sektorler/cilt-bakimi) sayfasında topladım.
+
+Siz müşterinize cilt analizi yapmadan bakıma başlamıyorsunuz. İşletmenize de aynısı gerekiyor. Ücretsiz Dijital Büyüme Röntgeni için: [başvuru formu](/rontgen)

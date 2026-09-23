@@ -116,4 +116,6 @@ Artık değil. Sertifika sahipliği kategori içinde yaygınlaştı ve kamuoyund
 Bireysel teklifin aynısıyla değil. Kurumsal alıcı kapsam, seans sayısı, ölçüm yöntemi ve takvim ister; ayrıca bütçe döngüsüne göre karar verir. Aynı programı İK diline çeviren ayrı bir teklif belgesi, bu hattın giriş kapısıdır.
 
 ---
-**Sıradaki adım:** Teklifinizin dört bileşenini söyleyip söylemediğini ve dağıtım hattınızdaki boşluğu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [koçluk danışan bulma](/sektorler/kocluk-danismanlik) sayfasında topladım.
+
+Teklifinizin dört bileşenini söyleyip söylemediğini ve dağıtım hattınızdaki boşluğu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

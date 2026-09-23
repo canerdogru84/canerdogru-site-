@@ -99,4 +99,6 @@ Evet. Yönetim yazılımı rezervasyonu ve ödemeyi tutar; yazan ama hiç gelmey
 Paket bitiş tarihini ve yenileme durumunu aynı tabloda tutun. Sektörde en sık dile getirilen kayıp "sessizce eriyen üyeler" ([r/pilatesinstructors](https://www.reddit.com/r/pilatesinstructors/comments/1u516ei/whats_your_biggest_challenge_running_a_pilates/)); sessiz olmasının sebebi, bitiş tarihinin hiçbir yerde takvimde olmaması.
 
 ---
-**Sıradaki adım:** Stüdyonuza yazan birinin kaç dakikada cevap aldığını ve üç sayıdan hangisinin sızdırdığını dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [pilates stüdyosu müşteri bulma](/sektorler/pilates-fitness) sayfasında topladım.
+
+Stüdyonuza yazan birinin kaç dakikada cevap aldığını ve üç sayıdan hangisinin sızdırdığını dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

@@ -104,4 +104,6 @@ Hayır. Yönetmelik Ek m.4, öğrenci resimlerinin, isimlerinin ve başarı duru
 Kasım-Aralık sessizse bu bir talep sorunu değil, teklif sorunudur. Ölü sezona farklı bir ürün ve farklı bir kitle gerekir: sınav hazırlık, kurumsal grup, konuşma kulübü. Aynı Eylül metnini Kasım'da yayınlamak sonuç vermez.
 
 ---
-**Sıradaki adım:** Bugün hangi kitleye konuştuğunuzu ve kaybın nerede olduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [dil kursuna öğrenci çekme](/sektorler/dil-okullari) sayfasında topladım.
+
+Bugün hangi kitleye konuştuğunuzu ve kaybın nerede olduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

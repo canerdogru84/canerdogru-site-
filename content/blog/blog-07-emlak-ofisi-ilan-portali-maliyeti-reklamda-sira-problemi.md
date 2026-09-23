@@ -97,4 +97,6 @@ Kesmek yerine bağımlılığı azaltmak daha güvenli. Portal alıcı tarafın�
 Hayır. Taşınmaz ticareti yetki belgesi olmayan işletme için içerik ve reklam üretilmemeli. Bu yalnızca bir uyum konusu değil; belgesiz görünürlük, ceza riskinin yanında itibar riski de taşıyor.
 
 ---
-**Sıradaki adım:** Reklamınızın hangi aşamaya konuştuğunu ve portföy hattınızdaki boşluğu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [emlak ofisi lead üretimi](/sektorler/gayrimenkul) sayfasında topladım.
+
+Reklamınızın hangi aşamaya konuştuğunu ve portföy hattınızdaki boşluğu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

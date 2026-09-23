@@ -97,4 +97,6 @@ Evet. Özel Öğretim Kurumları Yönetmeliği Ek m.4 öğrenci resimlerinin, is
 Aralık vermek çoğu durumda daha iyi sonuç verir. "Fiyat" en yüksek arama niyetidir; sayfanızda karşılığı yoksa kişi rakibin sayfasında karşılığını arar. Kur saati ve sınıf mevcuduyla birlikte verilen aralık, pazarlık gücünü de korur.
 
 ---
-**Sıradaki adım:** Kurumunuzun kayıt hattında kaybın nerede olduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [dil kursuna öğrenci çekme](/sektorler/dil-okullari) sayfasında topladım.
+
+Kurumunuzun kayıt hattında kaybın nerede olduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

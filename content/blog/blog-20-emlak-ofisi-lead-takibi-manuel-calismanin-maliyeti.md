@@ -97,4 +97,6 @@ Görüşme. Görüntülenme ve tıklama reklamın çalıştığını gösterir, 
 Soğuk arama tümüyle bırakılmak zorunda değil ama tek kanal olmaktan çıkmalı. Sektörün kendi tarifi yöntemin yorulduğunu söylüyor ([emlakreklam.com](https://emlakreklam.com/)). Alternatif, satıcıya yazılmış tek bir giriş teklifi ("mülkünüzün bugünkü satılabilirlik durumu") ve bu teklife bağlı takip hattıdır.
 
 ---
-**Sıradaki adım:** Ofisinize gelen talebin nerede kaybolduğunu ve reklamdan sonraki hattın nerede koptuğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [emlak ofisi lead üretimi](/sektorler/gayrimenkul) sayfasında topladım.
+
+Ofisinize gelen talebin nerede kaybolduğunu ve reklamdan sonraki hattın nerede koptuğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

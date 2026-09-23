@@ -81,4 +81,6 @@ Reklamda fiyat aralığı ve ödeme koşulu yoksa gelen ilk soru her zaman fiyat
 Veri ikisini birbirine yakın gösteriyor: indirim %53, ödeme ve taksit koşulları %50. Fark şurada: indirimi herkes yazıyor, taksiti aylık tutara çeviren az. Aylık ödeme rakamını yazmak çoğu durumda daha ayrıştırıcıdır.
 
 ---
-**Sıradaki adım:** Yayındaki reklamınızda bu üç parçadan hangisinin eksik olduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [mobilya mağazası müşteri çekme](/sektorler/mobilya-showroom) sayfasında topladım.
+
+Yayındaki reklamınızda bu üç parçadan hangisinin eksik olduğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)

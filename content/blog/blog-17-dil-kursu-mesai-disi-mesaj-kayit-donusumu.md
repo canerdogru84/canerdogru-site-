@@ -103,4 +103,6 @@ Yaratan şey otomasyon değil, **jenerik metin**. Kur saati, şube, sınıf mevc
 Hayır. Yönetmelik Ek m.4 öğrenci resimlerinin, isimlerinin ve başarı durum bilgilerinin reklam ve ilanlarda kullanılmasını yasaklıyor ([Lexpera](https://blog.lexpera.com.tr/5580-sayili-ozel-ogretim-kurumlari-kanunu-ve-ilgili-mevzuat-cercevesinde-reklam-yasaklari/)). Güven; program şeffaflığı, eğitmen tanıtımı ve yorum yönetimiyle kurulur.
 
 ---
-**Sıradaki adım:** Kurumunuza şu anda yazan birinin kaç dakikada cevap aldığını ve hattın nerede koptuğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [canerdogru.com/rontgen](https://canerdogru.com/rontgen)
+**Sıradaki adım:** Bu yazı tek bir parçayı anlatıyor; sistemin tamamını [dil kursuna öğrenci çekme](/sektorler/dil-okullari) sayfasında topladım.
+
+Kurumunuza şu anda yazan birinin kaç dakikada cevap aldığını ve hattın nerede koptuğunu dışarıdan bir gözle görmek için ücretsiz Dijital Büyüme Röntgeni: [başvuru formu](/rontgen)
