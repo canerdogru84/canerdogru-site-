@@ -1,0 +1,73 @@
+{
+  "slug": "kocluk-danismanlik",
+  "sektorAd": "Koçluk / Danışmanlık",
+  "hero": {
+    "baslik": "Danışanlarınızın yarısından fazlası şirket bütçesinden geliyor. Siz Instagram'dasınız.",
+    "altBaslik": "ICF 2025 verisine göre koçluk danışanlarının %50'den fazlası işveren sponsorlu. Hedef kitlenizin tüm enerjisi bireysel takipçiye giderken, kurumsal hat boş kalıyor.",
+    "formBaslik": "Nerede danışan kaybettiğinizi görün"
+  },
+  "teshis": {
+    "baslik": "Görüşme oluyor, satış olmuyor",
+    "belirtiler": [
+      {
+        "baslik": "Sertifikaya yatırım var, dağıtıma yok",
+        "metin": "Eğitime binlerce lira harcandı; o eğitimi kimin duyacağına sıfır. \"Danışandan çok koç var\" cümlesi bu yüzden dolaşıyor."
+      },
+      {
+        "baslik": "Ücretsiz seans dağıtıyorsunuz, banka hesabı dolmuyor",
+        "metin": "Takvim ücretsiz keşif seanslarıyla dolu; seans sonrası takip yok. Kimi ay 5 satış, kimi ay 0 — gelir tesadüfe bağlı."
+      },
+      {
+        "baslik": "Sektörün itibar borcunu siz ödüyorsunuz",
+        "metin": "\"Para verip alınan unvan\" algısı sizin işiniz değil ama sizin sorununuz. Vaat vermeyen, ayrışır."
+      }
+    ]
+  },
+  "kayip": {
+    "rakam": "%50+",
+    "aciklama": "Koçluk danışanlarının işveren sponsorlu olduğu oran. Bireysel takipçiye konuşan bir koç, pazarın yarısından fazlasına hiç ulaşmıyor.",
+    "kaynak": "ICF 2025 Küresel Koçluk Çalışması"
+  },
+  "nasil": {
+    "rontgen": "Sitenizi, LinkedIn'inizi ve Instagram'ınızı bir İK yöneticisi ve bir bireysel danışan gözüyle ayrı ayrı inceliyorum: teklifiniz okunabiliyor mu?",
+    "kurulum": "Yetenek tanımı yerine dört bileşenli teklif sayfası, keşif seansından sonra 7 gün süren takip, kurumsal ve bireysel hattı ayıran ölçüm.",
+    "partnerlik": "Reklam yönetimi: LinkedIn'de kurumsal karar vericiye, Meta'da bireysel danışana ayrı kampanya; haftalık tabloda kaç görüşme, kaç paket."
+  },
+  "durustluk": {
+    "mevzuat": "Koçluk terapi değildir ve klinik tanı dili kullanılamaz; gelir ya da kariyer sonucu vaadi (\"3 ayda altı haneli\") hem yasal risk hem sektörün en yıpranmış klişesi. Hazırladığım kreatifler bu sınırda kalır — sektör şarlatan algısıyla dolu, dürüstlük burada satış argümanıdır."
+  },
+  "kimler": {
+    "uygun": [
+      "Bireysel ya da 2-5 kişilik ekiple çalışan, paket satmak isteyen koç ve butik danışmanlar",
+      "Kurumsal hattı açmak isteyenler — LinkedIn burada ana kanal",
+      "Reklama düzenli bütçe ayırabilen ve haftalık 30 dakikayı rapora verebilecek olanlar"
+    ],
+    "uygunDegil": [
+      "\"Ayda kaç danışan garanti ediyorsun?\" sorusuna rakam bekleyenler",
+      "Belirli bir bandın altında reklam bütçesiyle çalışanlar — o bantta veri birikmez; bandın neresinde olduğunuz görüşmede netleşir"
+    ]
+  },
+  "rontgende": [
+    "Teklifinizin dört bileşeni okunuyor mu: kime, hangi sonuç, ne kadar sürede, ne kadar emekle",
+    "Keşif seansından sonra ne olduğu — takip hattı var mı, kaç gün sürüyor",
+    "Kurumsal ve bireysel danışana aynı mesajla mı konuştuğunuz"
+  ],
+  "sss": [
+    {
+      "soru": "Reklam vermek koçluğu ucuzlatmaz mı?",
+      "cevap": "Ucuzlatan reklam değil, saatlik fiyat kıyasına girmek. Paket ve sonuç anlatan bir teklif reklamla büyür; \"seans 450 TL\" pazaryeri diline girmez."
+    },
+    {
+      "soru": "LinkedIn'de içerik üretmeye vaktim yok, ne olacak?",
+      "cevap": "İçerik üretimi sistemin bir parçası ama günlük yükü sizde değil. Kurumsal hat için haftalık ritim ve şablon kurulur; siz onaylarsınız."
+    },
+    {
+      "soru": "Kurumsal müşteri için ayrı bir teklif mi gerekir?",
+      "cevap": "Evet. İK yöneticisi kapsam, seans sayısı, ölçüm yöntemi ve takvim ister; bireysel danışan değişim ister. Aynı program iki dille yazılır."
+    }
+  ],
+  "meta": {
+    "title": "Koçluk Danışan Bulma — Ücretsiz Röntgen",
+    "description": "Danışanların yarısından fazlası şirket bütçesinden geliyor, siz Instagram'dasınız. Ücretsiz Dijital Büyüme Röntgeni ile nerede danışan kaybettiğinizi görün."
+  }
+}

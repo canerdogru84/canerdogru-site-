@@ -1,0 +1,73 @@
+{
+  "slug": "pilates-fitness",
+  "sektorAd": "Pilates / Fitness",
+  "hero": {
+    "baslik": "Herkes ücretsiz deneme dersi veriyor. Fark, dersten sonraki 48 saatte.",
+    "altBaslik": "Stüdyonuza \"başlamak istiyorum\" diye yazanların yaklaşık yarısı randevuya kadar gelmiyor. Deneme dersi bir farklılaşma değil, giriş bileti — asıl iş sonrasında başlıyor.",
+    "formBaslik": "Stüdyonuzun nerede üye kaybettiğini görün"
+  },
+  "teshis": {
+    "baslik": "Sabah ve akşam dolu, 11:00-16:00 boş",
+    "belirtiler": [
+      {
+        "baslik": "Ders verirken telefona bakamıyorsunuz",
+        "metin": "Günde 4-6 ders; bir saatlik ders bir saat sessizlik demek. Mesaj 6 saat sonra cevaplanınca kişi başka stüdyoya yazmış oluyor."
+      },
+      {
+        "baslik": "Deneme dersine gelen üye olmuyor",
+        "metin": "Deneme dersi verildi, kişi çıktı, kimse aramadı. Üyelik kararı derste değil, dersten sonraki iki günde veriliyor."
+      },
+      {
+        "baslik": "Takipçi var, üye listesi yok",
+        "metin": "Instagram takipçiniz platforma ait; algoritma değişince erişim düşüyor. İzinli üye listeniz yoksa her ay sıfırdan başlıyorsunuz."
+      }
+    ]
+  },
+  "kayip": {
+    "rakam": "~%50",
+    "aciklama": "Stüdyoya yazıp başlamak istediğini söyleyenlerin bu kadarı randevuya dönmüyor — bir stüdyo sahibinin kendi ölçümü. Reformer sayınız sabit; boş slot, kirası ödenmiş satılamamış kapasitedir.",
+    "kaynak": "r/pilates, stüdyo sahibi paylaşımı — Türkiye ortalaması değil, tek işletme verisi"
+  },
+  "nasil": {
+    "rontgen": "Stüdyonuza bir potansiyel üye gibi yazıyorum; kaç dakikada, nasıl dönüldüğünü ve deneme dersinden sonra ne olduğunu birlikte görüyoruz.",
+    "kurulum": "Ders saatinde gelen mesaja dakikalar içinde dönen hat, deneme dersi randevusunu hatırlatan ve gelmeyeni geri çağıran zincir, dersten sonra 7 gün süren takip.",
+    "partnerlik": "Reklam yönetimi: gündüz kuşağı için ayrı teklif, bölgeye göre hedefleme, haftalık tabloda kaç mesaj, kaç deneme, kaç üye."
+  },
+  "durustluk": {
+    "mevzuat": "Pilates ve fitness reklamında kilo, ölçü ya da tedavi vaadi (bel fıtığı, skolyoz) verilemez; öncesi-sonrası görseli kullanılmaz. Hazırladığım kreatifler bu sınırda kalır — sağlık iddiası taşıyan bir reklam hem yasal risk hem güven kaybıdır."
+  },
+  "kimler": {
+    "uygun": [
+      "1-2 stüdyosu olan, eğitmen kökenli reformer pilates ya da butik fitness sahipleri",
+      "Gündüz kuşağını doldurmak isteyen, kapasitesi belli olanlar",
+      "Reklama düzenli bütçe ayırabilen ve haftalık 30 dakikayı rapora verebilecek olanlar"
+    ],
+    "uygunDegil": [
+      "\"Ayda kaç üye garanti ediyorsun?\" sorusuna rakam bekleyenler",
+      "Belirli bir bandın altında reklam bütçesiyle çalışanlar — o bantta anlamlı veri birikmez; bandın neresinde olduğunuz görüşmede netleşir"
+    ]
+  },
+  "rontgende": [
+    "Mesajınıza dönüş süresi — ders saatinde ve mesai dışında gerçek ölçüm",
+    "Deneme dersi sonrası hattınız: gelen kişiye kim, ne zaman, ne yazıyor",
+    "Gündüz kuşağı için ayrı bir teklifiniz olup olmadığı"
+  ],
+  "sss": [
+    {
+      "soru": "Rezervasyon yazılımımız var, bu yeterli değil mi?",
+      "cevap": "Rezervasyon yazılımı dersi tutar, lead'i tutmaz. Yazıp randevu almayan kişi o yazılımda görünmez. Sistem, yazılımdan önceki boşluğu kapatır."
+    },
+    {
+      "soru": "Deneme dersini ücretli yapsak sorun çözülür mü?",
+      "cevap": "Kısmen. Ücretli deneme niteliği artırır ama hacmi düşürür. Asıl kırık nokta dersten sonraki takip; o kurulmadan ücretli ya da ücretsiz fark etmez."
+    },
+    {
+      "soru": "Küçük bir stüdyoyum, bu sistem bana büyük gelmez mi?",
+      "cevap": "Sistem kapasiteye göre ölçeklenir. Reformer sayınız ve slot yapınız görüşmede konuşulur; uygun değilse bunu Röntgen'de açıkça söylerim."
+    }
+  ],
+  "meta": {
+    "title": "Pilates Stüdyosu Müşteri Bulma — Ücretsiz Röntgen",
+    "description": "Herkes deneme dersi veriyor; fark dersten sonraki 48 saatte. Ücretsiz Dijital Büyüme Röntgeni ile stüdyonuzun nerede üye kaybettiğini görün."
+  }
+}

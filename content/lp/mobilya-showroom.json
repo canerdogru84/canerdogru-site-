@@ -1,0 +1,73 @@
+{
+  "slug": "mobilya-showroom",
+  "sektorAd": "Mobilya / Showroom",
+  "hero": {
+    "baslik": "Mağazanıza gelen mesaja kaç saatte dönülüyor?",
+    "altBaslik": "Alıcıların %94'ü showroom'a gelmeden önce dijitalde araştırıyor. Müşteri size karar vermeye değil, kararını onaylamaya geliyor — ve o karar, mesajınıza dönüş hızınızda veriliyor.",
+    "formBaslik": "Mağazanızın nerede müşteri kaybettiğini görün"
+  },
+  "teshis": {
+    "baslik": "Reklam yayında, showroom sessiz",
+    "belirtiler": [
+      {
+        "baslik": "Vitrin trafiğine güveniyorsunuz",
+        "metin": "\"Yoğunluk yok, geçen seneden daha kötü\" — sektörün kendi sözü. Kapı önü trafiği düşerken, gelen mesajlar cevapsız kalıyor."
+      },
+      {
+        "baslik": "Cumartesi gelen mesaj pazartesi cevaplanıyor",
+        "metin": "Yüksek sepetli bir alıcı ölçü sorup 48 saat cevap alamayınca başka mağazaya gider. Bu kayıp hiçbir raporda görünmez."
+      },
+      {
+        "baslik": "İlan özellik sayıyor, fayda söylemiyor",
+        "metin": "\"Leke tutmaz kumaş, 10 yıl iskelet garantisi\" — rakibiniz de aynısını yazıyor. Kıyası siz başlatıyorsunuz."
+      }
+    ]
+  },
+  "kayip": {
+    "rakam": "%94",
+    "aciklama": "Mobilya alıcılarının bu kadarı mağazaya gelmeden önce internette araştırıyor. Mesajınıza dönüş hızınız, showroom'a kaç kişinin geleceğini belirliyor.",
+    "kaynak": "MOSFED-NielsenIQ 2026 Tüketici Eğilimleri Araştırması"
+  },
+  "nasil": {
+    "rontgen": "Instagram'ınıza ve sitenize bir alıcı gözüyle mesaj atıyorum; kaç saatte, nasıl dönüldüğünü birlikte görüyoruz.",
+    "kurulum": "Ölçü/fiyat soran alıcıya dakikalar içinde dönen bir hat, randevulu showroom ziyareti ve hangi reklamın satışa döndüğünü gösteren ölçüm.",
+    "partnerlik": "Reklam yönetimi: yüksek sepetli alıcıyı hedefleyen kampanyalar, her hafta kazananı testle bulmak, kapanan satışı reklama geri işlemek."
+  },
+  "durustluk": {
+    "mevzuat": "Mobilyada \"en ucuz\" iddiası ve teslim süresi vaadi Tüketicinin Korunması Hakkında Kanun kapsamında doğrulanabilir olmak zorunda. Hazırladığım hiçbir kreatifte doğrulanamayan fiyat ya da süre iddiası olmaz — cezayı reklamı yazan değil, mağaza öder."
+  },
+  "kimler": {
+    "uygun": [
+      "1-2 showroom'u olan, ortalama sepeti yüksek mağaza sahipleri",
+      "Reklama düzenli bütçe ayırabilen ve haftalık 30 dakikayı rapora ayırabilecek olanlar",
+      "Gelen mesajın kaç saatte cevaplandığını gerçekten merak edenler"
+    ],
+    "uygunDegil": [
+      "\"Ayda kaç satış garanti ediyorsun?\" sorusuna rakam bekleyenler",
+      "Belirli bir bandın altında reklam bütçesiyle çalışanlar — o bantta veri birikmez, optimizasyon tahmine döner; bandın neresinde olduğunuz görüşmede netleşir"
+    ]
+  },
+  "rontgende": [
+    "Vitrin trafiği ile mesaj kutunuz arasındaki kopukluk: kaç kişi soruyor, kaçı mağazaya geliyor",
+    "İlan ve reklam metinleriniz özellik mi sayıyor, fayda mı anlatıyor — üç örnek üzerinden",
+    "Satış sonrası servis ve yerellik kozunuzun reklamda görünüp görünmediği"
+  ],
+  "sss": [
+    {
+      "soru": "Mobilya internetten satılmıyor, reklam bize ne kazandırır?",
+      "cevap": "Satış showroom'da kapanır, ama karar internette verilir. Reklamın işi satmak değil, doğru alıcıyı doğru bilgiyle mağazaya getirmek ve gelen mesajın kaybolmamasını sağlamak."
+    },
+    {
+      "soru": "Instagram'ımızı zaten bir arkadaş yönetiyor, fark ne?",
+      "cevap": "Paylaşım yapmakla gelen mesajı satışa çevirmek farklı işler. Ben reklamı, açılış sayfasını, takip hattını ve ölçümü tek sistem olarak kuruyorum; paylaşım o sistemin bir parçası."
+    },
+    {
+      "soru": "Röntgen gerçekten ücretsiz mi, sonra ne oluyor?",
+      "cevap": "Evet. Röntgen bir teşhis; rapor size kalır, çalışmasak da. Devam etmek isterseniz kurulum ve aylık reklam yönetimi konuşulur; yatırım aralığı görüşmede netleşir."
+    }
+  ],
+  "meta": {
+    "title": "Mobilya Mağazası Müşteri Çekme — Ücretsiz Röntgen",
+    "description": "Mağazanıza gelen mesaja kaç saatte dönülüyor? Alıcıların %94'ü gelmeden önce araştırıyor. Ücretsiz Dijital Büyüme Röntgeni ile nerede müşteri kaybettiğinizi görün."
+  }
+}

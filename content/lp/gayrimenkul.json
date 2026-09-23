@@ -1,0 +1,73 @@
+{
+  "slug": "gayrimenkul",
+  "sektorAd": "Gayrimenkul",
+  "hero": {
+    "baslik": "Portal faturanız ofis kiranıza yaklaştı; portföy hâlâ sırada bekliyor.",
+    "altBaslik": "75 ilanlık paket bir yılda 12.281 TL'den 24.123 TL'ye çıktı. Ödediğiniz para size değil, portalın sıralamasına gidiyor. Kendi kanalınızı kurmanın zamanı.",
+    "formBaslik": "Ofisinizin nerede portföy kaybettiğini görün"
+  },
+  "teshis": {
+    "baslik": "Reklam veriyorsunuz ama sıra sizde değil",
+    "belirtiler": [
+      {
+        "baslik": "Bütçenin tamamı portalda",
+        "metin": "\"Ofis kirası kadar ilan ücreti ödüyoruz\" — TEDB Başkanı'nın sözü. Portal görünürlük satıyor; görünürlükten sonra gelen talebi karşılayacak hat sizde yok."
+      },
+      {
+        "baslik": "Satıcı sizi gördü ama aramadı",
+        "metin": "Mülk sahibi önce kendi ilanını veriyor, 3-6 hafta niyetsiz aramalarla yoruluyor, sonra ofis arıyor. Reklamınız ona yanlış anda ulaşıyor."
+      },
+      {
+        "baslik": "Portföy ve alıcı aynı mesajla ikna olmuyor",
+        "metin": "Satıcıya \"evinizi satalım\", alıcıya \"ev bulalım\" — iki ayrı insan, iki ayrı huni. Tek kampanyayla ikisine birden konuşmak ikisini de kaçırıyor."
+      }
+    ]
+  },
+  "kayip": {
+    "rakam": "12.281 → 24.123 TL",
+    "aciklama": "75 ilanlık portal paketinin bir yıldaki fiyat değişimi. Bu bütçenin ölçülebilir bir kanala kayması, yeni gider değil; ölçülemeyen giderden ölçülebilir kanala geçiştir.",
+    "kaynak": "Şikayetvar, 2026 kullanıcı kaydı"
+  },
+  "nasil": {
+    "rontgen": "İlanlarınızı, sitenizi ve Instagram'ınızı bir mülk sahibi gözüyle inceliyorum: sizi bulan satıcı neden aramıyor?",
+    "kurulum": "İki ayrı hat: mülk sahibine \"evinizin bugünkü satılabilirlik durumu\" sayfası; alıcıya bölge ve bütçe filtreli talep formu. Gelen her talep tek yerde, mesai dışı ilk cevap otomatik.",
+    "partnerlik": "Reklam yönetimi: portföy kampanyası ve alıcı kampanyası ayrı ölçülür; haftalık tabloda kaç talep, kaç değerleme randevusu, kaç yetki görüşmesi."
+  },
+  "durustluk": {
+    "mevzuat": "Gayrimenkulde fiyat artışı, değerlenme ya da kira getirisi vaadi yasak; sosyal medya ilanlarında EİDS doğrulama şartı var ve ihlalin idari cezası 2026 için 286.206 TL. Hazırladığım hiçbir kreatifte getiri vaadi olmaz — yalnız yetki belgeli ofislerle çalışırım."
+  },
+  "kimler": {
+    "uygun": [
+      "Taşınmaz ticareti yetki belgesi olan emlak ofisi sahipleri ve brokerlar",
+      "Portföy üretimini portala bağımlı olmaktan çıkarmak isteyenler",
+      "Reklama düzenli bütçe ayırabilen ve haftalık 30 dakikayı rapora verebilecek olanlar"
+    ],
+    "uygunDegil": [
+      "\"Bu bölge %40 değerlenecek\" gibi bir vaadi reklamda görmek isteyenler — yasal sınır, istisnasız",
+      "Belirli bir bandın altında reklam bütçesiyle çalışanlar — o bantta veri birikmez; bandın neresinde olduğunuz görüşmede netleşir"
+    ]
+  },
+  "rontgende": [
+    "Portal harcamanızın karşılığı: ilan başına kaç temas, kaç randevu, kaç yetki",
+    "Mülk sahibinin sizi bulduğu an ne gördüğü — ilan, site, Instagram üçlüsü",
+    "Mesai dışı ve gezi saatlerinde gelen mesajın nereye düştüğü"
+  ],
+  "sss": [
+    {
+      "soru": "Portalı tamamen bırakmamı mı öneriyorsunuz?",
+      "cevap": "Hayır. Portal alıcı trafiği için işe yarar; sorun portföy üretiminin de tamamen ona bağlı olması. Amaç portalı bırakmak değil, yanına size ait ve ölçülebilir bir kanal koymak."
+    },
+    {
+      "soru": "Danışmanlarım için ayrı ayrı mı kurulur?",
+      "cevap": "Sistem ofis adına kurulur; gelen talep danışmanlara dağıtılır ve kimin ne zaman döndüğü görünür. Danışman başına ayrı kampanya gerekmez, ofis tek havuzdan beslenir."
+    },
+    {
+      "soru": "EİDS ve mevzuatla ilgili sorumluluk kimde?",
+      "cevap": "Kreatifleri ben hazırlarım ve bilinen yasakları uygularım; yayın onayı size aittir. Bu ayrım sözleşmede yazılı olur — ikimizi de korur."
+    }
+  ],
+  "meta": {
+    "title": "Emlak Ofisi Lead Üretimi — Ücretsiz Röntgen",
+    "description": "Portal faturanız ofis kiranıza yaklaştı, portföy hâlâ sırada. Ücretsiz Dijital Büyüme Röntgeni ile ofisinizin nerede portföy kaybettiğini görün."
+  }
+}

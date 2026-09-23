@@ -16,12 +16,12 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Ücretsiz Dijital Büyüme Röntgeni",
   description:
-    "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını gösteriyorum. 48 saat, kişiye özel, ücretsiz.",
+    "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını gösteriyorum. Canlı görüşmede ya da yazılı raporla, kişiye özel, ücretsiz.",
   alternates: { canonical: "/rontgen" },
   openGraph: {
     title: "Ücretsiz Dijital Büyüme Röntgeni | Caner Doğru",
     description:
-      "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını gösteriyorum. 48 saat, kişiye özel, ücretsiz.",
+      "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını gösteriyorum. Canlı görüşmede ya da yazılı raporla, kişiye özel, ücretsiz.",
     url: `${site.url}/rontgen`,
   },
 };
@@ -35,8 +35,8 @@ const checks = [
 
 const delivers = [
   "3 kritik kayıp noktası — öncelik sırasıyla",
-  "Kişiye özel video rapor (5-7 dk)",
-  "Detaylı analiz raporu",
+  "Canlı Röntgen görüşmesi (30-45 dk, ekranda birlikte) — haftada 10 firma",
+  "Yazılı Röntgen raporu (görüşme alamayanlara)",
   "Hemen yapabileceğin 2-3 ücretsiz iyileştirme",
 ];
 
@@ -66,7 +66,7 @@ export default function RontgenPage() {
             <Reveal>
               <p className="eyebrow flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-signal" />
-                Ücretsiz · 48 saat · Kişiye özel
+                Ücretsiz · Haftada 10 görüşme · Kişiye özel
               </p>
             </Reveal>
             <Reveal delay={0.05}>
@@ -79,7 +79,7 @@ export default function RontgenPage() {
             <Reveal delay={0.1}>
               <p className="lead mt-6 max-w-md">
                 İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını
-                gösteriyorum. 48 saat, kişiye özel, ücretsiz.
+                gösteriyorum. Canlı görüşmede ya da yazılı raporla, kişiye özel, ücretsiz.
               </p>
             </Reveal>
 
