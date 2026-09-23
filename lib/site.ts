@@ -65,11 +65,13 @@ export const site = {
 
 export type NavItem = { href: string; label: string };
 
+// Çapalar `/#...` biçiminde: alt sayfalardan (blog, sektörler) tıklandığında da
+// ana sayfadaki ilgili bölüme gider. Salt `#...` olsaydı alt sayfada kırılırdı.
 export const navItems: NavItem[] = [
-  { href: "#problem", label: "Problem" },
-  { href: "#sistem", label: "Sistem" },
-  { href: "#kimler", label: "Kimlerle" },
-  { href: "#surec", label: "Süreç" },
-  { href: "#hizmetler", label: "Hizmetler" },
-  { href: "#sss", label: "SSS" },
+  { href: "/#problem", label: "Problem" },
+  { href: "/#sistem", label: "Sistem" },
+  { href: "/sektorler", label: "Sektörler" },
+  { href: "/#surec", label: "Süreç" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#sss", label: "SSS" },
 ];

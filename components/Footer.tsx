@@ -89,6 +89,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/sektorler"
+                  className="text-ink-soft transition-colors hover:text-signal"
+                >
+                  Sektörler
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-ink-soft transition-colors hover:text-signal"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={site.legal.kvkkHref}
                   className="text-ink-soft transition-colors hover:text-signal"
                 >

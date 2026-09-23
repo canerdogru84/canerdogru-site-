@@ -102,6 +102,78 @@
     color: theme("colors.ink-soft");
   }
 
+  /* Markdown'dan gelen uzun metin (blog + sektör sayfası gövdesi).
+     Mevcut tipografi ölçeğini kullanır; yeni stil icat etmez. */
+  .icerik {
+    @apply prose-body;
+  }
+  .icerik > * + * {
+    @apply mt-5;
+  }
+  .icerik h1 {
+    font-family: theme("fontFamily.display");
+    font-weight: 800;
+    @apply mb-2 text-[clamp(2rem,1.5rem+1.9vw,2.9rem)] leading-[1.08] tracking-[-0.03em] text-ink;
+  }
+  /* H1'den hemen sonraki paragraf = giriş cümlesi (GEO cevap bloğu) */
+  .icerik h1 + p {
+    @apply text-[1.12rem] leading-relaxed text-ink-soft;
+  }
+  .icerik h2 {
+    font-family: theme("fontFamily.display");
+    font-weight: 700;
+    @apply mt-14 text-[clamp(1.4rem,1.15rem+0.9vw,1.85rem)] leading-tight tracking-[-0.02em] text-ink;
+  }
+  .icerik h3 {
+    font-family: theme("fontFamily.display");
+    font-weight: 600;
+    @apply mt-10 text-[clamp(1.1rem,1rem+0.4vw,1.28rem)] leading-snug text-ink;
+  }
+  .icerik p {
+    @apply text-[1.02rem];
+  }
+  .icerik strong {
+    @apply font-semibold text-ink;
+  }
+  .icerik a {
+    @apply text-signal underline decoration-signal/30 underline-offset-4 transition-colors hover:decoration-signal;
+  }
+  .icerik ul,
+  .icerik ol {
+    @apply space-y-2.5 pl-5;
+  }
+  .icerik ul {
+    @apply list-disc marker:text-line-strong;
+  }
+  .icerik ol {
+    @apply list-decimal marker:text-muted;
+  }
+  .icerik li > ul,
+  .icerik li > ol {
+    @apply mt-2.5;
+  }
+  .icerik blockquote {
+    @apply border-l-2 border-signal/30 bg-surface/60 py-3 pl-5 pr-4 text-ink-soft;
+  }
+  .icerik blockquote p {
+    @apply text-[0.98rem];
+  }
+  .icerik hr {
+    @apply my-12 border-line;
+  }
+  .icerik table {
+    @apply my-8 w-full border-collapse text-left text-[0.93rem];
+  }
+  .icerik th {
+    @apply border-b border-line-strong pb-2.5 pr-4 font-semibold text-ink;
+  }
+  .icerik td {
+    @apply border-b border-line py-2.5 pr-4 align-top;
+  }
+  .icerik code {
+    @apply rounded bg-surface-2 px-1.5 py-0.5 text-[0.88em] text-ink;
+  }
+
   /* Buttons */
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-200;
