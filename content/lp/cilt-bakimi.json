@@ -1,0 +1,73 @@
+{
+  "slug": "cilt-bakimi",
+  "sektorAd": "Cilt Bakımı / Güzellik",
+  "hero": {
+    "baslik": "Günde 20 kişi soruyor, 3-4'ü randevu alıyor. Kalan 16'sı nereye gidiyor?",
+    "altBaslik": "Siz müşterinize cilt analizi yapmadan bakıma başlamıyorsunuz. Ben de işletmenize Röntgen çekmeden reklam açmıyorum. Önce nerede kaybettiğinizi görelim.",
+    "formBaslik": "Salonunuzun nerede randevu kaybettiğini görün"
+  },
+  "teshis": {
+    "baslik": "Takipçi var, koltuk boş",
+    "belirtiler": [
+      {
+        "baslik": "Müşteri hep tanıdık çemberinden",
+        "metin": "Kartvizit, broşür, çekiliş, her gün paylaşım — aylar sonra gelen tek randevu yine tanıdığınız biri. Çemberin dışına çıkan bir kanalınız yok."
+      },
+      {
+        "baslik": "Gelen ilgi randevuya dönmüyor",
+        "metin": "DM geliyor, fiyat soruluyor, cevap 3 saat sonra gidiyor. O sürede kişi iki salona daha yazmış oluyor."
+      },
+      {
+        "baslik": "Daha önce reklam verdiniz, karşılığını göremediniz",
+        "metin": "\"Sosyal medyanızı yönetelim\" dendi, takipçi geldi, randevu gelmedi. Artık takipçi sayısına güvenmiyorsunuz — haklısınız."
+      }
+    ]
+  },
+  "kayip": {
+    "rakam": "16 / 20",
+    "aciklama": "Günde 20 kişi sorup 3-4'ü randevuya dönüyorsa kalan 16'sı kayıptır. Bu örnek bir hesap, sizin rakamınız değil — kendi oranınızı Röntgen'de birlikte çıkarırız.",
+    "kaynak": ""
+  },
+  "nasil": {
+    "rontgen": "Sitenizi, Instagram'ınızı, Google işletme profilinizi ve yayındaki reklamlarınızı görüşmeden önce inceliyorum; görüşmede bulguları ve rakip kıyasını ekranda gösteriyorum.",
+    "kurulum": "Fiyat soran kişiye dakikalar içinde dönen, iki alternatif saat sunan hat; boş günleri dolduran teklif; hangi reklamın randevuya döndüğünü gösteren ölçüm.",
+    "partnerlik": "Reklam yönetimi: ilçe bazlı hedefleme, non-invaziv hizmetleri mevzuata uygun anlatan kreatifler, haftalık tabloda kaç DM, kaç randevu, kaç boş koltuk."
+  },
+  "durustluk": {
+    "mevzuat": "Güzellik salonu reklamları Reklam Kurulu denetiminde; \"%70 garantili sonuç\" gibi oransal vaatler ve tıbbi izlenim veren dil salon başına 347.128 TL'ye varan ceza doğuruyor. Hazırladığım kreatiflerde yalnız non-invaziv hizmet, yalnız doğrulanabilir ifade olur."
+  },
+  "kimler": {
+    "uygun": [
+      "2-3 kabinli, güzellik uzmanı kökenli salon sahipleri",
+      "Tanıdık çemberinin dışına çıkmak isteyen, gelen DM'in randevuya dönmediğini fark edenler",
+      "Reklama düzenli bütçe ayırabilen ve haftalık 30 dakikayı rapora verebilecek olanlar"
+    ],
+    "uygunDegil": [
+      "Botoks, dolgu gibi tıbbi işlemi reklamda görmek isteyenler — sağlık reklam yasağı, istisnasız",
+      "Belirli bir bandın altında reklam bütçesiyle çalışanlar — o bantta veri birikmez; bandın neresinde olduğunuz görüşmede netleşir"
+    ]
+  },
+  "rontgende": [
+    "Google'da ve haritada durumunuz: yorumlarınızın kaçı cevapsız kalmış, \"bölge + cilt bakımı\" arandığında çıkıyor musunuz",
+    "Gönderileriniz hizmet adı mı sayıyor, müşterinin göreceği değişimi mi anlatıyor",
+    "Yayındaki reklamlarınız Reklam Kurulu sınırında mı — Meta Reklam Kütüphanesi herkese açık, rakiplerinizinkiyle birlikte bakarız"
+  ],
+  "sss": [
+    {
+      "soru": "Instagram'dan müşteri gelmiyor, reklam verirsem gelir mi?",
+      "cevap": "Reklam ilgiyi getirir; ilgiyi randevuya çeviren şey DM'e dönüş hızı ve cevabın biçimi. Önce o hat kurulur, sonra reklam açılır — tersi bütçeyi boşa harcar."
+    },
+    {
+      "soru": "Küçük bir salonum, bu iş bana ağır gelmez mi?",
+      "cevap": "Kabin sayınız ve günlük kapasiteniz görüşmede konuşulur. Uygun değilse Röntgen'de açıkça söylerim; yanınızda 30 Günlük Checklist kalır."
+    },
+    {
+      "soru": "Reklamda hangi ifadeleri kullanamam?",
+      "cevap": "Tedavi, teşhis, tıbbi işlem adı ve oransal sonuç vaadi kullanılmaz. Bakım seansı, cilt analizi ve günlük rutin anlatılır; salonun sağlık kuruluşu izlenimi vermesi cezaya girer."
+    }
+  ],
+  "meta": {
+    "title": "Güzellik Salonuna Müşteri Çekme — Ücretsiz Röntgen",
+    "description": "Günde 20 kişi soruyor, 3-4'ü randevu alıyor. Ücretsiz Dijital Büyüme Röntgeni ile salonunuzun nerede randevu kaybettiğini görün."
+  }
+}

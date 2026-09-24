@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { site } from "@/lib/site";
+import { site, butceYolu } from "@/lib/site";
 import { IconCheck, IconAlert, IconArrow } from "./icons";
+import Takvim from "./Takvim";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -13,6 +14,8 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
   const [budget, setBudget] = useState("");
+  // Başarı ekranı için: hangi yola girdi + takvimi önceden doldurmak için ad/e-posta
+  const [sonuc, setSonuc] = useState<{ yol: "takvim" | "inceleme"; ad: string; eposta: string } | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -67,6 +70,11 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
           butce: payload.reklam_butcesi,
         });
       }
+      setSonuc({
+        yol: butceYolu(payload.reklam_butcesi),
+        ad: payload.ad_soyad,
+        eposta: payload.eposta,
+      });
       setStatus("success");
       form.reset();
       setBudget("");
@@ -81,15 +89,42 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
   }
 
   if (status === "success") {
+    const takvim = sonuc?.yol === "takvim";
     return (
       <div className="bp-card tick-corners p-8 text-center sm:p-10">
         <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-signal/10 text-signal">
           <IconCheck className="h-7 w-7" />
         </span>
         <h3 className="h3 mt-5">Başvurun alındı.</h3>
-        <p className="prose-body mx-auto mt-3 max-w-md text-[0.95rem]">
-          48 saat içinde işletmeni inceleyip 3 kritik kayıp noktanı kişiye özel
-          video + raporla paylaşacağım. Acil bir konu varsa{" "}
+
+        {takvim ? (
+          <>
+            {/* 50K+ : takvim hemen açılır — niyetin en yüksek anı bu */}
+            <p className="prose-body mx-auto mt-3 max-w-md text-[0.95rem]">
+              Röntgen görüşmesi için uygun bir saat seç. Ekranı birlikte açıp
+              sitenizi ve Instagram&apos;ınızı adım adım geçeceğiz.
+            </p>
+            <Takvim ad={sonuc?.ad} eposta={sonuc?.eposta} kaynak={source} />
+          </>
+        ) : (
+          <>
+            {/* 50K altı / bütçe yok : Caner önce bakar — ekranda "elendiniz" YOK.
+                Karar Caner'in; kişi neyle karşılaşacağını ondan öğrenir. */}
+            <p className="prose-body mx-auto mt-3 max-w-md text-[0.95rem]">
+              Başvurun bana düştü. İşletmene bakıp 24 saat içinde e-posta ya da
+              WhatsApp&apos;tan dönüyorum.
+            </p>
+            <a
+              href="/checklist"
+              className="btn-ghost mt-6"
+            >
+              Beklerken: 30 Günlük Müşteri Kazanım Checklist&apos;i
+            </a>
+          </>
+        )}
+
+        <p className="mt-6 text-[13px] text-muted">
+          Acil bir konu varsa{" "}
           <a
             href={site.contact.whatsappHref}
             target="_blank"

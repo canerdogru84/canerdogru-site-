@@ -1,0 +1,73 @@
+{
+  "slug": "dil-okullari",
+  "sektorAd": "Dil Okulları",
+  "hero": {
+    "baslik": "Kursunuza mesaj atan biri kaç dakikada cevap alıyor?",
+    "altBaslik": "Yılın gelirinin çoğu 6-8 haftaya sıkışıyor. O haftalarda gece 23:00'te gelen \"fiyat?\" mesajı sabaha kadar beklerse, kayıt başka kuruma gidiyor.",
+    "formBaslik": "Kurumunuzun nerede kayıt kaybettiğini görün"
+  },
+  "teshis": {
+    "baslik": "Kayıt sezonu kısa, kayıp hattı uzun",
+    "belirtiler": [
+      {
+        "baslik": "Fiyatı telefonda söylemiyorsunuz",
+        "metin": "\"Ofisimize bekliyoruz\" cevabı kursiyerin en çok şikayet ettiği şey. Fiyatı gizlemek trafiği korumuyor, öldürüyor."
+      },
+      {
+        "baslik": "Takip var ama sıra yok",
+        "metin": "\"Numara bırakırsanız aylarca ararlar\" — kursiyerin sözü. Agresif takip ile doğru zamanda doğru mesaj aynı şey değil."
+      },
+      {
+        "baslik": "Seviye tespit sınavı ayrıştırmıyor",
+        "metin": "Ücretsiz seviye tespitini herkes veriyor. Kaydı belirleyen sınav değil, sınavdan sonraki yedi günde ne olduğu."
+      }
+    ]
+  },
+  "kayip": {
+    "rakam": "6-8 hafta",
+    "aciklama": "Yıllık kayıt gelirinin büyük kısmının sıkıştığı süre (Eylül-Ekim, Ocak-Şubat). O haftalara hazırlıksız girmek yılın geri kalanını belirliyor. Bu bir sektör gözlemi; kendi kayıt dağılımınıza Röntgen'de birlikte bakarız.",
+    "kaynak": ""
+  },
+  "nasil": {
+    "rontgen": "Sitenizi, Instagram'ınızı, Google işletme profilinizi ve yayındaki reklamlarınızı görüşmeden önce inceliyorum; görüşmede bulguları ve rakip kurum kıyasını ekranda gösteriyorum.",
+    "kurulum": "Gece gelen mesaja dakikalar içinde dönen karşılama, seviye tespit randevusunu dolduran hat, sınavdan sonra 7 gün süren ve mevzuata uygun takip.",
+    "partnerlik": "Reklam yönetimi: kayıt sezonuna 6 hafta önceden hazırlanan kampanyalar, kur ve segment bazlı mesaj, haftalık tabloda kaç mesaj, kaç sınav, kaç kayıt."
+  },
+  "durustluk": {
+    "mevzuat": "5580 sayılı Kanun ve Yönetmelik Ek m.4: \"6 ayda akıcı İngilizce\" gibi yanıltıcı vaadin cezası brüt asgari ücretin beş katı ve cezayı metni yazan değil, kurum öder. Size kayıt sayısı söyleyen kişi sizin adınıza risk alıyor. Hazırladığım hiçbir kreatifte süre-sonuç vaadi olmaz."
+  },
+  "kimler": {
+    "uygun": [
+      "1-3 şubeli, MEB onaylı özel dil kursu kurucuları ve müdürleri",
+      "Kayıt sezonuna bu kez hazırlıklı girmek isteyenler",
+      "Reklama düzenli bütçe ayırabilen ve haftalık 30 dakikayı rapora verebilecek olanlar"
+    ],
+    "uygunDegil": [
+      "\"Kayıt garantisi\" ya da \"6 ayda akıcı\" vaadini reklamda görmek isteyenler — yasal sınır",
+      "Belirli bir bandın altında reklam bütçesiyle çalışanlar — o bantta veri birikmez; bandın neresinde olduğunuz görüşmede netleşir"
+    ]
+  },
+  "rontgende": [
+    "Google'da ve haritada durumunuz: yorumlarınızın kaçı cevapsız kalmış, \"şehir + ingilizce kursu\" arandığında çıkıyor musunuz",
+    "Seviye tespit sınavından kayda giden hattınız: kim, ne zaman, kaç kez dönüyor",
+    "Yayındaki reklamlarınız 5580 sayılı Kanun sınırında mı — Meta Reklam Kütüphanesi herkese açık, rakip kurumlarınkiyle birlikte bakarız"
+  ],
+  "sss": [
+    {
+      "soru": "Fiyatı açıkça yazarsak rakipler görmez mi?",
+      "cevap": "Rakipleriniz fiyatınızı zaten biliyor; bilmeyen kursiyer. Fiyatı gizleyen kurum, kursiyerin en çok şikayet ettiği davranışı sergiliyor ve trafiği kendi eliyle kesiyor."
+    },
+    {
+      "soru": "Sezon dışında reklam vermenin anlamı var mı?",
+      "cevap": "Sezon dışı, sezona hazırlık dönemidir: liste büyütülür, seviye tespit randevuları doldurulur, kreatif test edilir. Sezonda başlayan kampanya, öğrenme aşamasını sezonun ortasında tamamlar."
+    },
+    {
+      "soru": "Hangi ifadeler mevzuata takılır?",
+      "cevap": "Süre-sonuç vaadi, başarı yüzdesi, öğrenci resmi/ismi ile tanıtım ve ilan edilen ücretin üstünde fiyat. Bunları kreatifte hiç kullanmam; yayın onayı sizde kalır, sınırlar sözleşmede yazılıdır."
+    }
+  ],
+  "meta": {
+    "title": "Dil Kursuna Öğrenci Çekme — Ücretsiz Röntgen",
+    "description": "Kursunuza mesaj atan biri kaç dakikada cevap alıyor? Kayıt sezonu kısa. Ücretsiz Dijital Büyüme Röntgeni ile kurumunuzun nerede kayıt kaybettiğini görün."
+  }
+}

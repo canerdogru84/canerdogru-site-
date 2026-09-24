@@ -56,12 +56,27 @@ export const site = {
   // Seçilen değer olduğu gibi Supabase'e kaydedilir.
   budgetOptions: [
     { value: "", label: "Aylık reklam bütçenizi seçin" },
+    { value: "yok", label: "Henüz reklam bütçem yok" },
     { value: "0-50k", label: "50.000 TL altı" },
     { value: "50-100k", label: "50.000 - 100.000 TL" },
     { value: "100-250k", label: "100.000 - 250.000 TL" },
     { value: "250k-plus", label: "250.000 TL+" },
   ],
+
+  // --- RÖNTGEN GÖRÜŞMESİ (cal.com) ---
+  // Form sonrası 50K+ bütçeye takvim gömülür.
+  // Etkinlik: "Dijital Büyüme Röntgeni" · 45 dk · cal.com/canerdogru/dp-toplanti
+  // ⚠️ Slug "rontgen" DEĞİL, "dp-toplanti" — etkinlik adı ile slug ayrışık, şaşırma.
+  // Boşaltılırsa takvim yerine "24 saat içinde dönüyorum" ekranı gösterilir (güvenli düşüş).
+  calcomEvent: "canerdogru/dp-toplanti",
 } as const;
+
+/** Form sonrası hangi yola girer? Kaynak: budgetOptions.value */
+export function butceYolu(deger: string): "takvim" | "inceleme" {
+  return deger === "50-100k" || deger === "100-250k" || deger === "250k-plus"
+    ? "takvim"
+    : "inceleme";
+}
 
 export type NavItem = { href: string; label: string };
 
