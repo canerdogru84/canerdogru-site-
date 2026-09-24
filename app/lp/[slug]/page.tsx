@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Logo from "@/components/Logo";
 import LeadForm from "@/components/LeadForm";
 import Reveal from "@/components/Reveal";
@@ -83,6 +84,21 @@ export default async function FunnelSayfasi({ params }: Props) {
           <div id="form">
             <Reveal y={24}>
               <h2 className="h3 mb-4 text-ink">{f.hero.formBaslik}</h2>
+              {/* Kimlik şeridi — formu kimin aldığını göstermek doldurma direncini düşürür */}
+              <div className="mb-5 flex items-center gap-3">
+                <Image
+                  src={SABIT.kimlik.foto}
+                  alt={SABIT.kimlik.ad}
+                  width={44}
+                  height={44}
+                  className="h-11 w-11 shrink-0 rounded-full object-cover"
+                />
+                <p className="text-[13px] leading-snug text-muted">
+                  {SABIT.kimlik.formYani}
+                  <br />
+                  <span className="font-medium text-ink">{SABIT.kimlik.ad}</span>
+                </p>
+              </div>
               <LeadForm source={kaynak} />
             </Reveal>
           </div>
@@ -173,7 +189,22 @@ export default async function FunnelSayfasi({ params }: Props) {
               <p className="prose-body mt-6 max-w-2xl border-t border-signal/15 pt-6">
                 {f.durustluk.mevzuat}
               </p>
-              <p className="mt-6 text-[0.95rem] font-medium text-ink">{SABIT.kitlik}</p>
+              {/* İmza — bu blok kişisel bir duruş; imzasız görüş pazarlama metni gibi okunur */}
+              <div className="mt-7 flex items-center gap-3">
+                <Image
+                  src={SABIT.kimlik.foto}
+                  alt={SABIT.kimlik.ad}
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 shrink-0 rounded-full object-cover"
+                />
+                <p className="text-[13px] leading-snug text-muted">
+                  <span className="font-medium text-ink">{SABIT.kimlik.ad}</span>
+                  <br />
+                  {SABIT.kimlik.imzaAlt}
+                </p>
+              </div>
+              <p className="mt-7 text-[0.95rem] font-medium text-ink">{SABIT.kitlik}</p>
             </div>
           </Reveal>
         </div>

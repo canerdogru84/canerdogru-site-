@@ -24,12 +24,12 @@
     ]
   },
   "kayip": {
-    "rakam": "20 → 3-4",
-    "aciklama": "Bir cilt bakım merkezinin günlük ölçümü: yaklaşık 20 potansiyel temastan 3-4'ü randevuya dönüyor. Sorun müşteri azlığı değil, gelen ilginin kaybolması.",
-    "kaynak": "ixirlife, sektör yazısı"
+    "rakam": "16 / 20",
+    "aciklama": "Günde 20 kişi sorup 3-4'ü randevuya dönüyorsa kalan 16'sı kayıptır. Bu örnek bir hesap, sizin rakamınız değil — kendi oranınızı Röntgen'de birlikte çıkarırız.",
+    "kaynak": ""
   },
   "nasil": {
-    "rontgen": "Salonunuza bir müşteri gibi DM atıyorum; kaç dakikada, nasıl dönüldüğünü ve randevuya giden hattı birlikte görüyoruz.",
+    "rontgen": "Sitenizi, Instagram'ınızı, Google işletme profilinizi ve yayındaki reklamlarınızı görüşmeden önce inceliyorum; görüşmede bulguları ve rakip kıyasını ekranda gösteriyorum.",
     "kurulum": "Fiyat soran kişiye dakikalar içinde dönen, iki alternatif saat sunan hat; boş günleri dolduran teklif; hangi reklamın randevuya döndüğünü gösteren ölçüm.",
     "partnerlik": "Reklam yönetimi: ilçe bazlı hedefleme, non-invaziv hizmetleri mevzuata uygun anlatan kreatifler, haftalık tabloda kaç DM, kaç randevu, kaç boş koltuk."
   },
@@ -48,9 +48,9 @@
     ]
   },
   "rontgende": [
-    "DM'inize dönüş süresi ve fiyat sorusuna verilen cevabın randevuya dönüp dönmediği",
+    "Google'da ve haritada durumunuz: yorumlarınızın kaçı cevapsız kalmış, \"bölge + cilt bakımı\" arandığında çıkıyor musunuz",
     "Gönderileriniz hizmet adı mı sayıyor, müşterinin göreceği değişimi mi anlatıyor",
-    "Reklam metinlerinizin Reklam Kurulu sınırında kalıp kalmadığı"
+    "Yayındaki reklamlarınız Reklam Kurulu sınırında mı — Meta Reklam Kütüphanesi herkese açık, rakiplerinizinkiyle birlikte bakarız"
   ],
   "sss": [
     {

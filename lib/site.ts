@@ -64,10 +64,11 @@ export const site = {
   ],
 
   // --- RÖNTGEN GÖRÜŞMESİ (cal.com) ---
-  // Form sonrası 50K+ bütçeye takvim gömülür. Etkinlik türü cal.com'da açılınca
-  // buraya public link'in yol kısmı yazılır: "kullanici/rontgen" biçiminde.
-  // Boşsa takvim yerine "24 saat içinde dönüyorum" ekranı gösterilir (güvenli düşüş).
-  calcomEvent: "",
+  // Form sonrası 50K+ bütçeye takvim gömülür.
+  // Etkinlik: "Dijital Büyüme Röntgeni" · 45 dk · cal.com/canerdogru/dp-toplanti
+  // ⚠️ Slug "rontgen" DEĞİL, "dp-toplanti" — etkinlik adı ile slug ayrışık, şaşırma.
+  // Boşaltılırsa takvim yerine "24 saat içinde dönüyorum" ekranı gösterilir (güvenli düşüş).
+  calcomEvent: "canerdogru/dp-toplanti",
 } as const;
 
 /** Form sonrası hangi yola girer? Kaynak: budgetOptions.value */

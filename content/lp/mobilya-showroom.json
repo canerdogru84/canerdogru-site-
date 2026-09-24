@@ -29,7 +29,7 @@
     "kaynak": "MOSFED-NielsenIQ 2026 Tüketici Eğilimleri Araştırması"
   },
   "nasil": {
-    "rontgen": "Instagram'ınıza ve sitenize bir alıcı gözüyle mesaj atıyorum; kaç saatte, nasıl dönüldüğünü birlikte görüyoruz.",
+    "rontgen": "Sitenizi, Instagram'ınızı, Google işletme profilinizi ve yayındaki reklamlarınızı görüşmeden önce inceliyorum; görüşmede bulguları ve rakip mağaza kıyasını ekranda gösteriyorum.",
     "kurulum": "Ölçü/fiyat soran alıcıya dakikalar içinde dönen bir hat, randevulu showroom ziyareti ve hangi reklamın satışa döndüğünü gösteren ölçüm.",
     "partnerlik": "Reklam yönetimi: yüksek sepetli alıcıyı hedefleyen kampanyalar, her hafta kazananı testle bulmak, kapanan satışı reklama geri işlemek."
   },
@@ -48,9 +48,9 @@
     ]
   },
   "rontgende": [
-    "Vitrin trafiği ile mesaj kutunuz arasındaki kopukluk: kaç kişi soruyor, kaçı mağazaya geliyor",
+    "Google'da ve haritada durumunuz: yorumlarınızın kaçı cevapsız kalmış, \"şehir + mobilya mağazası\" arandığında çıkıyor musunuz",
     "İlan ve reklam metinleriniz özellik mi sayıyor, fayda mı anlatıyor — üç örnek üzerinden",
-    "Satış sonrası servis ve yerellik kozunuzun reklamda görünüp görünmediği"
+    "Yayındaki reklamlarınız ve rakip mağazalarınkiler — Meta Reklam Kütüphanesi herkese açık: satış sonrası servis ve yerellik kozunuz görünüyor mu"
   ],
   "sss": [
     {

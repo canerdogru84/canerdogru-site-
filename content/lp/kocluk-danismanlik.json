@@ -29,9 +29,9 @@
     "kaynak": "ICF 2025 Küresel Koçluk Çalışması"
   },
   "nasil": {
-    "rontgen": "Sitenizi, LinkedIn'inizi ve Instagram'ınızı bir İK yöneticisi ve bir bireysel danışan gözüyle ayrı ayrı inceliyorum: teklifiniz okunabiliyor mu?",
+    "rontgen": "Sitenizi, LinkedIn'inizi, Instagram'ınızı ve yayındaki reklamlarınızı bir İK yöneticisi ve bir bireysel danışan gözüyle görüşmeden önce inceliyorum: teklifiniz okunabiliyor mu?",
     "kurulum": "Yetenek tanımı yerine dört bileşenli teklif sayfası, keşif seansından sonra 7 gün süren takip, kurumsal ve bireysel hattı ayıran ölçüm.",
-    "partnerlik": "Reklam yönetimi: LinkedIn'de kurumsal karar vericiye, Meta'da bireysel danışana ayrı kampanya; haftalık tabloda kaç görüşme, kaç paket."
+    "partnerlik": "Reklam yönetimi: Meta'da bireysel danışana, Google'da \"kurumsal koçluk\" diye arayan İK'ya ayrı kampanya; haftalık tabloda kaç görüşme, kaç paket."
   },
   "durustluk": {
     "mevzuat": "Koçluk terapi değildir ve klinik tanı dili kullanılamaz; gelir ya da kariyer sonucu vaadi (\"3 ayda altı haneli\") hem yasal risk hem sektörün en yıpranmış klişesi. Hazırladığım kreatifler bu sınırda kalır — sektör şarlatan algısıyla dolu, dürüstlük burada satış argümanıdır."
@@ -39,7 +39,7 @@
   "kimler": {
     "uygun": [
       "Bireysel ya da 2-5 kişilik ekiple çalışan, paket satmak isteyen koç ve butik danışmanlar",
-      "Kurumsal hattı açmak isteyenler — LinkedIn burada ana kanal",
+      "Kurumsal hattı açmak isteyenler — reklam Meta ve Google'dan döner, LinkedIn profiliniz güven yüzeyi olarak denetlenir",
       "Reklama düzenli bütçe ayırabilen ve haftalık 30 dakikayı rapora verebilecek olanlar"
     ],
     "uygunDegil": [
@@ -50,7 +50,7 @@
   "rontgende": [
     "Teklifinizin dört bileşeni okunuyor mu: kime, hangi sonuç, ne kadar sürede, ne kadar emekle",
     "Keşif seansından sonra ne olduğu — takip hattı var mı, kaç gün sürüyor",
-    "Kurumsal ve bireysel danışana aynı mesajla mı konuştuğunuz"
+    "Yayındaki reklamlarınız — Meta Reklam Kütüphanesi herkese açık: kurumsal ve bireysel danışana aynı mesajla mı konuşuyorsunuz, rakipleriniz ne yayınlıyor"
   ],
   "sss": [
     {
@@ -59,7 +59,7 @@
     },
     {
       "soru": "LinkedIn'de içerik üretmeye vaktim yok, ne olacak?",
-      "cevap": "İçerik üretimi sistemin bir parçası ama günlük yükü sizde değil. Kurumsal hat için haftalık ritim ve şablon kurulur; siz onaylarsınız."
+      "cevap": "Talep reklamdan gelir, LinkedIn'den değil. LinkedIn'in işi başka: İK yöneticisi sizi aradığında profiliniz güven veriyor mu? Onu düzenleriz. İçerik üretecekseniz haftalık ritim ve şablon kurulur, günlük yük sizde olmaz — ama sistem buna bağlı değildir."
     },
     {
       "soru": "Kurumsal müşteri için ayrı bir teklif mi gerekir?",
@@ -69,5 +69,6 @@
   "meta": {
     "title": "Koçluk Danışan Bulma — Ücretsiz Röntgen",
     "description": "Danışanların yarısından fazlası şirket bütçesinden geliyor, siz Instagram'dasınız. Ücretsiz Dijital Büyüme Röntgeni ile nerede danışan kaybettiğinizi görün."
-  }
+  },
+  "yayinda": false
 }

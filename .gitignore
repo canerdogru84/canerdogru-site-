@@ -11,3 +11,6 @@ npm-debug.log*
 .vercel
 next-env.d.ts
 tsconfig.tsbuildinfo
+
+# Yerel env yedekleri — sır içerir, commit'lenmez
+.env.local.yedek-*

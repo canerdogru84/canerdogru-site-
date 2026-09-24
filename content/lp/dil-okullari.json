@@ -25,11 +25,11 @@
   },
   "kayip": {
     "rakam": "6-8 hafta",
-    "aciklama": "Yıllık kayıt gelirinin büyük kısmının sıkıştığı süre (Eylül-Ekim, Ocak-Şubat). O haftalara hazırlıksız girmek, yılın geri kalanını belirliyor.",
-    "kaynak": "Dil okulu hedef kitle analizi, sektör kaynakları"
+    "aciklama": "Yıllık kayıt gelirinin büyük kısmının sıkıştığı süre (Eylül-Ekim, Ocak-Şubat). O haftalara hazırlıksız girmek yılın geri kalanını belirliyor. Bu bir sektör gözlemi; kendi kayıt dağılımınıza Röntgen'de birlikte bakarız.",
+    "kaynak": ""
   },
   "nasil": {
-    "rontgen": "Kurumunuza bir veli ya da kursiyer gibi mesaj atıyorum; mesai dışında kaç dakikada dönüldüğünü ve fiyat sorusuna ne cevap verildiğini birlikte görüyoruz.",
+    "rontgen": "Sitenizi, Instagram'ınızı, Google işletme profilinizi ve yayındaki reklamlarınızı görüşmeden önce inceliyorum; görüşmede bulguları ve rakip kurum kıyasını ekranda gösteriyorum.",
     "kurulum": "Gece gelen mesaja dakikalar içinde dönen karşılama, seviye tespit randevusunu dolduran hat, sınavdan sonra 7 gün süren ve mevzuata uygun takip.",
     "partnerlik": "Reklam yönetimi: kayıt sezonuna 6 hafta önceden hazırlanan kampanyalar, kur ve segment bazlı mesaj, haftalık tabloda kaç mesaj, kaç sınav, kaç kayıt."
   },
@@ -48,9 +48,9 @@
     ]
   },
   "rontgende": [
-    "Mesai dışı gelen mesaja dönüş süreniz ve fiyat sorusuna verilen cevap",
+    "Google'da ve haritada durumunuz: yorumlarınızın kaçı cevapsız kalmış, \"şehir + ingilizce kursu\" arandığında çıkıyor musunuz",
     "Seviye tespit sınavından kayda giden hattınız: kim, ne zaman, kaç kez dönüyor",
-    "Reklam metinlerinizin 5580 sayılı Kanun sınırında kalıp kalmadığı"
+    "Yayındaki reklamlarınız 5580 sayılı Kanun sınırında mı — Meta Reklam Kütüphanesi herkese açık, rakip kurumlarınkiyle birlikte bakarız"
   ],
   "sss": [
     {

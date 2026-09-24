@@ -29,16 +29,17 @@
     "kaynak": "Şikayetvar, 2026 kullanıcı kaydı"
   },
   "nasil": {
-    "rontgen": "İlanlarınızı, sitenizi ve Instagram'ınızı bir mülk sahibi gözüyle inceliyorum: sizi bulan satıcı neden aramıyor?",
+    "rontgen": "İlanlarınızı, sitenizi, Instagram'ınızı ve yayındaki reklamlarınızı bir mülk sahibi gözüyle görüşmeden önce inceliyorum: sizi bulan satıcı neden aramıyor?",
     "kurulum": "İki ayrı hat: mülk sahibine \"evinizin bugünkü satılabilirlik durumu\" sayfası; alıcıya bölge ve bütçe filtreli talep formu. Gelen her talep tek yerde, mesai dışı ilk cevap otomatik.",
     "partnerlik": "Reklam yönetimi: portföy kampanyası ve alıcı kampanyası ayrı ölçülür; haftalık tabloda kaç talep, kaç değerleme randevusu, kaç yetki görüşmesi."
   },
   "durustluk": {
-    "mevzuat": "Gayrimenkulde fiyat artışı, değerlenme ya da kira getirisi vaadi yasak; sosyal medya ilanlarında EİDS doğrulama şartı var ve ihlalin idari cezası 2026 için 286.206 TL. Hazırladığım hiçbir kreatifte getiri vaadi olmaz — yalnız yetki belgeli ofislerle çalışırım."
+    "mevzuat": "Gayrimenkulde fiyat artışı, değerlenme ya da kira getirisi vaadi yasak; sosyal medya ilanlarında EİDS doğrulama şartı var ve ihlalin idari cezası 2026 için 286.206 TL. Hazırladığım hiçbir kreatifte getiri vaadi olmaz. Aracılık yapan ofislerde taşınmaz ticareti yetki belgesi ararım; kendi projesini satan inşaat firmasında bu belge aranmaz, reklam kuralları aynen geçerlidir."
   },
   "kimler": {
     "uygun": [
       "Taşınmaz ticareti yetki belgesi olan emlak ofisi sahipleri ve brokerlar",
+      "Satıştaki projesi olan inşaat firmaları — kendi projesini satan firmada yetki belgesi aranmaz; reklam mevzuatı aynen geçerlidir",
       "Portföy üretimini portala bağımlı olmaktan çıkarmak isteyenler",
       "Reklama düzenli bütçe ayırabilen ve haftalık 30 dakikayı rapora verebilecek olanlar"
     ],
@@ -48,9 +49,9 @@
     ]
   },
   "rontgende": [
-    "Portal harcamanızın karşılığı: ilan başına kaç temas, kaç randevu, kaç yetki",
-    "Mülk sahibinin sizi bulduğu an ne gördüğü — ilan, site, Instagram üçlüsü",
-    "Mesai dışı ve gezi saatlerinde gelen mesajın nereye düştüğü"
+    "Google'da ve haritada durumunuz: yorumlarınızın kaçı cevapsız kalmış, \"ilçe + emlak\" arandığında çıkıyor musunuz",
+    "Yayındaki reklamlarınız ve rakip ofislerinkiler — Meta Reklam Kütüphanesi herkese açık: kim portföy peşinde, kim alıcı peşinde",
+    "Mülk sahibinin sizi bulduğu an ne gördüğü: ilan, site ve Instagram üçlüsü — ve mesai dışı gelen mesajın nereye düştüğü"
   ],
   "sss": [
     {
