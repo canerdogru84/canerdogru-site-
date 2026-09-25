@@ -7,6 +7,23 @@ import Takvim from "./Takvim";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+/**
+ * Hangi reklamın getirdiği. Reklam URL'lerinde `utm_content=TOFU-MOB-1` var.
+ * İlk gelişte saklanır: kullanıcı sayfa içinde gezinip forma sonra dönse de kaybolmaz.
+ * Bu veri sonradan geri kazanılamaz — reklam yayına girdiği anda yakalanmalı.
+ */
+function reklamKodu(): string {
+  if (typeof window === "undefined") return "";
+  const p = new URLSearchParams(window.location.search);
+  const simdi = p.get("utm_content") || p.get("utm_campaign") || "";
+  try {
+    if (simdi) sessionStorage.setItem("lam_reklam_kodu", simdi);
+    return simdi || sessionStorage.getItem("lam_reklam_kodu") || "";
+  } catch {
+    return simdi;
+  }
+}
+
 const fieldBase =
   "w-full rounded-lg border border-line-strong bg-white px-4 py-3 text-[0.95rem] text-ink placeholder:text-muted/70 transition-colors focus:border-signal focus:outline-none focus:ring-2 focus:ring-signal/20";
 
@@ -39,6 +56,7 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
       instagram: String(data.get("instagram") || "").trim(),
       reklam_butcesi: String(data.get("reklam_butcesi") || ""),
       kaynak: source,
+      reklam_kodu: reklamKodu(),
     };
 
     try {

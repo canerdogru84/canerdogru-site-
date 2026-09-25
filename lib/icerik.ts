@@ -235,7 +235,7 @@ export function tumYazilar(): Yazi[] {
         ozet: ilkParagraf(govde),
         html: htmlUret(govde),
         sss,
-        _sira: Number(data.reels_no ?? 999),
+        _sira: Number(data.sira ?? data.reels_no) || 999,
       } as Yazi & { _sira: number };
     })
     .sort((a, b) => (a as any)._sira - (b as any)._sira);

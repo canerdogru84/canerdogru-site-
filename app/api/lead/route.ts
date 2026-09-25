@@ -26,6 +26,9 @@ export async function POST(req: Request) {
   const instagram = clean(body.instagram, 80);
   const reklam_butcesi = clean(body.reklam_butcesi, 40);
   const kaynak = clean(body.kaynak, 40) || "rontgen";
+  // utm_content — hangi reklam kreatifinin getirdiği (örn. TOFU-MOB-1).
+  // Sektör `kaynak` alanında; bu alan sektörün İÇİNDEKİ açıyı ayırır.
+  const reklam_kodu = clean(body.reklam_kodu, 60);
   // CAPI eşleştirme verisi: tarayıcıdaki fbq('track','Lead',...,{eventID}) ile aynı id.
   // n8n [SABLON] 02 bu satırı okuyup Meta'ya sunucu tarafı olayını gönderiyor;
   // aynı event_id sayesinde Meta ikisini tek olay sayar (çift sayım yok).
@@ -81,6 +84,7 @@ export async function POST(req: Request) {
     instagram: instagram || null,
     reklam_butcesi,
     kaynak,
+    reklam_kodu: reklam_kodu || null,
     event_id: event_id || null,
     event_source_url: req.headers.get("referer") || null,
     client_ip_address: ip,

@@ -56,6 +56,8 @@ Haftada iki düzenli video, ayda bir yoğun dalgadan daha iyi sonuç verir. Konu
 ### Sosyal medyada emlak ilanı paylaşmak yasak mı?
 Yasak değil ama şarta bağlı. İlan paylaşımı EİDS doğrulamasına tabi ve uymayanlar için 286.206 TL'ye varan idari para cezası gündemde. Bu yüzden içerik planını tek tek ilan üzerine değil, bölge bilgisi ve süreç anlatımı üzerine kurmak hem güvenli hem daha etkili.
 
+Kuralların tamamı — yetki belgesi, EİDS doğrulaması ve yazılamayacak vaat ailesi — ayrı bir yazıda: [sosyal medyada emlak ilanı paylaşma kuralları](/blog/emlak-ofisi-sosyal-medya-ilan-mevzuati)
+
 ### Portala ödediğim parayı kesip sosyal medyaya mı kaydırmalıyım?
 Kesmek değil, dengelemek. Portföy görünürlüğünüzün önemli bölümü hâlâ portalda. Doğru soru şu: ilan sitesi yarın koşullarını değiştirirse kaç kişiye kendi kanalınızdan ulaşabilirsiniz? Bu sayı sıfıra yakınsa bağımlılığı azaltmak bir tercih değil, ihtiyaçtır.
 

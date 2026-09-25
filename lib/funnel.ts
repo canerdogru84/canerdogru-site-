@@ -39,24 +39,30 @@ export type FunnelIcerik = {
 
 /** Altı sayfada da AYNI olan metinler — tek düzenleme noktası */
 export const SABIT = {
-  guvenSatiri: "Ücretsiz · 10 dakikalık form · Sonuç garantisi yok, sistem garantisi var",
+  guvenSatiri: "Ücretsiz · 10 dakikalık form · Canlı görüşme haftada 10 firmayla sınırlı",
   teshisKapanis: "Reklamın çalışmıyorsa sorun bütçe değil, sistemsizlik.",
   nasil: {
     rontgen: { baslik: "Röntgen", alt: "Ücretsiz. Sitenizi ve Instagram'ınızı inceleyip nerede müşteri kaybettiğinizi gösteriyorum." },
     kurulum: { baslik: "Kurulum", alt: "Açılış sayfası, takip hattı ve ölçüm. 10 iş günü; süre bilgi ve erişimlerin tesliminden itibaren başlar." },
     partnerlik: { baslik: "Büyüme Partnerliği", alt: "Aylık reklam yönetimi. Her hafta aynı tabloya birlikte bakarız: kaç talep geldi, kaçı görüşmeye döndü." },
   },
+  /**
+   * ⚠️ "Sistem garantisi veriyorum" kalıbı 25 Eyl 2026'da BIRAKILDI.
+   * Okurda "sistemi kuruyor ama sonuç almıyorsun" izlenimi bırakıyordu — yani anti-garanti
+   * pozisyonu, korumak istediği güveni tam tersine çeviriyordu. Yerine sayı taahhüdü
+   * reddedilir ama Caner'in neyin altına imza attığı TEK TEK sayılır.
+   */
   antiGaranti: {
-    baslik: "Sistem garantisi veriyorum, sonuç garantisi vermiyorum.",
-    metin: "Size \"ayda şu kadar müşteri\" diyen kişi, o cümleyi sizin reklamınıza yazacak ve cezasını siz ödeyeceksiniz. Benim taahhüdüm sistemi kurmak ve her hafta birlikte izlemek.",
+    baslik: "Sayı taahhüt etmiyorum. Rakamı her hafta birlikte görmeyi taahhüt ediyorum.",
+    metin: "Size \"ayda şu kadar müşteri\" diyen kişi o cümleyi sizin reklamınıza da yazar; cezası size kesilir. Kaç müşteri geleceğini kimse dürüstçe söyleyemez, çünkü sonucun yarısı sizin tarafınızda: kapasiteniz, cevap hızınız, fiyatınız. Altına imza attığım şey şu: kurulum 10 iş gününde biter, her hafta aynı tabloya birlikte bakarız, rakam düşerse sebebini ben bulurum ve ilk ben söylerim.",
   },
-  kitlik: "Her hafta 10 firmayla canlı Röntgen görüşmesi yapıyorum; diğer başvurulara yazılı rapor gönderiyorum. Başvurunuza bakıp hangisinin uygun olduğunu bildiririm.",
+  kitlik: "Her hafta 10 firmayla canlı Röntgen görüşmesi yapıyorum; kalan başvurulara yazılı rapor gönderiyorum.",
   rontgendeSabit: "Hepsi kamuya açık kaynaklardan, görüşmeden önce hazırlanır — sizden ekran, şifre ya da hesap erişimi istenmez. İki biçim: canlı görüşme (bulguları ekranda birlikte gezeriz, 30-45 dk) ya da yazılı rapor.",
   sssGaranti: {
-    soru: "Sonuç garantisi veriyor musunuz?",
-    cevap: "Hayır. Sistem garantisi veriyorum: açılış sayfası, takip hattı ve ölçüm çalışır hâlde teslim edilir ve her hafta birlikte izlenir. Kaç müşteri geleceğini kimse garanti edemez; eden kişiden uzak durun.",
+    soru: "Kaç müşteri geleceğini söyleyebiliyor musunuz?",
+    cevap: "Hayır — söyleyen kimse de söyleyemez, çünkü sonucun yarısı sizin tarafınızda: kapasiteniz, gelen mesaja dönüş hızınız, fiyatınız. Benim tarafımda olan işin tamamını taahhüt ediyorum: kurulum 10 iş gününde biter, her hafta aynı tabloya birlikte bakarız, rakam düşerse sebebini bulmak benim işim.",
   },
-  formAltBaslik: "Formu doldurun; başvurunuza bakıp size hangi biçimin uygun olduğunu bildireyim.",
+  formAltBaslik: "Formu doldurun; Röntgen'inizi hazırlayıp 24 saat içinde dönüyorum.",
   /**
    * Kimlik — reklam kreatifi Caner'in yüzü ve sesiyle dönüyor; sayfa yüzsüz kalırsa
    * mesaj eşleşmesi kopar. Ayrıca müşteri referansı yokken tek güven varlığı kişinin
