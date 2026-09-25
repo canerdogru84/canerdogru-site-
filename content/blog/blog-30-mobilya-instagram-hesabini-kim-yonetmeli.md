@@ -75,7 +75,7 @@ Pratik karar yöntemi şu: dört parçayı bir kâğıda yazın, her birinin yan
 
 ## Sık sorulan sorular
 
-### Mobilya mağazasının Instagram hesabını dışarıya vermek mantıklı mı?
+### Mobilya mağazasının Instagram hesabını ajansa mı versem, kendim mi yapsam?
 İçerik üretimi ve yayın düzeni için mantıklı; gelen mesaja cevap ve ölçüm için riskli. Fiyat, stok, ölçü ve teslim bilgisi mağazanın içinde olduğu için dışarıdaki kişi satış sohbetini yürütemiyor. Devri parça parça yapmak, hesabın tamamını tek bir adrese vermekten daha iyi sonuç veriyor.
 
 ### Sosyal medyayı kendim yönetsem yeter mi?
