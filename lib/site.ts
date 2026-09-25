@@ -65,10 +65,11 @@ export const site = {
 
   // --- RÖNTGEN GÖRÜŞMESİ (cal.com) ---
   // Form sonrası 50K+ bütçeye takvim gömülür.
-  // Etkinlik: "Dijital Büyüme Röntgeni" · 45 dk · cal.com/canerdogru/dp-toplanti
-  // ⚠️ Slug "rontgen" DEĞİL, "dp-toplanti" — etkinlik adı ile slug ayrışık, şaşırma.
+  // Etkinlik: "Dijital Büyüme Röntgeni" · 45 dk · cal.com/canerdogru/rontgen
+  // ⚠️ Slug 24 Eyl'de "dp-toplanti" → "rontgen" oldu. cal.com'da slug değişirse burası
+  // da değişmeli; eski slug 404 verir ve 50K+ başvuran takvim yerine hata sayfası görür.
   // Boşaltılırsa takvim yerine "24 saat içinde dönüyorum" ekranı gösterilir (güvenli düşüş).
-  calcomEvent: "canerdogru/dp-toplanti",
+  calcomEvent: "canerdogru/rontgen",
 } as const;
 
 /** Form sonrası hangi yola girer? Kaynak: budgetOptions.value */
