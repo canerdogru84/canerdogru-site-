@@ -14,6 +14,30 @@ export default function Analytics() {
 
   return (
     <>
+      {/* Geliş kanalı — ID'den bağımsız, her sayfada çalışır. Ziyaretçi Google'dan
+          ana sayfaya gelip sonra /rontgen'e geçerse, forma ulaştığında ilk geliş
+          bilgisi çoktan kaybolmuş olurdu. LeadForm aynı anahtarları okur (sql/s15). */}
+      <Script id="gelis-kanali" strategy="afterInteractive">
+        {`
+          try {
+            var p = new URLSearchParams(location.search), s = sessionStorage;
+            if (p.get('utm_source') || p.get('utm_medium') || p.get('utm_campaign')) {
+              s.setItem('lam_utm', JSON.stringify({
+                utm_source: p.get('utm_source') || '',
+                utm_medium: p.get('utm_medium') || '',
+                utm_campaign: p.get('utm_campaign') || ''
+              }));
+            }
+            var k = p.get('utm_content') || p.get('utm_campaign');
+            if (k) s.setItem('lam_reklam_kodu', k);
+            if (document.referrer && !s.getItem('lam_ilk_referrer')) {
+              var r = new URL(document.referrer);
+              if (r.hostname !== location.hostname) s.setItem('lam_ilk_referrer', r.origin + r.pathname);
+            }
+          } catch (e) {}
+        `}
+      </Script>
+
       {ga && (
         <>
           <Script

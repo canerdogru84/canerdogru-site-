@@ -29,6 +29,12 @@ export async function POST(req: Request) {
   // utm_content — hangi reklam kreatifinin getirdiği (örn. TOFU-MOB-1).
   // Sektör `kaynak` alanında; bu alan sektörün İÇİNDEKİ açıyı ayırır.
   const reklam_kodu = clean(body.reklam_kodu, 60);
+  // Geliş kanalı: UTM üçlüsü + ilk dış referrer. UTM'siz gelişi (Google, ChatGPT,
+  // Instagram profili) ayıran tek sinyal referrer. Sınıflandırma sql/s15 görünümünde.
+  const utm_source = clean(body.utm_source, 60);
+  const utm_medium = clean(body.utm_medium, 60);
+  const utm_campaign = clean(body.utm_campaign, 100);
+  const ilk_referrer = clean(body.ilk_referrer, 300);
   // CAPI eşleştirme verisi: tarayıcıdaki fbq('track','Lead',...,{eventID}) ile aynı id.
   // n8n [SABLON] 02 bu satırı okuyup Meta'ya sunucu tarafı olayını gönderiyor;
   // aynı event_id sayesinde Meta ikisini tek olay sayar (çift sayım yok).
@@ -85,6 +91,12 @@ export async function POST(req: Request) {
     reklam_butcesi,
     kaynak,
     reklam_kodu: reklam_kodu || null,
+    utm_source: utm_source || null,
+    utm_medium: utm_medium || null,
+    utm_campaign: utm_campaign || null,
+    ilk_referrer: ilk_referrer || null,
+    // Boş UTM + boş referrer artık "doğrudan giriş" demek, "bilinmiyor" değil.
+    kanal_izlendi: true,
     event_id: event_id || null,
     event_source_url: req.headers.get("referer") || null,
     client_ip_address: ip,

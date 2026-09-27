@@ -24,6 +24,50 @@ function reklamKodu(): string {
   }
 }
 
+/**
+ * Nereden geldi? UTM üçlüsü + siteye ilk gelinen dış adres.
+ * UTM'siz gelişi (Google araması, ChatGPT cevabı, Instagram profili) ayıran tek
+ * sinyal referrer'dır; KPI'daki `kanal` sınıfı ikisinden türetilir (sql/s15).
+ * Referrer ilk gelişte bir kez saklanır — site içi geçiş sonradan üzerine yazmaz.
+ */
+function gelisKanali() {
+  const bos = { utm_source: "", utm_medium: "", utm_campaign: "", ilk_referrer: "" };
+  if (typeof window === "undefined") return bos;
+  const p = new URLSearchParams(window.location.search);
+  let ref = "";
+  try {
+    const r = document.referrer ? new URL(document.referrer) : null;
+    if (r && r.hostname !== window.location.hostname) ref = r.origin + r.pathname;
+  } catch {}
+  try {
+    if (p.get("utm_source") || p.get("utm_medium") || p.get("utm_campaign")) {
+      sessionStorage.setItem(
+        "lam_utm",
+        JSON.stringify({
+          utm_source: p.get("utm_source") || "",
+          utm_medium: p.get("utm_medium") || "",
+          utm_campaign: p.get("utm_campaign") || "",
+        })
+      );
+    }
+    if (ref && !sessionStorage.getItem("lam_ilk_referrer")) {
+      sessionStorage.setItem("lam_ilk_referrer", ref);
+    }
+    return {
+      ...bos,
+      ...JSON.parse(sessionStorage.getItem("lam_utm") || "{}"),
+      ilk_referrer: sessionStorage.getItem("lam_ilk_referrer") || "",
+    };
+  } catch {
+    return {
+      utm_source: p.get("utm_source") || "",
+      utm_medium: p.get("utm_medium") || "",
+      utm_campaign: p.get("utm_campaign") || "",
+      ilk_referrer: ref,
+    };
+  }
+}
+
 const fieldBase =
   "w-full rounded-lg border border-line-strong bg-white px-4 py-3 text-[0.95rem] text-ink placeholder:text-muted/70 transition-colors focus:border-signal focus:outline-none focus:ring-2 focus:ring-signal/20";
 
@@ -57,6 +101,7 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
       reklam_butcesi: String(data.get("reklam_butcesi") || ""),
       kaynak: source,
       reklam_kodu: reklamKodu(),
+      ...gelisKanali(),
     };
 
     try {
