@@ -86,7 +86,7 @@ Kurulum **10 iş günü** sürer; süre bilgi ve erişimlerin tesliminden itibar
 **3) Büyüme Partnerliği — aylık.**
 Ana iş burada: reklam yönetimi, kreatif üretimi, her hafta kazananın testle bulunması, açılış sayfasının düzenlenmesi ve gelen talep kalitesinin kampanyaya işlenmesi. Bu sektöre özel bir parça daha var: **ölü sezon için ayrı teklif hattı.** Kasım-Aralık ve Mart-Mayıs'ta bütçe düşer ama iş durmaz; o aylarda yapılan iş bir sonraki tepeyi hazırlamaktır.
 
-Her hafta Zoom'da aynı tabloya bakarız: kaç form, kaç randevu, kaç geliş, kaç kayıt.
+Her hafta aynı tabloya birlikte bakarız: kaç form, kaç randevu, kaç geliş, kaç kayıt.
 
 **Yatırım aralığı görüşmede netleşir.** Şube sayısı, kaç programda başlanacağı ve reklam bütçesinin ölçeği fiyatı belirler.
 
@@ -112,7 +112,7 @@ Her hafta Zoom'da aynı tabloya bakarız: kaç form, kaç randevu, kaç geliş, 
 
 ## 6. ANTI-GARANTİ
 
-Net söyleyeyim: **size kayıt sayısı garanti etmiyorum.** Sistem garantisi veriyorum, sonuç garantisi vermiyorum. Bu her sektörde söylediğim bir cümle — dil kursunda ayrıca **sizi koruyan** bir cümle.
+Net söyleyeyim: **size kayıt sayısı söylemiyorum.** Kaç kayıt geleceğini kimse dürüstçe söyleyemez — sonucun yarısı sizin tarafınızda: kapasiteniz, gelen mesaja dönüş hızınız, fiyatınız. Bu her sektörde söylediğim bir cümle — dil kursunda ayrıca **sizi koruyan** bir cümle.
 
 Kategorinin en çürük klişesi "öğrenme garantisi" ve kursiyer bunu çoktan çözmüş: *"hepsi size oğrenme garantisi verir ama o kursa gidenlere sorunca hiç bir şey öğrenemediklerini söylerler"* ([Ekşi Sözlük](https://eksisozluk.com/dil-kursu--284229)). Vaat ikna etmiyor — **şüphe üretiyor.**
 
@@ -122,7 +122,7 @@ Kurduğum her kampanyada sabit olan sınırlar: süre-seviye garantisi kurulmaz;
 
 Bu bir kısıt listesi gibi görünüyor ama tersi doğru. Mevzuat sizi kısıtlamıyor — **yalan söyleyen rakibinizi kısıtlıyor.** Serbest alan geniş: hocanın kim olduğu, sınıf mevcudu, ders formatı, program takvimi, ücret aralığı, gerçek yorumlar.
 
-Garanti ettiğim şey sistemin kendisi: randevu hattı, açılış sayfası, ilk cevap düzeni, takip dizisi ve ölçüm kurulur, çalışır durumda teslim edilir. Sonuç garantisi arıyorsanız doğru kişi ben değilim — bunu şimdi söylemek ikimizin de bir sezonunu kurtarır.
+Altına imza attığım şeyler: randevu hattı, açılış sayfası, ilk cevap düzeni, takip dizisi ve ölçüm 10 iş gününde kurulur ve çalışır durumda teslim edilir; her hafta aynı tabloya birlikte bakarız, bir rakam düşerse sebebini bulmak benim işim.
 
 ---
 

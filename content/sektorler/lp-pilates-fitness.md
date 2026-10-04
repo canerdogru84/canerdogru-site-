@@ -78,7 +78,7 @@ Deneme dersi hattı uçtan uca kurulur. Reklam; bölge, hedef ve uygun saat aral
 Kurulum **10 iş günü** sürer; süre bilgi ve erişimlerin tesliminden itibaren başlar.
 
 **3) Büyüme Partnerliği — aylık.**
-Ana iş burada: reklam yönetimi. Kampanyanın kurulması, gündüz kuşağı için ayrı kreatif setinin üretilmesi, her hafta kazananın testle bulunması — beğeniyle değil. Yanına üye tutma temasları eklenir: uzun süre gelmeyen üyeye ve paketi bitmek üzere olana otomatik temas. Her hafta Zoom'da aynı tabloya birlikte bakarız: kaç mesaj geldi, kaçı deneme dersine geldi, kaçı üye oldu, geçen haftaya göre ne değişti.
+Ana iş burada: reklam yönetimi. Kampanyanın kurulması, gündüz kuşağı için ayrı kreatif setinin üretilmesi, her hafta kazananın testle bulunması — beğeniyle değil. Yanına üye tutma temasları eklenir: uzun süre gelmeyen üyeye ve paketi bitmek üzere olana otomatik temas. Her hafta aynı tabloya birlikte bakarız: kaç mesaj geldi, kaçı deneme dersine geldi, kaçı üye oldu, geçen haftaya göre ne değişti.
 
 Teknik kurulumu size anlatmam — o benim işim. **Yatırım aralığı görüşmede netleşir**; makine sayısı, şube sayısı ve reklam bütçesinin ölçeği fiyatı belirler.
 

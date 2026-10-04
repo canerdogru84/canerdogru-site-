@@ -79,7 +79,7 @@ Burada iki ayrı huni kurulur, çünkü satıcı ile alıcı aynı insan değild
 Üstüne ofisin ortak omurgası gelir: gelen her talebin tek bir yerde biriktiği kayıt düzeni, mesai dışı ve gezi saatlerinde devreye giren ilk cevap, reklamdan gelen talebin hangi kampanyadan geldiğini gösteren ölçüm hattı ve haftalık bakacağınız tek bir rapor ekranı. Kurulum **10 iş günü** sürer; süre bilgi ve erişimlerin tesliminden itibaren başlar.
 
 **3) Büyüme Partnerliği — aylık.**
-Ana iş burada: reklam yönetimi. Kampanyanın kurulması, kreatiflerin üretilmesi ve her hafta kazananın testle bulunması, açılış sayfasının dönüşüm için düzenlenmesi, gelen lead'in kalitesinin sizden geri alınıp kampanyaya işlenmesi. Her hafta Zoom'da aynı tabloya birlikte bakarız: kaç talep geldi, kaçı değerleme randevusuna döndü, kaç yetki görüşmesi oldu.
+Ana iş burada: reklam yönetimi. Kampanyanın kurulması, kreatiflerin üretilmesi ve her hafta kazananın testle bulunması, açılış sayfasının dönüşüm için düzenlenmesi, gelen lead'in kalitesinin sizden geri alınıp kampanyaya işlenmesi. Her hafta aynı tabloya birlikte bakarız: kaç talep geldi, kaçı değerleme randevusuna döndü, kaç yetki görüşmesi oldu.
 
 Teknik kurulumu size anlatmam — o benim işim. Size gösterdiğim şey her zaman şu olur: bu hafta kaç görüşme, geçen haftaya göre ne değişti, önümüzdeki hafta ne deniyoruz.
 
@@ -94,7 +94,7 @@ Teknik kurulumu size anlatmam — o benim işim. Size gösterdiğim şey her zam
 - **Taşınmaz ticareti yetki belgesi olan** emlak ofisi sahibi, broker veya sorumlu danışman.
 - **Reklama düzenli bütçe ayırabilen ofisler.** Gayrimenkulde satış döngüsü uzun ve tıklama pahalıdır; belirli bir bandın altında anlamlı veri bile birikmez, dolayısıyla optimizasyon yapılacak bir şey olmaz. Reklam bütçesi size aittir, ben finanse etmem.
 - **Karar yetkisi masada olan** kişi. Ofis sahibi ya da brokerle çalışırım; kararı bir başkasına taşıyan aracıyla süreç yürümüyor.
-- **Haftalık Zoom'a gelen** ofisler. Lead kalitesini bana sadece siz söyleyebilirsiniz; o geri bildirim olmadan kampanya körleşir.
+- **Haftalık görüşmeye gelen** ofisler. Lead kalitesini bana sadece siz söyleyebilirsiniz; o geri bildirim olmadan kampanya körleşir.
 
 **Uygun değil:**
 

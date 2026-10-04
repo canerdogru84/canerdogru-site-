@@ -78,7 +78,7 @@ Bu ortamda kaybı kapatmanın yolu daha çok gönderi atmak değil; gelen kişiy
 
 **2) Müşteri Kazanım Sistemi Kurulumu.** Koçluk nişine özel bir açılış sayfası (randevu alınan, "ücretsiz seans" değil **stratejik netlik görüşmesi** çerçevesinde kurulan bir sayfa), reklam altyapısı, gelen soruyu 7/24 karşılayıp takvime yönlendiren **WhatsApp YZ Müşteri Temsilcisi**, her adayın nerede olduğunu gösteren bir kayıt düzeni, gelmeyen ve "düşüneyim" diyen kişi için otomatik ama insani bir takip dizisi ve kaynak → görüşme → satış yolunu tek ekranda gösteren rapor. Kurulum, bilgi ve erişimlerin tesliminden itibaren 10 iş günü.
 
-**3) Büyüme Partnerliği — aylık.** Reklam yönetimi bu aşamanın merkezinde: kampanya yönetimi, kreatif testi ve kazananı veriyle bulma, haftalık optimizasyon. Kurumsal hat isteniyorsa LinkedIn ve içerik tarafı ikinci hat olarak paralel yürür. Her hafta Zoom'da bütün rakamları birlikte okuyoruz — aylık rapor değil, haftalık görüşme. Kara kutu yok.
+**3) Büyüme Partnerliği — aylık.** Reklam yönetimi bu aşamanın merkezinde: kampanya yönetimi, kreatif testi ve kazananı veriyle bulma, haftalık optimizasyon. Kurumsal hat isteniyorsa LinkedIn ve içerik tarafı ikinci hat olarak paralel yürür. Her hafta bütün rakamları birlikte okuyoruz — aylık rapor değil, haftalık görüşme. Kara kutu yok.
 
 Sizde kalan tek iş: kendi kameranız karşısındaki çekim ve haftalık 45 dakikalık görüşme. Metin, teklif ve kreatiflerin hepsi sizin onayınızla yayına girer; marka sesi sizin kalır.
 
@@ -104,7 +104,7 @@ Yatırım aralığı, kapsam netleştikten sonra görüşmede konuşulur.
 
 ---
 
-## 6. Sistem garantilidir, sonuç garanti edilmez
+## 6. Neden sayı söylemiyorum, neyin altına imza atıyorum
 
 Size şu kadar danışan sözü vermiyorum. Verdiğim söz şu: kurduğum sistem **çalışır hâlde** teslim edilir ve her metriğini her hafta birlikte görürsünüz.
 
@@ -136,7 +136,7 @@ Ucuzlatan şey reklamın kendisi değil, reklamın vaat dilidir. Abartılı vaat
 
 ### Kaç danışan getireceğinizi garanti ediyor musunuz?
 
-Hayır. Sonuç garantisi vermiyorum; sistem garantisi veriyorum. Kurduğum yapı çalışır hâlde teslim edilir ve her hafta bütün rakamları Zoom'da birlikte okuruz — kara kutu yok. Bütçeniz, nişiniz, rekabetiniz ve mevsim değişken kalemler; bunların sonucunu garanti eden biri ya reklamı ya sizi tanımıyordur.
+Hayır. Kaç danışan geleceğini kimse dürüstçe söyleyemez; sonucun yarısı sizin tarafınızda. Benim tarafımda olan: kurulum 10 iş gününde biter, her hafta bütün rakamları birlikte okuruz, bir rakam düşerse sebebini bulmak benim işim — kara kutu yok. Bütçeniz, nişiniz, rekabetiniz ve mevsim değişken kalemler; bunların sonucunu garanti eden biri ya reklamı ya sizi tanımıyordur.
 
 ### Sistemin kurulması ne kadar sürüyor ve benden ne isteniyor?
 

@@ -80,7 +80,7 @@ Burada showroom randevu hattı kurulur. Reklam, odanın tipini, ölçüsünü ve
 Kurulum **10 iş günü** sürer; süre bilgi ve erişimlerin tesliminden itibaren başlar.
 
 **3) Büyüme Partnerliği — aylık.**
-Ana iş burada: reklam yönetimi. Kampanyanın kurulması, kreatiflerin üretilmesi ve her hafta kazananın testle bulunması, açılış sayfasının dönüşüm için düzenlenmesi, gelen talebin kalitesinin sizden geri alınıp kampanyaya işlenmesi. Her hafta Zoom'da aynı tabloya birlikte bakarız: kaç mesaj geldi, kaçı randevuya döndü, kaçı showroom'a geldi, kaçı kapandı.
+Ana iş burada: reklam yönetimi. Kampanyanın kurulması, kreatiflerin üretilmesi ve her hafta kazananın testle bulunması, açılış sayfasının dönüşüm için düzenlenmesi, gelen talebin kalitesinin sizden geri alınıp kampanyaya işlenmesi. Her hafta aynı tabloya birlikte bakarız: kaç mesaj geldi, kaçı randevuya döndü, kaçı showroom'a geldi, kaçı kapandı.
 
 Teknik kurulumu size anlatmam — o benim işim. Size gösterdiğim şey her zaman şu olur: bu hafta kaç randevu, geçen haftaya göre ne değişti, önümüzdeki hafta ne deniyoruz.
 
