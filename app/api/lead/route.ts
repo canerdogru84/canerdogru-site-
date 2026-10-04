@@ -26,6 +26,8 @@ export async function POST(req: Request) {
   const instagram = clean(body.instagram, 80);
   const reklam_butcesi = clean(body.reklam_butcesi, 40);
   const kaynak = clean(body.kaynak, 40) || "rontgen";
+  // Ayrı, işaretsiz onay kutusu (TR-41). false ise pazarlama dizisine alınmaz (sql/s18).
+  const pazarlama_izni = body.pazarlama_izni === true;
   // utm_content — hangi reklam kreatifinin getirdiği (örn. TOFU-MOB-1).
   // Sektör `kaynak` alanında; bu alan sektörün İÇİNDEKİ açıyı ayırır.
   const reklam_kodu = clean(body.reklam_kodu, 60);
@@ -89,6 +91,7 @@ export async function POST(req: Request) {
     web_sitesi: web_sitesi || null,
     instagram: instagram || null,
     reklam_butcesi,
+    pazarlama_izni,
     kaynak,
     reklam_kodu: reklam_kodu || null,
     utm_source: utm_source || null,

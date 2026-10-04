@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { site } from "@/lib/site";
 import Analytics from "@/components/Analytics";
+import CerezPaneli from "@/components/CerezPaneli";
 import "./globals.css";
 
 const title = "Caner Doğru | Hizmet İşletmelerine Müşteri Kazanım Sistemi";
@@ -72,6 +73,7 @@ export default function RootLayout({
       <body>
         {children}
         <Analytics />
+        <CerezPaneli />
       </body>
     </html>
   );

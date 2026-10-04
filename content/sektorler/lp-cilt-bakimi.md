@@ -107,7 +107,7 @@ Bu sektörde en çok tekrarlanan boş vaat oransal sözdür: "%70 garantili sonu
 
 Birincisi ticari risk: sözün tutulmadığı her seferde şikâyete dönüyor. Kategoride birikmiş **2.680 şikâyet kaydı** ve tüketicinin ortak cümlesi — **"verilen sözlerin hiçbiri yerine getirilmedi"** — tam olarak bunun izi ([Şikayetvar](https://www.sikayetvar.com/guzellik-salonu)).
 
-İkincisi hukuki risk: Reklam Kurulu, salonların sağlık alanında faaliyet gösterdiği izlenimi uyandıran tanıtımlarını cezalandırıyor. Kararlarda **"her biri için ayrı ayrı 347.128'er TL idari para ve anılan reklamları durdurma cezalarına"** hükmedildiği görülüyor ([Hukuki Haber](https://www.hukukihaber.net/guzellik-salonlarina-reklam-cezalari-guzel-eryurek)). Sizin reklamınızda sonuç vaadi kullanmam; kendi hizmetimde de kullanmam. Aynı sınır iki tarafa da işliyor.
+İkincisi hukuki risk: Reklam Kurulu, salonların sağlık alanında faaliyet gösterdiği izlenimi uyandıran tanıtımlarını cezalandırıyor. Kararlarda idari para cezası ve reklamı durdurma cezalarına hükmedildiği görülüyor; 2026'da internet reklamı için ceza bandı 1.083.706 TL'den başlıyor ([Hukuki Haber](https://www.hukukihaber.net/guzellik-salonlarina-reklam-cezalari-guzel-eryurek)). Sizin reklamınızda sonuç vaadi kullanmam; kendi hizmetimde de kullanmam. Aynı sınır iki tarafa da işliyor.
 
 Benim tarafımda olanın altına imza atarım: **kurulum 10 iş gününde biter, her hafta aynı tabloya birlikte bakarız, bir rakam düşerse sebebini bulmak benim işim.**
 

@@ -30,7 +30,7 @@ const checks = [
   { Icon: IconGlobe, title: "Web sitesi", desc: "hız · mobil · SEO" },
   { Icon: IconInstagram, title: "Instagram", desc: "etkileşim · bio · içerik" },
   { Icon: IconStar, title: "Google & itibar", desc: "yorumlar · görünürlük" },
-  { Icon: IconTarget, title: "Reklam varlığı", desc: "mesaj kalitesi · hedefleme" },
+  { Icon: IconTarget, title: "Reklam varlığı", desc: "yayındaki reklamlar · mesaj kalitesi" },
 ];
 
 const delivers = [
