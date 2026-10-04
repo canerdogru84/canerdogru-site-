@@ -35,7 +35,7 @@ Reklamınız çalışmıyorsa sorun bütçe değil, sistemsizlik. Emlakta bu cü
 
 > "Emlakçıların bir çoğu ofis kirası kadar ilan ücreti ödediklerini dile getiriyorlar; böyle bir haksız kazanç olamaz" — TEDB Başkanı Hakan Akçam, [emlakhaberi.com](https://www.emlakhaberi.com/emlak-ilan-sitelerine-emlakcilardan-buyuk-tepki)
 
-**Belirti 2 — İkinci kanal sosyal medya ama zemin kaygan.** Sosyal medyada ilan paylaşımı EİDS doğrulama şartına bağlandı; uymayana **286.206 TL**'ye varan idari para cezası gündeme geldi ([bursavar.com](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Oysa sektörün pazarlama ağırlığı çoktan oraya kaymış durumda:
+**Belirti 2 — İkinci kanal sosyal medya ama zemin kaygan.** Sosyal medyada ilan paylaşımı EİDS doğrulama şartına bağlandı; aykırı paylaşıma idari para cezası uygulanabiliyor ([bursavar.com](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Oysa sektörün pazarlama ağırlığı çoktan oraya kaymış durumda:
 
 > "Emlak danışmanları, portföylerini sadece ilan portallarından pazarlamazlar." / "geri kalan pazarlama faaliyetleri ve bütçelerinin büyük bir kısmı sosyal medya üzerinden gerçekleşmektedir." — [alperisler.com.tr](https://www.alperisler.com.tr/yazilar/emlak-sektorunu-duzenleyememek-sosyal-medya-yasagi/)
 
@@ -125,7 +125,7 @@ Kendi adınıza çalışan bir hat kurarak. Portala ek olarak: mülk sahibine ya
 
 ### Instagram'da emlak ilanı paylaşmak yasak mı, EİDS şartı ne?
 
-Yasak değil; doğrulama şartına bağlandı. Sosyal medyada ilan paylaşanların Elektronik İlan Doğrulama Sistemi üzerinden doğrulanmış ilan kullanması bekleniyor, uymayana 286.206 TL'ye varan idari para cezası gündeme geldi. Bu yüzden Röntgen'de ilk bakılan başlıklardan biri ilan paylaşım düzeninizin uyumu oluyor.
+Yasak değil; doğrulama şartına bağlandı. Sosyal medyada ilan paylaşanların Elektronik İlan Doğrulama Sistemi üzerinden doğrulanmış ilan kullanması bekleniyor, aykırı paylaşıma idari para cezası uygulanabiliyor. Röntgen'de sosyal medya hesabınızdaki ilan paylaşım düzenine de dışarıdan bakılır; bu bir hukuki değerlendirme değildir.
 
 ### Emlak ofisi için Meta reklamına aylık ne kadar bütçe gerekir?
 

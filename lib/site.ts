@@ -17,7 +17,7 @@ export const site = {
     // E.164 + görünür biçim. tel: linki phoneHref kullanır.
     phoneHref: "+905309919484",
     phoneLabel: "+90 530 991 94 84",
-    email: "caner@canerdogru.com",
+    email: "info@canerdogru.com",
     // Giden otomatik postaların GÖNDEREN adresi. İletişim adresinden ayrı:
     // Brevo yalnızca kendi panelinde "Verified" olan adresten göndermeye izin
     // veriyor. Bu değeri değiştirirsen önce Brevo > Senders'ta doğrulat,
