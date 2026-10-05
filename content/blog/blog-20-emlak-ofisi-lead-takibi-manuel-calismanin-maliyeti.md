@@ -66,7 +66,7 @@ Buradaki mesaj şu: hizmetin gerekliliği tartışmalı değil, **görünürlü�
 Hattı kurmadan önce iki sınır bilinmeli.
 
 - **Yetki belgesi ve sorumlu danışman şartı.** Taşınmaz Ticareti Hakkında Yönetmelik yetki belgesi, Seviye 5 sorumlu emlak danışmanı, meslek odası ve vergi kaydı şartı getiriyor; yetki belgesi devredilemiyor ([mevzuat.gov.tr](https://www.mevzuat.gov.tr/File/GeneratePdf?mevzuatNo=24645&mevzuatTur=KurumVeKurulusYonetmeligi&mevzuatTertip=5)).
-- **İlan paylaşımının doğrulamaya bağlanması.** Sosyal medyada ilan paylaşımının EİDS doğrulama şartına bağlanması ve **286.206 TL**'ye varan idari para cezası gündemde ([Bursavar](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)).
+- **İlan paylaşımının doğrulamaya bağlanması.** Sosyal medyada ilan paylaşımının EİDS doğrulama şartına bağlanması; aykırı paylaşıma idari para cezası uygulanabiliyor ([Bursavar](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)).
 
 Pratik sonuç: reklam kreatifini ilan görselinin kopyası yapmak hem ayrıştırmıyor hem risk taşıyor. Ayrışan kreatif ilan değil, **bölge ve talep kanıtı** anlatır: "bu bölgede satmak isteyenlerle konuşuluyor" mesajı, ilan fotoğrafından daha az riskli ve daha çok portföy üretir.
 
@@ -88,7 +88,7 @@ Burada garanti edilebilecek şey kapanış sayısı değil. Daralan bir piyasada
 Talep sayısı düşükken tablo yeterli olabilir. Ancak tablo, gelen mesaja **otomatik cevap üretemez** ve hangi kampanyadan geldiğini kendiliğinden yazmaz. Kritik olan araç değil, iki alanın kayıt altına alınması: talebin kaynağı ve ilk cevaba kadar geçen süre.
 
 ### Instagram'da ilan paylaşmak yasak mı?
-Paylaşım, doğrulama şartına bağlanıyor ve uymayanlar için 286.206 TL'ye varan idari para cezası gündemde ([Bursavar](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Güncel durumu yetki belgesi ve EİDS kayıtlarınız üzerinden doğrulamadan kampanya kurmayın.
+Paylaşım, doğrulama şartına bağlanıyor ve aykırı paylaşıma idari para cezası uygulanabiliyor ([Bursavar](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Güncel durumu yetki belgesi ve EİDS kayıtlarınız üzerinden doğrulamadan kampanya kurmayın.
 
 ### Reklamda hangi metriğe bakmalıyım: görüntülenme mi, görüşme mi?
 Görüşme. Görüntülenme ve tıklama reklamın çalıştığını gösterir, ofisin çalıştığını göstermez. Kampanya başına randevu ve portföy görüşmesi sayısı, bütçe kararını verdiren tek metriktir.

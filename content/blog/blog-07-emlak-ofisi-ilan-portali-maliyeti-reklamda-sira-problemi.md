@@ -68,7 +68,7 @@ Sıra burada da aynı. Tersten kurulan kampanya bütçeyi değil, zamanı yakıy
 Gayrimenkulde reklam kurmadan önce netleştirilmesi gereken üç başlık var.
 
 - **Yetki belgesi.** Taşınmaz Ticareti Hakkında Yönetmelik kapsamında yetki belgesi olmayan bir işletme için içerik ve reklam üretilmez ([mevzuat.gov.tr](https://www.mevzuat.gov.tr/File/GeneratePdf?mevzuatNo=24645&mevzuatTur=KurumVeKurulusYonetmeligi&mevzuatTertip=5)).
-- **EİDS doğrulaması.** Sosyal medyada ilan paylaşımı doğrulama şartına bağlandı; uymayanlar için 286.206 TL'ye varan idari para cezası gündemde ([Bursavar](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Pratik sonuç: reklam kreatifleri tek tek ilan üzerine değil, **bölge ve talep** üzerine kurulur.
+- **EİDS doğrulaması.** Sosyal medyada ilan paylaşımı doğrulama şartına bağlandı; uymayanlar için idari para cezası gündemde ([Bursavar](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Pratik sonuç: reklam kreatifleri tek tek ilan üzerine değil, **bölge ve talep** üzerine kurulur.
 - **Vaat sınırı.** Fiyat artışı, değerlenme ve kira getirisi vaadi kullanılmaz. Bu hem mevzuat hem itibar meselesi.
 
 Üst segmentte kanalın ağırlığı da değişmiş durumda: *"Milyon dolarlık projeler şu anda sosyal medya üzerinden pazarlanıyor."* ([Alper İşler](https://www.alperisler.com.tr/yazilar/emlak-sektorunu-duzenleyememek-sosyal-medya-yasagi/)) Kanal büyüdükçe kural okuryazarlığı da bir rekabet avantajına dönüşüyor.

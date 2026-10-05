@@ -37,7 +37,7 @@ Kadıköy'de çalışan bir emlak ofisi düşünün. Hedefi alıcı değil, **po
 
 O kişi ilk teması bir reels'te yaşıyor — "bu bölgede satışı uzatan üç şey" başlıklı bir video, kaydırıp geçiyor. Bir. İki gün sonra aynı hesabın "alıcı ilanınızı neden açıp kapatıyor" videosunda duruyor. İki. Aynı hafta Instagram'da ofisin reklamı karşısına çıkıyor. Üç. Komşusunun paylaştığı bir bölge raporunu görüyor. Dört. Profile girip üç video izliyor. Beş, altı, yedi. O akşam mesaj atıyor: "Dairem için bir değerlendirme yapar mısınız?"
 
-Ofis bunu şans sanıyor. Değil — sayaç doldu. Dikkat edilmesi gereken bir nokta var: bu zincirin hiçbir halkası tek tek ilan paylaşımı değil. Sosyal medyada ilan paylaşımı EİDS doğrulama şartına tabi ve uymayana **286.206 TL'ye varan** idari para cezası gündemde ([Bursavar](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Sayacı dolduran şey ilan değil, bölge bilgisi ve süreç anlatımıdır. Bu ikisi zaten daha çok güven üretir.
+Ofis bunu şans sanıyor. Değil — sayaç doldu. Dikkat edilmesi gereken bir nokta var: bu zincirin hiçbir halkası tek tek ilan paylaşımı değil. Sosyal medyada ilan paylaşımı EİDS doğrulama şartına tabi ve uymayana idari para cezası uygulanabiliyor ([Bursavar](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Sayacı dolduran şey ilan değil, bölge bilgisi ve süreç anlatımıdır. Bu ikisi zaten daha çok güven üretir.
 
 ## Ne yapılır
 
@@ -54,7 +54,7 @@ Ofis bunu şans sanıyor. Değil — sayaç doldu. Dikkat edilmesi gereken bir n
 Haftada iki düzenli video, ayda bir yoğun dalgadan daha iyi sonuç verir. Konu listesi ilan değil, süreç olmalı: bölgedeki satış süreleri, alıcının sorduğu sorular, evi satışa hazırlama, sözleşme adımları. Düzenlilik, tekil içerik kalitesinden daha belirleyicidir.
 
 ### Sosyal medyada emlak ilanı paylaşmak yasak mı?
-Yasak değil ama şarta bağlı. İlan paylaşımı EİDS doğrulamasına tabi ve uymayanlar için 286.206 TL'ye varan idari para cezası gündemde. Bu yüzden içerik planını tek tek ilan üzerine değil, bölge bilgisi ve süreç anlatımı üzerine kurmak hem güvenli hem daha etkili.
+Yasak değil ama şarta bağlı. İlan paylaşımı EİDS doğrulamasına tabi ve aykırı paylaşıma idari para cezası uygulanabiliyor. Bu yüzden içerik planını tek tek ilan üzerine değil, bölge bilgisi ve süreç anlatımı üzerine kurmak hem güvenli hem daha etkili.
 
 Kuralların tamamı — yetki belgesi, EİDS doğrulaması ve yazılamayacak vaat ailesi — ayrı bir yazıda: [sosyal medyada emlak ilanı paylaşma kuralları](/blog/emlak-ofisi-sosyal-medya-ilan-mevzuati)
 
