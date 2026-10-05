@@ -178,15 +178,38 @@ export default async function FunnelSayfasi({ params }: Props) {
         </div>
       </section>
 
-      {/* 5 — DÜRÜSTLÜK: sosyal kanıt yerine — en kritik blok */}
+      {/* 5 — KPI ÇERÇEVESİ: sosyal kanıt yerine ölçüm vaadi — en kritik blok (5 Eki 2026) */}
       <section className="section">
         <div className="container-x">
           <Reveal>
             <div className="rounded-2xl border-2 border-signal/20 bg-signal/[0.03] p-8 sm:p-12">
-              <p className="eyebrow">Açık konuşalım</p>
-              <h2 className="h2 mt-4 max-w-2xl">{SABIT.antiGaranti.baslik}</h2>
-              <p className="lead mt-5 max-w-2xl">{SABIT.antiGaranti.metin}</p>
-              <p className="prose-body mt-6 max-w-2xl border-t border-signal/15 pt-6">
+              <p className="eyebrow">{SABIT.kpiCerceve.eyebrow}</p>
+              <h2 className="h2 mt-4 max-w-2xl">{SABIT.kpiCerceve.baslik}</h2>
+              <p className="lead mt-5 max-w-2xl">{SABIT.kpiCerceve.giris}</p>
+
+              {/* Yöntem — 4 adım tek satır */}
+              <ol className="mt-7 flex flex-wrap items-center gap-x-3 gap-y-2 text-[0.92rem] font-medium text-ink">
+                {SABIT.kpiCerceve.yontem.map((a, i) => (
+                  <li key={a} className="flex items-center gap-3">
+                    <span className="rounded-full border border-line bg-white px-3.5 py-1.5">{a}</span>
+                    {i < SABIT.kpiCerceve.yontem.length - 1 && <span className="text-muted" aria-hidden>→</span>}
+                  </li>
+                ))}
+              </ol>
+
+              {/* Sektöre özel 4 KPI — hedef rakam YAZILMAZ */}
+              <p className="eyebrow-muted mt-8">{f.sektorAd} için ilk görüşmede belirlediğimiz ölçütler</p>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+                {f.kpi.map((k) => (
+                  <li key={k.ad} className="rounded-xl border border-line bg-white p-4">
+                    <p className="text-[0.95rem] font-medium text-ink">{k.ad}</p>
+                    <p className="mt-1 text-[0.85rem] text-muted">{k.olcer}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-[0.9rem] text-ink-soft">{SABIT.kpiCerceve.altSatir}</p>
+
+              <p className="prose-body mt-6 max-w-2xl border-t border-signal/15 pt-6 text-[0.9rem] text-muted">
                 {f.durustluk.mevzuat}
               </p>
               {/* İmza — bu blok kişisel bir duruş; imzasız görüş pazarlama metni gibi okunur */}

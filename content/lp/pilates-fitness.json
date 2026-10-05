@@ -36,6 +36,24 @@
   "durustluk": {
     "mevzuat": "Pilates ve fitness reklamında kilo, ölçü ya da tedavi vaadi (bel fıtığı, skolyoz) verilemez; öncesi-sonrası görseli kullanılmaz. Hazırladığım kreatifler bu sınırda kalır — sağlık iddiası taşıyan bir reklam hem yasal risk hem güven kaybıdır."
   },
+  "kpi": [
+    {
+      "ad": "Mesaj başına reklam maliyeti",
+      "olcer": "Reklamın verimi"
+    },
+    {
+      "ad": "Mesaja ilk dönüş süresi",
+      "olcer": "Takip hattının hızı"
+    },
+    {
+      "ad": "Mesaj → deneme dersi oranı",
+      "olcer": "Teklifin ve iletişimin gücü"
+    },
+    {
+      "ad": "Deneme dersi → üyelik oranı",
+      "olcer": "Satış kapanışı (48 saat takibi)"
+    }
+  ],
   "kimler": {
     "uygun": [
       "1-2 stüdyosu olan, eğitmen kökenli reformer pilates ya da butik fitness sahipleri",

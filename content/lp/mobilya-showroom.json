@@ -36,6 +36,24 @@
   "durustluk": {
     "mevzuat": "Mobilyada \"en ucuz\" iddiası ve teslim süresi vaadi Tüketicinin Korunması Hakkında Kanun kapsamında doğrulanabilir olmak zorunda. Hazırladığım hiçbir kreatifte doğrulanamayan fiyat ya da süre iddiası olmaz — cezayı reklamı yazan değil, mağaza öder."
   },
+  "kpi": [
+    {
+      "ad": "Talep başına reklam maliyeti",
+      "olcer": "Reklamın verimi"
+    },
+    {
+      "ad": "Fiyat/ölçü sorusuna ilk dönüş süresi",
+      "olcer": "Takip hattının hızı"
+    },
+    {
+      "ad": "Talep → showroom randevusu oranı",
+      "olcer": "Teklifin ve iletişimin gücü"
+    },
+    {
+      "ad": "Randevu → satış oranı",
+      "olcer": "Satış kapanışı"
+    }
+  ],
   "kimler": {
     "uygun": [
       "1-2 showroom'u olan, ortalama sepeti yüksek mağaza sahipleri",

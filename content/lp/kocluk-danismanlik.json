@@ -36,6 +36,24 @@
   "durustluk": {
     "mevzuat": "Koçluk terapi değildir ve klinik tanı dili kullanılamaz; gelir ya da kariyer sonucu vaadi (\"3 ayda altı haneli\") hem yasal risk hem sektörün en yıpranmış klişesi. Hazırladığım kreatifler bu sınırda kalır — sektör şarlatan algısıyla dolu, dürüstlük burada satış argümanıdır."
   },
+  "kpi": [
+    {
+      "ad": "Görüşme talebi başına reklam maliyeti",
+      "olcer": "Reklamın verimi"
+    },
+    {
+      "ad": "Talebe ilk dönüş süresi",
+      "olcer": "Takip hattının hızı"
+    },
+    {
+      "ad": "Talep → keşif görüşmesi oranı",
+      "olcer": "Teklifin netliği"
+    },
+    {
+      "ad": "Görüşme → paket oranı",
+      "olcer": "Satış kapanışı"
+    }
+  ],
   "kimler": {
     "uygun": [
       "Bireysel ya da 2-5 kişilik ekiple çalışan, paket satmak isteyen koç ve butik danışmanlar",

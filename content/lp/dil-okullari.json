@@ -36,6 +36,24 @@
   "durustluk": {
     "mevzuat": "5580 sayılı Kanun ve Yönetmelik Ek m.4: \"6 ayda akıcı İngilizce\" gibi yanıltıcı vaadin cezası brüt asgari ücretin beş katı ve cezayı metni yazan değil, kurum öder. Size kayıt sayısı söyleyen kişi sizin adınıza risk alıyor. Hazırladığım hiçbir kreatifte süre-sonuç vaadi olmaz."
   },
+  "kpi": [
+    {
+      "ad": "Kayıt talebi başına reklam maliyeti",
+      "olcer": "Reklamın verimi"
+    },
+    {
+      "ad": "Mesaja ilk dönüş süresi (mesai dışı dahil)",
+      "olcer": "Takip hattının hızı"
+    },
+    {
+      "ad": "Talep → seviye sınavı oranı",
+      "olcer": "Teklifin ve iletişimin gücü"
+    },
+    {
+      "ad": "Seviye sınavı → kayıt oranı",
+      "olcer": "Satış kapanışı"
+    }
+  ],
   "kimler": {
     "uygun": [
       "1-3 şubeli, MEB onaylı özel dil kursu kurucuları ve müdürleri",

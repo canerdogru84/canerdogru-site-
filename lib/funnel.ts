@@ -24,8 +24,10 @@ export type FunnelIcerik = {
   kayip: { rakam: string; aciklama: string; kaynak?: string };
   /** 3 adımın sektöre özel örnekleri */
   nasil: { rontgen: string; kurulum: string; partnerlik: string };
-  /** Blok 5 — sektörün mevzuatı; sosyal kanıt yerine dürüstlük */
+  /** Blok 5 — sektörün mevzuatı; KPI bloğunun altında küçük not */
   durustluk: { mevzuat: string };
+  /** Blok 5 — ilk görüşmede birlikte belirlenen 4 KPI. Hedef RAKAM yazılmaz (5 Eki 2026). */
+  kpi: { ad: string; olcer: string }[];
   /** Blok 6 — eşik rakamı YAZILMAZ */
   kimler: { uygun: string[]; uygunDegil: string[] };
   /** Blok 7 — Röntgen'de sektöre özel bakılan 3 şey */
@@ -52,9 +54,17 @@ export const SABIT = {
    * pozisyonu, korumak istediği güveni tam tersine çeviriyordu. Yerine sayı taahhüdü
    * reddedilir ama Caner'in neyin altına imza attığı TEK TEK sayılır.
    */
-  antiGaranti: {
-    baslik: "Sayı taahhüt etmiyorum. Rakamı her hafta birlikte görmeyi taahhüt ediyorum.",
-    metin: "Size \"ayda şu kadar müşteri\" diyen kişi o cümleyi sizin reklamınıza da yazar; cezası size kesilir. Kaç müşteri geleceğini kimse dürüstçe söyleyemez, çünkü sonucun yarısı sizin tarafınızda: kapasiteniz, cevap hızınız, fiyatınız. Altına imza attığım şey şu: kurulum 10 iş gününde biter, her hafta aynı tabloya birlikte bakarız, rakam düşerse sebebini ben bulurum ve ilk ben söylerim.",
+  /**
+   * 5 Eki 2026: anti-garanti bloğu KPI çerçevesine dönüştü (Caner kararı). "Ne taahhüt
+   * etmiyorum" yerine "neyi birlikte ölçüyoruz". Hedef rakam sayfada yazılmaz; ilk
+   * görüşmede işletmenin kapasitesine göre konur. Bkz. leadadmedia/outputs/landing-pages/KPI-CERCEVESI-2026-10-05.md
+   */
+  kpiCerceve: {
+    eyebrow: "Neyi birlikte ölçüyoruz",
+    baslik: "İlk görüşmede 4 KPI belirleriz. Her hafta aynı tabloya birlikte bakarız.",
+    giris: "Kaç müşteri geleceğini kimse dürüstçe söyleyemez; sonucun yarısı sizin tarafınızda. O yüzden sayı vaat etmek yerine ölçüm vaat ediyorum: ilk görüşmede işletmenize göre dört ölçüt seçeriz, hedef rakamlarını birlikte koyarız, her hafta aynı tabloda izleriz. Hangi rakam düşerse sebebini bulmak ve ilk söylemek benim işim.",
+    yontem: ["Röntgen", "Kurulum · 10 iş günü", "Reklam + takip", "Haftalık KPI görüşmesi"],
+    altSatir: "Hedef rakamlar sayfada değil, görüşmede: sizin kapasitenize ve birim ekonominize göre konur.",
   },
   kitlik: "Her hafta 10 firmayla canlı Röntgen görüşmesi yapıyorum; kalan başvurulara yazılı rapor gönderiyorum.",
   rontgendeSabit: "Hepsi kamuya açık kaynaklardan, görüşmeden önce hazırlanır — sizden ekran, şifre ya da hesap erişimi istenmez. İki biçim: canlı görüşme (bulguları ekranda birlikte gezeriz, 30-45 dk) ya da yazılı rapor.",

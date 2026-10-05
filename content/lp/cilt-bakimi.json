@@ -36,6 +36,24 @@
   "durustluk": {
     "mevzuat": "Güzellik salonu reklamları Reklam Kurulu denetiminde; \"%70 garantili sonuç\" gibi oransal vaatler ve tıbbi izlenim veren dil idari para cezası ve reklam durdurma kararıyla sonuçlanabiliyor. Hazırladığım kreatiflerde yalnız non-invaziv hizmet, yalnız doğrulanabilir ifade olur."
   },
+  "kpi": [
+    {
+      "ad": "Randevu talebi başına reklam maliyeti",
+      "olcer": "Reklamın verimi"
+    },
+    {
+      "ad": "DM'ye ilk dönüş süresi",
+      "olcer": "Takip hattının hızı"
+    },
+    {
+      "ad": "Talep → randevu oranı",
+      "olcer": "Teklifin ve iletişimin gücü"
+    },
+    {
+      "ad": "İlk seans → ikinci seans oranı",
+      "olcer": "Müşterinin kalıcılığı"
+    }
+  ],
   "kimler": {
     "uygun": [
       "2-3 kabinli, güzellik uzmanı kökenli salon sahipleri",

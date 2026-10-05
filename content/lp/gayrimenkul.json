@@ -36,6 +36,24 @@
   "durustluk": {
     "mevzuat": "Gayrimenkulde fiyat artışı, değerlenme ya da kira getirisi vaadi yasak; sosyal medya ilanlarında EİDS doğrulama şartı var; aykırı paylaşıma idari para cezası uygulanabiliyor. Hazırladığım hiçbir kreatifte getiri vaadi olmaz. Aracılık yapan ofislerde taşınmaz ticareti yetki belgesi ararım; kendi projesini satan inşaat firmasında bu belge aranmaz, reklam kuralları aynen geçerlidir."
   },
+  "kpi": [
+    {
+      "ad": "Talep başına reklam maliyeti (portföy / alıcı ayrı)",
+      "olcer": "Reklamın verimi"
+    },
+    {
+      "ad": "Talebe ilk dönüş süresi",
+      "olcer": "Takip hattının hızı"
+    },
+    {
+      "ad": "Talep → değerleme randevusu oranı",
+      "olcer": "Teklifin ve iletişimin gücü"
+    },
+    {
+      "ad": "Randevu → yetki sözleşmesi oranı",
+      "olcer": "Satış kapanışı"
+    }
+  ],
   "kimler": {
     "uygun": [
       "Taşınmaz ticareti yetki belgesi olan emlak ofisi sahipleri ve brokerlar",
