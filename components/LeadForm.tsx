@@ -94,6 +94,7 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
     const payload = {
       event_id: eventId,
       ad_soyad: String(data.get("ad_soyad") || "").trim(),
+      pazarlama_izni: data.get("pazarlama_izni") === "on",
       telefon: String(data.get("telefon") || "").trim(),
       eposta: String(data.get("eposta") || "").trim(),
       web_sitesi: String(data.get("web_sitesi") || "").trim(),
@@ -314,6 +315,20 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
           </div>
         </div>
 
+        {/* Pazarlama iletişimi izni — ayrı, işaretsiz (uyum TR-41). Başvuruya cevap
+            ve Röntgen raporu bu izne bağlı değildir. */}
+        <label className="flex items-start gap-2.5 text-xs leading-relaxed text-muted">
+          <input
+            type="checkbox"
+            name="pazarlama_izni"
+            className="mt-0.5 h-4 w-4 shrink-0 accent-signal"
+          />
+          <span>
+            Bilgilendirme ve kampanya e-postaları, SMS ve WhatsApp mesajları almak
+            istiyorum. (İsteğe bağlı; istediğiniz zaman vazgeçebilirsiniz.)
+          </span>
+        </label>
+
         {status === "error" && error && (
           <div className="flex items-start gap-2.5 rounded-lg border border-red-200 bg-red-50 p-3.5 text-sm text-red-700">
             <IconAlert className="mt-0.5 h-4 w-4 shrink-0" />
@@ -341,7 +356,7 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
           <a href={site.legal.kvkkHref} className="underline underline-offset-2 hover:text-ink">
             KVKK Aydınlatma Metni
           </a>{" "}
-          kapsamında iletişim kurulmasını kabul edersiniz.
+          kapsamında başvurunuzla ilgili sizinle iletişim kurulmasını kabul edersiniz.
         </p>
       </div>
     </form>

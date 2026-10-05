@@ -50,6 +50,8 @@ export const site = {
     kullanimSartlariHref: "/kullanim-sartlari",
     veriSilmeHref: "/veri-silme",
     company: "Caner Doğru",
+    // Reklam veren unvanı — LP alt bilgisinde zorunlu (uyum §7).
+    unvan: "Caner Doğru (Şahıs Şirketi)",
   },
 
   // Reklam bütçesi aralıkları — bütçe filtresi (50K altı seçenek yok).

@@ -306,7 +306,11 @@ export default async function FunnelSayfasi({ params }: Props) {
       {/* Alt bilgi — yasal zorunluluk, başka bağlantı yok */}
       <footer className="border-t border-line py-8">
         <div className="container-x flex flex-wrap items-center justify-between gap-3 text-[12.5px] text-muted">
-          <span>© {new Date().getFullYear()} {site.brand}</span>
+          <span>
+            © {new Date().getFullYear()} {site.legal.unvan} ·{" "}
+            <a href={`tel:${site.contact.phoneHref}`} className="hover:text-ink">{site.contact.phoneLabel}</a> ·{" "}
+            <a href={`mailto:${site.contact.email}`} className="hover:text-ink">{site.contact.email}</a>
+          </span>
           <span className="flex gap-4">
             <Link href={site.legal.kvkkHref} className="hover:text-ink">KVKK</Link>
             <Link href={site.legal.kullanimSartlariHref} className="hover:text-ink">Kullanım şartları</Link>

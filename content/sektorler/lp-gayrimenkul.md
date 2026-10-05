@@ -35,7 +35,7 @@ Reklamınız çalışmıyorsa sorun bütçe değil, sistemsizlik. Emlakta bu cü
 
 > "Emlakçıların bir çoğu ofis kirası kadar ilan ücreti ödediklerini dile getiriyorlar; böyle bir haksız kazanç olamaz" — TEDB Başkanı Hakan Akçam, [emlakhaberi.com](https://www.emlakhaberi.com/emlak-ilan-sitelerine-emlakcilardan-buyuk-tepki)
 
-**Belirti 2 — İkinci kanal sosyal medya ama zemin kaygan.** Sosyal medyada ilan paylaşımı EİDS doğrulama şartına bağlandı; uymayana **286.206 TL**'ye varan idari para cezası gündeme geldi ([bursavar.com](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Oysa sektörün pazarlama ağırlığı çoktan oraya kaymış durumda:
+**Belirti 2 — İkinci kanal sosyal medya ama zemin kaygan.** Sosyal medyada ilan paylaşımı EİDS doğrulama şartına bağlandı; aykırı paylaşıma idari para cezası uygulanabiliyor ([bursavar.com](https://www.bursavar.com/haber/28640787/sosyal-medyada-emlak-ilani-paylasanlar-dikkat-uymayana-286-bin-206-tl-ceza)). Oysa sektörün pazarlama ağırlığı çoktan oraya kaymış durumda:
 
 > "Emlak danışmanları, portföylerini sadece ilan portallarından pazarlamazlar." / "geri kalan pazarlama faaliyetleri ve bütçelerinin büyük bir kısmı sosyal medya üzerinden gerçekleşmektedir." — [alperisler.com.tr](https://www.alperisler.com.tr/yazilar/emlak-sektorunu-duzenleyememek-sosyal-medya-yasagi/)
 
@@ -79,7 +79,7 @@ Burada iki ayrı huni kurulur, çünkü satıcı ile alıcı aynı insan değild
 Üstüne ofisin ortak omurgası gelir: gelen her talebin tek bir yerde biriktiği kayıt düzeni, mesai dışı ve gezi saatlerinde devreye giren ilk cevap, reklamdan gelen talebin hangi kampanyadan geldiğini gösteren ölçüm hattı ve haftalık bakacağınız tek bir rapor ekranı. Kurulum **10 iş günü** sürer; süre bilgi ve erişimlerin tesliminden itibaren başlar.
 
 **3) Büyüme Partnerliği — aylık.**
-Ana iş burada: reklam yönetimi. Kampanyanın kurulması, kreatiflerin üretilmesi ve her hafta kazananın testle bulunması, açılış sayfasının dönüşüm için düzenlenmesi, gelen lead'in kalitesinin sizden geri alınıp kampanyaya işlenmesi. Her hafta Zoom'da aynı tabloya birlikte bakarız: kaç talep geldi, kaçı değerleme randevusuna döndü, kaç yetki görüşmesi oldu.
+Ana iş burada: reklam yönetimi. Kampanyanın kurulması, kreatiflerin üretilmesi ve her hafta kazananın testle bulunması, açılış sayfasının dönüşüm için düzenlenmesi, gelen lead'in kalitesinin sizden geri alınıp kampanyaya işlenmesi. Her hafta aynı tabloya birlikte bakarız: kaç talep geldi, kaçı değerleme randevusuna döndü, kaç yetki görüşmesi oldu.
 
 Teknik kurulumu size anlatmam — o benim işim. Size gösterdiğim şey her zaman şu olur: bu hafta kaç görüşme, geçen haftaya göre ne değişti, önümüzdeki hafta ne deniyoruz.
 
@@ -94,7 +94,7 @@ Teknik kurulumu size anlatmam — o benim işim. Size gösterdiğim şey her zam
 - **Taşınmaz ticareti yetki belgesi olan** emlak ofisi sahibi, broker veya sorumlu danışman.
 - **Reklama düzenli bütçe ayırabilen ofisler.** Gayrimenkulde satış döngüsü uzun ve tıklama pahalıdır; belirli bir bandın altında anlamlı veri bile birikmez, dolayısıyla optimizasyon yapılacak bir şey olmaz. Reklam bütçesi size aittir, ben finanse etmem.
 - **Karar yetkisi masada olan** kişi. Ofis sahibi ya da brokerle çalışırım; kararı bir başkasına taşıyan aracıyla süreç yürümüyor.
-- **Haftalık Zoom'a gelen** ofisler. Lead kalitesini bana sadece siz söyleyebilirsiniz; o geri bildirim olmadan kampanya körleşir.
+- **Haftalık görüşmeye gelen** ofisler. Lead kalitesini bana sadece siz söyleyebilirsiniz; o geri bildirim olmadan kampanya körleşir.
 
 **Uygun değil:**
 
@@ -125,7 +125,7 @@ Kendi adınıza çalışan bir hat kurarak. Portala ek olarak: mülk sahibine ya
 
 ### Instagram'da emlak ilanı paylaşmak yasak mı, EİDS şartı ne?
 
-Yasak değil; doğrulama şartına bağlandı. Sosyal medyada ilan paylaşanların Elektronik İlan Doğrulama Sistemi üzerinden doğrulanmış ilan kullanması bekleniyor, uymayana 286.206 TL'ye varan idari para cezası gündeme geldi. Bu yüzden Röntgen'de ilk bakılan başlıklardan biri ilan paylaşım düzeninizin uyumu oluyor.
+Yasak değil; doğrulama şartına bağlandı. Sosyal medyada ilan paylaşanların Elektronik İlan Doğrulama Sistemi üzerinden doğrulanmış ilan kullanması bekleniyor, aykırı paylaşıma idari para cezası uygulanabiliyor. Röntgen'de sosyal medya hesabınızdaki ilan paylaşım düzenine de dışarıdan bakılır; bu bir hukuki değerlendirme değildir.
 
 ### Emlak ofisi için Meta reklamına aylık ne kadar bütçe gerekir?
 

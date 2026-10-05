@@ -71,9 +71,9 @@ Sitenizin ve Instagram hesabınızın dışarıdan nasıl göründüğünü tek 
 Reklamın gittiği yerden randevunun düştüğü yere kadar hattın tamamı kuruluyor: ilgi çeken reklam, tek işi randevu almak olan açılış sayfası, hiçbir temasın düşmediği müşteri kaydı, gelen her mesaja dakikalar içinde cevap veren WhatsApp YZ Müşteri Temsilcisi, gelmeyeni geri çağıran takip dizisi ve hangi reklamın hangi randevuyu getirdiğini gösteren ölçüm. Teslim süresi 10 iş günü — bilgi ve erişimlerin tesliminden itibaren.
 
 **Adım 3 — Büyüme Partnerliği**
-Aylık reklam yönetimi, kreatif döngüsü, optimizasyon ve haftalık Zoom raporu. Ana kalem budur. Her hafta aynı üç soruya birlikte bakıyoruz: hangi reklam randevu getirdi, hangi mesaj cevapsız kaldı, bu ay kaç randevu nereden geldi.
+Aylık reklam yönetimi, kreatif döngüsü, optimizasyon ve haftalık rapor görüşmesi. Ana kalem budur. Her hafta aynı üç soruya birlikte bakıyoruz: hangi reklam randevu getirdi, hangi mesaj cevapsız kaldı, bu ay kaç randevu nereden geldi.
 
-**Değişen ne oluyor:** Sonuç büyür (boş Salı-Çarşamba kabini dolar, tek seferlik müşteri yerine rutine bağlanmış portföy oluşur). İhtimal büyür (tahmine değil ölçüme bakılır; kazanan kreatif haftalık seçilir). Zaman küçülür (gelen ilgiye cevap süresi saatlerden dakikalara iner; ilk randevu akışı kurulumun ilk haftasında başlar). Emek küçülür (reklam, kreatif, takip ve raporlama bende; sizin işiniz kabine girmek ve haftada bir saat Zoom).
+**Değişen ne oluyor:** Sonuç büyür (boş Salı-Çarşamba kabini dolar, tek seferlik müşteri yerine rutine bağlanmış portföy oluşur). İhtimal büyür (tahmine değil ölçüme bakılır; kazanan kreatif haftalık seçilir). Zaman küçülür (gelen ilgiye cevap süresi saatlerden dakikalara iner; ilk randevu akışı kurulumun ilk haftasında başlar). Emek küçülür (reklam, kreatif, takip ve raporlama bende; sizin işiniz kabine girmek ve haftada bir saatlik görüşme).
 
 Araç adı, panel adı, teknik kurulum anlatmıyorum. Sizin işiniz cilt, benim işim hat.
 
@@ -87,7 +87,7 @@ Araç adı, panel adı, teknik kurulum anlatmıyorum. Sizin işiniz cilt, benim 
 
 - **2-3 kabinli, yerleşik bir stüdyo işletiyorsunuz.** Ayda birkaç yüz müşteri görüyorsunuz; birim ekonominiz hesaplanabiliyor.
 - **Kararı siz veriyorsunuz.** Ortağınız varsa görüşmeye birlikte geliyorsunuz.
-- **Haftada bir saatlik Zoom ritmine giriyorsunuz.** İşi devretmek istiyorsunuz ama rakamları görmekten kaçmıyorsunuz.
+- **Haftada bir saatlik görüşme ritmine giriyorsunuz.** İşi devretmek istiyorsunuz ama rakamları görmekten kaçmıyorsunuz.
 - **Hizmet menüniz non-invaziv.** Bakım seansı, cilt analizi, cihaz destekli yüz bakımı, kirpik-kaş uygulamaları.
 
 **Uygun değil**
@@ -99,17 +99,17 @@ Araç adı, panel adı, teknik kurulum anlatmıyorum. Sizin işiniz cilt, benim 
 
 ---
 
-## 6. Anti-garanti
+## 6. Neden sayı söylemiyorum
 
-**Sistem garantisi veriyorum. Sonuç garantisi vermiyorum.**
+**Kaç müşteri geleceğini kimse dürüstçe söyleyemez — sonucun yarısı sizin tarafınızda: kapasiteniz, gelen mesaja dönüş hızınız, fiyatınız.**
 
 Bu sektörde en çok tekrarlanan boş vaat oransal sözdür: "%70 garantili sonuç", "%100 memnuniyet". O kadar çok kullanılmış ki artık ayırt etmiyor, üstelik iki yönlü risk taşıyor.
 
 Birincisi ticari risk: sözün tutulmadığı her seferde şikâyete dönüyor. Kategoride birikmiş **2.680 şikâyet kaydı** ve tüketicinin ortak cümlesi — **"verilen sözlerin hiçbiri yerine getirilmedi"** — tam olarak bunun izi ([Şikayetvar](https://www.sikayetvar.com/guzellik-salonu)).
 
-İkincisi hukuki risk: Reklam Kurulu, salonların sağlık alanında faaliyet gösterdiği izlenimi uyandıran tanıtımlarını cezalandırıyor. Kararlarda **"her biri için ayrı ayrı 347.128'er TL idari para ve anılan reklamları durdurma cezalarına"** hükmedildiği görülüyor ([Hukuki Haber](https://www.hukukihaber.net/guzellik-salonlarina-reklam-cezalari-guzel-eryurek)). Sizin reklamınızda sonuç vaadi kullanmam; kendi hizmetimde de kullanmam. Aynı sınır iki tarafa da işliyor.
+İkincisi hukuki risk: Reklam Kurulu, salonların sağlık alanında faaliyet gösterdiği izlenimi uyandıran tanıtımlarını cezalandırıyor. Kararlarda idari para cezası ve reklamı durdurma cezalarına hükmedildiği görülüyor; 2026'da internet reklamı için ceza bandı 1.083.706 TL'den başlıyor ([Hukuki Haber](https://www.hukukihaber.net/guzellik-salonlarina-reklam-cezalari-guzel-eryurek)). Sizin reklamınızda sonuç vaadi kullanmam; kendi hizmetimde de kullanmam. Aynı sınır iki tarafa da işliyor.
 
-Benim taahhüdüm şu: **Çalışan bir müşteri kazanım sistemi kuruyorum; sistemin kendisi garantilidir.** Kaç müşteri geleceğini kimse garanti edemez — eden varsa, o kişi sizi değil kendi satışını düşünüyordur.
+Benim tarafımda olanın altına imza atarım: **kurulum 10 iş gününde biter, her hafta aynı tabloya birlikte bakarız, bir rakam düşerse sebebini bulmak benim işim.**
 
 Müşteri tarafında riski nasıl üstleneceğinizi — sonuç vaadi vermeden güven kurmayı — ayrı yazıda anlattım: [güzellik salonu müşteri güveni](/blog/guzellik-salonu-musteri-guveni-riski-ustlenmek-zayiflik-degil).
 
@@ -133,7 +133,7 @@ Gelmeme çoğu zaman ilgisizlik değil, unutma ve belirsizliktir. Randevunun yaz
 Üç sayı: bir randevunun ortalama getirisi, yeni müşteri başına katlandığınız pazarlama maliyeti ve müşterinin ikinci kez gelme oranı. Mevcut kabin doluluğu tavana dayanmadan ve bu üç sayı istikrar kazanmadan açılan şube, aynı belirsizliği ikiye katlar.
 
 ### Kaç yeni müşteri geleceğini garanti ediyor musunuz?
-Hayır. Sistem garantisi veriyorum, sonuç garantisi vermiyorum. Reklamın kime gösterileceğini, kimin randevu alacağını ve piyasanın o ay nasıl davranacağını kimse taahhüt edemez. Size rakam garantisi veren biri çıkarsa, o kişi sizin işinizi değil kendi satışını düşünüyordur.
+Hayır. Kaç müşteri geleceğini kimse dürüstçe söyleyemez; sonucun yarısı sizin tarafınızda. Benim tarafımda olan: kurulum 10 iş gününde biter, her hafta aynı tabloya birlikte bakarız, rakam düşerse sebebini bulmak benim işim. Reklamın kime gösterileceğini, kimin randevu alacağını ve piyasanın o ay nasıl davranacağını kimse taahhüt edemez. Size rakam garantisi veren biri çıkarsa, o kişi sizin işinizi değil kendi satışını düşünüyordur.
 
 ---
 

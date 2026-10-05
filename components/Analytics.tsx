@@ -1,4 +1,8 @@
+"use client";
+
 import Script from "next/script";
+import { useEffect, useState } from "react";
+import { CEREZ_ANAHTAR, CEREZ_OLAY } from "./CerezPaneli";
 
 /**
  * Meta Pixel + GA4 iskeleti.
@@ -7,10 +11,23 @@ import Script from "next/script";
  *   NEXT_PUBLIC_FB_PIXEL_ID=XXXXXXXXXXXXXXX
  * Lead event'leri form gönderiminde tetiklenir (LeadForm / ChecklistForm):
  *   fbq('track','Lead')  ·  gtag('event','generate_lead')
+ * Piksel ve GA4 yalnız çerez panelinde "Kabul et" sonrası yüklenir (uyum TR-44).
  */
 export default function Analytics() {
   const ga = process.env.NEXT_PUBLIC_GA4_ID;
   const pixel = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
+  const [izin, setIzin] = useState(false);
+
+  useEffect(() => {
+    const oku = () => {
+      try {
+        setIzin(localStorage.getItem(CEREZ_ANAHTAR) === "kabul");
+      } catch {}
+    };
+    oku();
+    window.addEventListener(CEREZ_OLAY, oku);
+    return () => window.removeEventListener(CEREZ_OLAY, oku);
+  }, []);
 
   return (
     <>
@@ -38,7 +55,7 @@ export default function Analytics() {
         `}
       </Script>
 
-      {ga && (
+      {izin && ga && (
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}
@@ -55,7 +72,7 @@ export default function Analytics() {
         </>
       )}
 
-      {pixel && (
+      {izin && pixel && (
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
