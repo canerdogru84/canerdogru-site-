@@ -134,10 +134,6 @@ Ucuzlatan şey reklamın kendisi değil, reklamın vaat dilidir. Abartılı vaat
 
 İkisi birbirinin alternatifi değil, iki ayrı hat. ICF verisine göre danışanların yarısından fazlası işveren sponsorlu; bu hacim İK ve liderlik karar vericisinde, yani ağırlıklı olarak LinkedIn'de toplanıyor. Instagram ise bireysel danışan hattını besler. Doğru kurgu çoğu zaman ikisini paralel yürütmek, birini diğerine feda etmemektir.
 
-### Kaç danışan getireceğinizi garanti ediyor musunuz?
-
-Hayır. Kaç danışan geleceğini kimse dürüstçe söyleyemez; sonucun yarısı sizin tarafınızda. Benim tarafımda olan: kurulum 10 iş gününde biter, her hafta bütün rakamları birlikte okuruz, bir rakam düşerse sebebini bulmak benim işim — kara kutu yok. Bütçeniz, nişiniz, rekabetiniz ve mevsim değişken kalemler; bunların sonucunu garanti eden biri ya reklamı ya sizi tanımıyordur.
-
 ### Sistemin kurulması ne kadar sürüyor ve benden ne isteniyor?
 
 Kurulum, bilgi ve erişimlerin tesliminden itibaren 10 iş günü sürer. Sizden istenen iki şey var: kendi kameranız karşısındaki çekim ve haftada bir 45 dakikalık görüşme. Reklam metni, teklif ve kreatiflerin hiçbiri sizin onayınızdan geçmeden yayına girmez; marka sesi ve son söz her zaman sizde kalır.

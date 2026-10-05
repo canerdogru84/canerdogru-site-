@@ -132,9 +132,6 @@ Gelmeme çoğu zaman ilgisizlik değil, unutma ve belirsizliktir. Randevunun yaz
 ### İkinci şubeyi açmadan önce hangi rakamlara bakmalıyım?
 Üç sayı: bir randevunun ortalama getirisi, yeni müşteri başına katlandığınız pazarlama maliyeti ve müşterinin ikinci kez gelme oranı. Mevcut kabin doluluğu tavana dayanmadan ve bu üç sayı istikrar kazanmadan açılan şube, aynı belirsizliği ikiye katlar.
 
-### Kaç yeni müşteri geleceğini garanti ediyor musunuz?
-Hayır. Kaç müşteri geleceğini kimse dürüstçe söyleyemez; sonucun yarısı sizin tarafınızda. Benim tarafımda olan: kurulum 10 iş gününde biter, her hafta aynı tabloya birlikte bakarız, rakam düşerse sebebini bulmak benim işim. Reklamın kime gösterileceğini, kimin randevu alacağını ve piyasanın o ay nasıl davranacağını kimse taahhüt edemez. Size rakam garantisi veren biri çıkarsa, o kişi sizin işinizi değil kendi satışını düşünüyordur.
-
 ---
 
 ## 8. İlgili yazılar

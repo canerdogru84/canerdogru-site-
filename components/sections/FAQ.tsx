@@ -10,10 +10,6 @@ const faqs = [
     a: "Çoğu hizmet sağlayıcı yalnızca reklam yönetir. Ben reklamı uçtan uca bir sistemin parçası olarak yönetiyorum — reklam + dönüşüm sayfası + otomasyon + takip. Fark bu.",
   },
   {
-    q: "Sonuç garanti ediyor musunuz?",
-    a: "Sonuç garanti etmiyorum çünkü sonuç sadece bana bağlı değil. Sistemi garanti ediyorum — 10 iş günde kurulu, test edilmiş, çalışır durumda.",
-  },
-  {
     q: "Ne kadar bütçe gerekiyor?",
     a: "Etkili sonuç için aylık minimum 50.000 TL reklam bütçesi öneriyorum. Sektör ve hedefe göre yukarı çıkabilir. Detaylar görüşmede netleşir.",
   },
@@ -23,11 +19,11 @@ const faqs = [
   },
   {
     q: "Sözleşme süresi var mı?",
-    a: "Kurulum tek seferlik. Büyüme Partnerliği aylık bazda; minimum 3 ay önerilir ama zorunlu değil.",
+    a: "Kurulum tek seferlik. Büyüme Partnerliğinde ilk 2 ay zorunludur; sonrasında aylık olarak yenilenir.",
   },
   {
     q: "Ne kadar sürede sonuç görürüm?",
-    a: "Sistem 10 iş günde kurulur. İlk lead sinyalleri genelde 2-3 hafta içinde başlar; düzenli akış 60-90 günde oturur.",
+    a: "Sistem 10 iş günde kurulur. Kurulumdan sonra reklamlarla birlikte 1 ay içinde müşteri akışı oturur.",
   },
   {
     q: "“Röntgen” tam olarak ne? Gerçekten ücretsiz mi?",

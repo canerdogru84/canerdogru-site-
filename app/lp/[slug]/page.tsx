@@ -272,7 +272,7 @@ export default async function FunnelSayfasi({ params }: Props) {
             <p className="eyebrow">Sık sorulanlar</p>
           </Reveal>
           <dl className="mt-8 space-y-7">
-            {[...f.sss, SABIT.sssGaranti].map((s, i) => (
+            {f.sss.map((s, i) => (
               <Reveal key={s.soru} delay={i * 0.04}>
                 <div>
                   <dt className="font-semibold text-ink">{s.soru}</dt>
