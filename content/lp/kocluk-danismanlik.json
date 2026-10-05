@@ -39,19 +39,23 @@
   "kpi": [
     {
       "ad": "Görüşme talebi başına reklam maliyeti",
-      "olcer": "Reklamın verimi"
+      "olcer": "Reklamın verimi",
+      "kaynak": "sistem"
     },
     {
       "ad": "Talebe ilk dönüş süresi",
-      "olcer": "Takip hattının hızı"
+      "olcer": "Takip hattının hızı",
+      "kaynak": "sistem"
     },
     {
       "ad": "Talep → keşif görüşmesi oranı",
-      "olcer": "Teklifin netliği"
+      "olcer": "Teklifin netliği",
+      "kaynak": "siz"
     },
     {
       "ad": "Görüşme → paket oranı",
-      "olcer": "Satış kapanışı"
+      "olcer": "Satış kapanışı",
+      "kaynak": "siz"
     }
   ],
   "kimler": {

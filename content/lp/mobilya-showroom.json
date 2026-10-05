@@ -39,19 +39,23 @@
   "kpi": [
     {
       "ad": "Talep başına reklam maliyeti",
-      "olcer": "Reklamın verimi"
+      "olcer": "Reklamın verimi",
+      "kaynak": "sistem"
     },
     {
       "ad": "Fiyat/ölçü sorusuna ilk dönüş süresi",
-      "olcer": "Takip hattının hızı"
+      "olcer": "Takip hattının hızı",
+      "kaynak": "sistem"
     },
     {
       "ad": "Talep → showroom randevusu oranı",
-      "olcer": "Teklifin ve iletişimin gücü"
+      "olcer": "Teklifin ve iletişimin gücü",
+      "kaynak": "siz"
     },
     {
       "ad": "Randevu → satış oranı",
-      "olcer": "Satış kapanışı"
+      "olcer": "Satış kapanışı",
+      "kaynak": "siz"
     }
   ],
   "kimler": {

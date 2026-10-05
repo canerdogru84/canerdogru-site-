@@ -39,19 +39,23 @@
   "kpi": [
     {
       "ad": "Mesaj başına reklam maliyeti",
-      "olcer": "Reklamın verimi"
+      "olcer": "Reklamın verimi",
+      "kaynak": "sistem"
     },
     {
       "ad": "Mesaja ilk dönüş süresi",
-      "olcer": "Takip hattının hızı"
+      "olcer": "Takip hattının hızı",
+      "kaynak": "sistem"
     },
     {
       "ad": "Mesaj → deneme dersi oranı",
-      "olcer": "Teklifin ve iletişimin gücü"
+      "olcer": "Teklifin ve iletişimin gücü",
+      "kaynak": "siz"
     },
     {
       "ad": "Deneme dersi → üyelik oranı",
-      "olcer": "Satış kapanışı (48 saat takibi)"
+      "olcer": "Satış kapanışı (48 saat takibi)",
+      "kaynak": "siz"
     }
   ],
   "kimler": {

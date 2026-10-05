@@ -39,19 +39,23 @@
   "kpi": [
     {
       "ad": "Randevu talebi başına reklam maliyeti",
-      "olcer": "Reklamın verimi"
+      "olcer": "Reklamın verimi",
+      "kaynak": "sistem"
     },
     {
       "ad": "DM'ye ilk dönüş süresi",
-      "olcer": "Takip hattının hızı"
+      "olcer": "Takip hattının hızı",
+      "kaynak": "sistem"
     },
     {
       "ad": "Talep → randevu oranı",
-      "olcer": "Teklifin ve iletişimin gücü"
+      "olcer": "Teklifin ve iletişimin gücü",
+      "kaynak": "siz"
     },
     {
       "ad": "İlk seans → ikinci seans oranı",
-      "olcer": "Müşterinin kalıcılığı"
+      "olcer": "Müşterinin kalıcılığı",
+      "kaynak": "siz"
     }
   ],
   "kimler": {

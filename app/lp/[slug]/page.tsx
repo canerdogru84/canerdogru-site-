@@ -204,6 +204,9 @@ export default async function FunnelSayfasi({ params }: Props) {
                   <li key={k.ad} className="rounded-xl border border-line bg-white p-4">
                     <p className="text-[0.95rem] font-medium text-ink">{k.ad}</p>
                     <p className="mt-1 text-[0.85rem] text-muted">{k.olcer}</p>
+                    <p className="mt-2 inline-block rounded-full bg-surface px-2.5 py-0.5 text-[11px] uppercase tracking-label text-ink-soft">
+                      {SABIT.kpiCerceve.kaynakEtiket[k.kaynak]}
+                    </p>
                   </li>
                 ))}
               </ul>

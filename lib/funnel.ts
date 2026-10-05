@@ -27,7 +27,7 @@ export type FunnelIcerik = {
   /** Blok 5 — sektörün mevzuatı; KPI bloğunun altında küçük not */
   durustluk: { mevzuat: string };
   /** Blok 5 — ilk görüşmede birlikte belirlenen 4 KPI. Hedef RAKAM yazılmaz (5 Eki 2026). */
-  kpi: { ad: string; olcer: string }[];
+  kpi: { ad: string; olcer: string; kaynak: "sistem" | "siz" }[];
   /** Blok 6 — eşik rakamı YAZILMAZ */
   kimler: { uygun: string[]; uygunDegil: string[] };
   /** Blok 7 — Röntgen'de sektöre özel bakılan 3 şey */
@@ -61,10 +61,11 @@ export const SABIT = {
    */
   kpiCerceve: {
     eyebrow: "Neyi birlikte ölçüyoruz",
-    baslik: "İlk görüşmede 4 KPI belirleriz. Her hafta aynı tabloya birlikte bakarız.",
-    giris: "Kaç müşteri geleceğini kimse dürüstçe söyleyemez; sonucun yarısı sizin tarafınızda. O yüzden sayı vaat etmek yerine ölçüm vaat ediyorum: ilk görüşmede işletmenize göre dört ölçüt seçeriz, hedef rakamlarını birlikte koyarız, her hafta aynı tabloda izleriz. Hangi rakam düşerse sebebini bulmak ve ilk söylemek benim işim.",
+    baslik: "İlk görüşmede 4 ölçüt belirleriz. Her hafta aynı tabloya birlikte bakarız.",
+    giris: "Kaç müşteri geleceğini kimse dürüstçe söyleyemez; sonucun yarısı sizin tarafınızda. O yüzden sayı vaat etmek yerine ölçüm ve müdahale vaat ediyorum: ilk görüşmede işletmenize göre dört ölçüt seçeriz, hedef rakamlarını birlikte koyarız, her hafta aynı tabloda izleriz. Bir rakam düşerse sebebini bulurum; reklamda, sayfada ya da takip hattında düzeltmeyi ben yaparım ve ne değiştiğini size söylerim. Düzeltme sizin tarafınızdaysa — kapasite, fiyat, ekibin dönüş hızı — ne yapılacağını net yazarım.",
     yontem: ["Röntgen", "Kurulum · 10 iş günü", "Reklam + takip", "Haftalık KPI görüşmesi"],
-    altSatir: "Hedef rakamlar sayfada değil, görüşmede: sizin kapasitenize ve birim ekonominize göre konur.",
+    kaynakEtiket: { sistem: "Sistemden ölçülür", siz: "Haftalık görüşmede sizden" },
+    altSatir: "İlk iki ölçüt reklam hesabından ve kurduğum takip hattından otomatik gelir. Son ikisi için her hafta sizden iki rakam alırım: kaç randevu geldi, kaçı satışa döndü. Haftalık görüşme tam bunun için var. Hedef rakamlar sayfada değil, görüşmede: sizin kapasitenize ve birim ekonominize göre konur.",
   },
   kitlik: "Her hafta 10 firmayla canlı Röntgen görüşmesi yapıyorum; kalan başvurulara yazılı rapor gönderiyorum.",
   rontgendeSabit: "Hepsi kamuya açık kaynaklardan, görüşmeden önce hazırlanır — sizden ekran, şifre ya da hesap erişimi istenmez. İki biçim: canlı görüşme (bulguları ekranda birlikte gezeriz, 30-45 dk) ya da yazılı rapor.",

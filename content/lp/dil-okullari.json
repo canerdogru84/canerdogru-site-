@@ -39,19 +39,23 @@
   "kpi": [
     {
       "ad": "Kayıt talebi başına reklam maliyeti",
-      "olcer": "Reklamın verimi"
+      "olcer": "Reklamın verimi",
+      "kaynak": "sistem"
     },
     {
       "ad": "Mesaja ilk dönüş süresi (mesai dışı dahil)",
-      "olcer": "Takip hattının hızı"
+      "olcer": "Takip hattının hızı",
+      "kaynak": "sistem"
     },
     {
       "ad": "Talep → seviye sınavı oranı",
-      "olcer": "Teklifin ve iletişimin gücü"
+      "olcer": "Teklifin ve iletişimin gücü",
+      "kaynak": "siz"
     },
     {
       "ad": "Seviye sınavı → kayıt oranı",
-      "olcer": "Satış kapanışı"
+      "olcer": "Satış kapanışı",
+      "kaynak": "siz"
     }
   ],
   "kimler": {
