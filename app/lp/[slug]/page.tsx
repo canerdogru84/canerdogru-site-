@@ -198,7 +198,7 @@ export default async function FunnelSayfasi({ params }: Props) {
               </ol>
 
               {/* Sektöre özel 4 KPI — hedef rakam YAZILMAZ */}
-              <p className="eyebrow-muted mt-8">{f.sektorAd} için ilk görüşmede belirlediğimiz ölçütler</p>
+              <p className="eyebrow-muted mt-8">{f.sektorAd} için birlikte izlediğimiz 4 ana ölçüt</p>
               <ul className="mt-3 grid gap-3 sm:grid-cols-2">
                 {f.kpi.map((k) => (
                   <li key={k.ad} className="rounded-xl border border-line bg-white p-4">
