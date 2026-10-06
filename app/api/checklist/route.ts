@@ -21,6 +21,9 @@ export async function POST(req: Request) {
 
   const isim = clean(body.isim, 120);
   const eposta = clean(body.eposta, 160);
+  // Ayrı, işaretsiz onay kutusu (TR-41). PDF teslimi ve bilgilendirme serisi (n8n 05,
+  // Gün 2/5) izne bağlı değil; Brevo listesi ve tanıtım mailleri yalnız izinle (sql/s19).
+  const pazarlama_izni = body.pazarlama_izni === true;
 
   if (isim.length < 2) {
     return NextResponse.json({ error: "Lütfen adınızı girin." }, { status: 422 });
@@ -47,7 +50,12 @@ export async function POST(req: Request) {
 
   const { error } = await supabase
     .from("checklist_subscribers")
-    .insert({ isim, eposta, kaynak: "checklist" });
+    .insert({
+      isim,
+      eposta,
+      kaynak: "checklist",
+      pazarlama_izni,
+    });
 
   if (error) {
     console.error("[checklist insert]", error.message);
@@ -57,10 +65,13 @@ export async function POST(req: Request) {
     );
   }
 
-  // Brevo: listeye ekle + hoş geldin e-postası. Hata olursa logla, akışı bozma.
+  // Brevo: checklist teslim e-postası herkese; listeye yalnız izinle.
+  // Hata olursa logla, akışı bozma.
   const listId = Number(process.env.BREVO_LIST_CHECKLIST) || undefined;
   const [contact, mail] = await Promise.all([
-    upsertContact({ email: eposta, firstName: isim, listId }),
+    pazarlama_izni
+      ? upsertContact({ email: eposta, firstName: isim, listId })
+      : Promise.resolve({ ok: false, error: "disabled" } as const),
     sendChecklistEmail({ email: eposta, name: isim }),
   ]);
   if (!contact.ok && contact.error !== "disabled")

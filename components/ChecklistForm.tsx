@@ -36,6 +36,7 @@ export default function ChecklistForm() {
     const payload = {
       isim: String(data.get("isim") || "").trim(),
       eposta: String(data.get("eposta") || "").trim(),
+      pazarlama_izni: data.get("pazarlama_izni") === "on",
       kaynak: "checklist",
     };
 
@@ -132,6 +133,20 @@ export default function ChecklistForm() {
           />
         </div>
 
+        {/* Pazarlama iletişimi izni — ayrı, işaretsiz (uyum TR-41). Checklist teslimi ve
+            bilgilendirme mailleri bu izne bağlı değildir; tanıtım mailleri ve liste bağlıdır. */}
+        <label className="flex items-start gap-2.5 text-xs leading-relaxed text-muted">
+          <input
+            type="checkbox"
+            name="pazarlama_izni"
+            className="mt-0.5 h-4 w-4 shrink-0 accent-signal"
+          />
+          <span>
+            Bilgilendirme ve kampanya e-postaları almak istiyorum. (İsteğe bağlı;
+            istediğiniz zaman vazgeçebilirsiniz.)
+          </span>
+        </label>
+
         {status === "error" && error && (
           <div className="flex items-start gap-2.5 rounded-lg border border-red-200 bg-red-50 p-3.5 text-sm text-red-700">
             <IconAlert className="mt-0.5 h-4 w-4 shrink-0" />
@@ -155,7 +170,11 @@ export default function ChecklistForm() {
         </button>
 
         <p className="text-center text-xs leading-relaxed text-muted">
-          E-postan güvende. Spam göndermiyorum. İstediğin zaman çıkabilirsin.
+          E-postan güvende. Spam göndermiyorum. Kişisel verilerin{" "}
+          <a href={site.legal.kvkkHref} className="underline underline-offset-2 hover:text-ink">
+            KVKK Aydınlatma Metni
+          </a>{" "}
+          kapsamında işlenir.
         </p>
       </div>
     </form>
