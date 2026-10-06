@@ -17,12 +17,16 @@ export default async function PanelLayout({ children }: { children: React.ReactN
   const { data: auth } = await sb.auth.getUser();
   if (!auth.user) redirect("/panel/giris");
 
-  const { data: m } = await sb.from("v_panel_musteri").select("*").maybeSingle<PanelMusteri>();
-  if (!m) redirect("/panel/giris?hata=yetkisiz");
+  const [{ data: m }, { data: pk }] = await Promise.all([
+    sb.from("v_panel_musteri").select("*").maybeSingle<PanelMusteri>(),
+    sb.from("panel_kullanicilari").select("rol").eq("user_id", auth.user.id).maybeSingle<{ rol: string }>(),
+  ]);
+  const yonetici = pk?.rol === "yonetici";
+  if (!m) redirect(yonetici ? "/panel/yonetim" : "/panel/giris?hata=yetkisiz");
 
   return (
     <div className="min-h-screen bg-paper text-ink">
-      <PanelNav isletme={m.isletme_adi} sekmeler={m.panel_sekmeler} email={auth.user.email ?? ""} />
+      <PanelNav isletme={m.isletme_adi} sekmeler={m.panel_sekmeler} email={auth.user.email ?? ""} yonetici={yonetici} />
       <main className="mx-auto w-full max-w-content px-5 pb-16 pt-6 sm:px-8">{children}</main>
       <footer className="mx-auto flex w-full max-w-content flex-col gap-1 px-5 pb-8 text-xs text-muted sm:flex-row sm:justify-between sm:px-8">
         <span>Caner Doğru · canerdogru.com</span>

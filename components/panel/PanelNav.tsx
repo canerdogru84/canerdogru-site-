@@ -16,7 +16,7 @@ const SEKMELER: Record<string, { ad: string; yol: string }> = {
 };
 const SIRA = ["ozet", "kacan_para", "huni", "para", "surer_mi", "dikkat", "kurulum"];
 
-export default function PanelNav({ isletme, sekmeler, email }: { isletme: string; sekmeler: string[]; email: string }) {
+export default function PanelNav({ isletme, sekmeler, email, yonetici = false }: { isletme: string; sekmeler: string[]; email: string; yonetici?: boolean }) {
   const yol = usePathname();
   const acik = SIRA.filter((k) => sekmeler.includes(k));
   return (
@@ -28,6 +28,7 @@ export default function PanelNav({ isletme, sekmeler, email }: { isletme: string
           <span className="hidden text-sm font-medium sm:inline">{isletme}</span>
         </div>
         <form action="/auth/cikis" method="post" className="flex items-center gap-3 text-xs text-muted">
+          {yonetici && <Link href="/panel/yonetim" className="rounded-lg bg-ink px-3 py-1.5 text-white hover:opacity-90">Yönetim</Link>}
           <span className="hidden md:inline">{email}</span>
           <button className="rounded-lg border border-line px-3 py-1.5 hover:bg-surface">Çıkış</button>
         </form>
