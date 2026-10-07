@@ -24,6 +24,10 @@ export async function POST(req: Request) {
   // Ayrı, işaretsiz onay kutusu (TR-41). PDF teslimi ve bilgilendirme serisi (n8n 05,
   // Gün 2/5) izne bağlı değil; Brevo listesi ve tanıtım mailleri yalnız izinle (sql/s19).
   const pazarlama_izni = body.pazarlama_izni === true;
+  // Geliş izi (KPI B, sql/s23): UTM varsa "checklist:<kaynak>/<ortam>", yoksa "checklist".
+  const utm = (v: unknown) => clean(v, 40).toLowerCase().replace(/[^a-z0-9_-]/g, "");
+  const utm_source = utm(body.utm_source);
+  const kaynak = utm_source ? `checklist:${utm_source}/${utm(body.utm_medium)}` : "checklist";
 
   if (isim.length < 2) {
     return NextResponse.json({ error: "Lütfen adınızı girin." }, { status: 422 });
@@ -53,7 +57,7 @@ export async function POST(req: Request) {
     .insert({
       isim,
       eposta,
-      kaynak: "checklist",
+      kaynak,
       pazarlama_izni,
     });
 

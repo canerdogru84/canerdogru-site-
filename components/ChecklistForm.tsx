@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { IconCheck, IconAlert, IconArrow, IconDownload } from "./icons";
+import { gelisKanali } from "./LeadForm";
 
 /** Tarayıcıda dosya indirmesini tetikler (kullanıcı jesti içinde çağrılmalı). */
 function triggerDownload(href: string) {
@@ -33,11 +34,15 @@ export default function ChecklistForm() {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    // Geliş izi (KPI B): IG "SİSTEM" DM bağlantısı ?utm_source=instagram&utm_medium=dm taşır.
+    // gelisKanali UTM'yi oturumda saklar; kişi buradan /rontgen'e geçerse başvuru da aynı izi taşır.
+    const { utm_source, utm_medium } = gelisKanali();
     const payload = {
       isim: String(data.get("isim") || "").trim(),
       eposta: String(data.get("eposta") || "").trim(),
       pazarlama_izni: data.get("pazarlama_izni") === "on",
-      kaynak: "checklist",
+      utm_source,
+      utm_medium,
     };
 
     try {

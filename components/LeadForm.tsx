@@ -30,7 +30,7 @@ function reklamKodu(): string {
  * sinyal referrer'dır; KPI'daki `kanal` sınıfı ikisinden türetilir (sql/s15).
  * Referrer ilk gelişte bir kez saklanır — site içi geçiş sonradan üzerine yazmaz.
  */
-function gelisKanali() {
+export function gelisKanali() {
   const bos = { utm_source: "", utm_medium: "", utm_campaign: "", ilk_referrer: "" };
   if (typeof window === "undefined") return bos;
   const p = new URLSearchParams(window.location.search);
