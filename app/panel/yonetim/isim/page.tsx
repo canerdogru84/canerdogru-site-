@@ -6,7 +6,7 @@ import { Baslik, HuniSeridi, Kutu, Bos } from "@/components/panel/Parcalar";
 // Haftalık Telegram raporu (haftalik-is-gozden-gecirme) aynı veriden "tek darboğaz + tek aksiyon" üretir; bu sayfa onun grafiğidir.
 const HEDEF = { q4Musteri: 5, butceAy: 40000, gorusmeHafta: 10 };
 
-type Huni = { hafta: string; basvuru: number; nitelikli: number; hat_takvim: number; hat_rapor: number; gorusme: number; kapanis: number; kaynak_meta: number; kaynak_google: number; kaynak_organik: number; checklist_abone: number };
+type Huni = { hafta: string; basvuru: number; nitelikli: number; hat_takvim: number; hat_rapor: number; gorusme: number; kapanis: number; kaynak_meta: number; kaynak_google: number; kaynak_organik: number; checklist_abone: number; harcama_tl: number; cpl_tl: number | null; nitelikli_cpl_tl: number | null };
 type Kuzey = { ay: string; yeni_musteri: number; yeni_mrr: number | null };
 
 export default async function BenimIsim() {
@@ -22,12 +22,14 @@ export default async function BenimIsim() {
   const mrr = (kuzey ?? []).reduce((a, k) => a + Number(k.yeni_mrr ?? 0), 0);
   const oran = (a: number, b: number) => (b > 0 ? `%${Math.round((a / b) * 100)}` : undefined);
   const fark = (a?: number, b?: number) => (a == null || b == null ? "" : a === b ? "→" : a > b ? `↑ ${a - b}` : `↓ ${b - a}`);
+  // Edinme (KPI A): harcama s22 iç satırından (PANEL-REKLAM-001 gece 03:10). Ay tavanı son 4 haftanın toplamıyla kıyaslanır.
+  const harcama4 = h.slice(0, 4).reduce((a, r) => a + Number(r.harcama_tl ?? 0), 0);
 
   return (
     <>
       <div className="mb-6 border-b border-line pb-5">
         <h1 className="font-display text-2xl font-semibold">Benim işim</h1>
-        <p className="mt-1 text-[13px] text-muted">Kaynak: Röntgen başvuruları (test hariç), checklist aboneleri, müşteri kayıtları. Reklam harcaması kendi hesabından — n8n bağlanınca.</p>
+        <p className="mt-1 text-[13px] text-muted">Kaynak: Röntgen başvuruları (test hariç), checklist aboneleri, müşteri kayıtları. Reklam harcaması kendi Meta + Google hesabından (her gece 03:10).</p>
       </div>
 
       <Baslik>Kuzey yıldızı · Q4 2026</Baslik>
@@ -35,6 +37,13 @@ export default async function BenimIsim() {
         <Sayac ad="Yeni müşteri (ön ödeme günü)" deger={`${q4Musteri} / ${HEDEF.q4Musteri}`} alt={`${Math.max(HEDEF.q4Musteri - q4Musteri, 0)} kaldı · 31 Ara`} ilerleme={q4Musteri / HEDEF.q4Musteri} />
         <Sayac ad="MRR (Büyüme Partnerliği)" deger={tl(mrr)} alt="aktif aylık ücretler toplamı" />
         <Sayac ad="Görüşme kapasitesi (bu hafta)" deger={`${bu?.gorusme ?? 0} / ${HEDEF.gorusmeHafta}`} alt={bu && bu.gorusme >= HEDEF.gorusmeHafta * 0.8 ? "doluluk %80+ → eşik sertleştir" : "slot var"} ilerleme={(bu?.gorusme ?? 0) / HEDEF.gorusmeHafta} />
+      </div>
+
+      <Baslik>Edinme maliyeti · {bu ? haftaEtiketi(bu.hafta) : "veri yok"}</Baslik>
+      <div className="mb-7 grid gap-4 sm:grid-cols-3">
+        <Sayac ad="Reklam harcaması (bu hafta)" deger={tl(bu?.harcama_tl ?? 0)} alt={`son 4 hafta ${tl(harcama4)} · tavan ${tl(HEDEF.butceAy)}/ay`} ilerleme={harcama4 / HEDEF.butceAy} />
+        <Sayac ad="CPL (başvuru başına)" deger={tl(bu?.cpl_tl)} alt={`harcama ÷ ${bu?.basvuru ?? 0} başvuru`} />
+        <Sayac ad="Nitelikli CPL (≥50K)" deger={tl(bu?.nitelikli_cpl_tl)} alt={`harcama ÷ ${bu?.nitelikli ?? 0} nitelikli başvuru`} />
       </div>
 
       <Baslik>Röntgen hunisi · {bu ? haftaEtiketi(bu.hafta) : "veri yok"}</Baslik>
@@ -67,7 +76,7 @@ export default async function BenimIsim() {
               <Satir ad="Organik / doğrudan" v={bu.kaynak_organik} f={fark(bu.kaynak_organik, gecen?.kaynak_organik)} />
               <Satir ad="Checklist abonesi (SİSTEM kapısı)" v={bu.checklist_abone} f={fark(bu.checklist_abone, gecen?.checklist_abone)} />
               <div className="mt-3 border-t border-dashed border-line pt-3 text-xs text-muted">
-                Hat dağılımı: takvim {bu.hat_takvim} · rapor (PDF) {bu.hat_rapor}. Edinme maliyeti (nitelikli CPL) kendi reklam hesabı bağlanınca burada; tavan {tl(HEDEF.butceAy)}/ay.
+                Hat dağılımı: takvim {bu.hat_takvim} · rapor (PDF) {bu.hat_rapor}.
               </div>
             </Kutu>
           </div>
