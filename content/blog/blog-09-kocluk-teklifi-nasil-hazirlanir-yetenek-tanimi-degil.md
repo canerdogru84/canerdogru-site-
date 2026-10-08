@@ -90,14 +90,14 @@ Koçluk terapi ya da psikolojik tedavi değildir ve öyle sunulamaz. Bu ayrımı
 
 Pratik sonuç: depresyon, anksiyete, travma, panik atak gibi klinik terimler teklif metnine girmez; "iyileştirme" ve "tedavi" kelimeleri kullanılmaz.
 
-İkinci sınır gelir vaadi. "3 ayda 6 haneli gelir" kalıbı hem finansal vaat riski taşıyor hem de zaten inandırıcılığını yitirmiş durumda. Doğru ayrım şu: **sistem tarif edilir, sonuç garanti edilmez.** Bu sektörde vaat vermemek, en güçlü ayrışma aracı.
+İkinci sınır gelir vaadi. "3 ayda 6 haneli gelir" kalıbı hem finansal vaat riski taşıyor hem de zaten inandırıcılığını yitirmiş durumda. Doğru ayrım şu: **sistem tarif edilir, sonuç vaat edilmez.** Bu sektörde vaat vermemek, en güçlü ayrışma aracı.
 
 ## Ne yapılır
 
 1. **Teklifinizi tek cümlede yazın.** "…için, …sürede, …ilerlemesini, …şartlarda." Cümle kurulamıyorsa satılabilir bir teklif henüz yok demektir.
 2. **Hizmet adını teklif sanmayı bırakın.** "Kariyer koçluğu", "yaşam koçluğu" birer kategori adı. Kategori satılmaz, program satılır.
 3. **Seans değil paket tanımlayın.** Seans sayısı, her seansın çıktısı ve programın sonunda elde edilecek somut aşama yazılı olsun.
-4. **Çıkış şartını açıkça yazın.** "İlk üç haftada yön netleşmezse devam etmiyoruz" cümlesi, riski sizden danışana değil, danışandan size taşır. Güvenin en ucuz kanıtı budur.
+4. **Çıkış şartını açıkça yazın.** "İlk üç haftada yön netleşmezse devam etmiyoruz" cümlesi, riski sizden danışana değil, danışandan size taşır. Güvenin en somut kanıtı budur.
 5. **Kurumsal hat için ayrı bir teklif sayfası kurun.** Aynı programın İK diline çevrilmiş hâli; kapsam, süre, ölçüm ve fatura düzeni ile.
 6. **Dağıtımı bir kanala bağlayın.** Referans bir kanal değil, bir sonuçtur. Reklam, form ve takip hattı kurulmadığı sürece iyi bir teklif bile yalnızca tanıdıklara ulaşır.
 
