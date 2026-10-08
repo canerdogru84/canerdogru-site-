@@ -45,7 +45,8 @@ export default function Analytics() {
                 utm_campaign: p.get('utm_campaign') || ''
               }));
             }
-            var k = p.get('utm_content') || p.get('utm_campaign');
+            var k = /^(paid|cpc|ppc|paid_social|ads)$/i.test(p.get('utm_medium') || '')
+              ? (p.get('utm_content') || p.get('utm_campaign')) : '';
             if (k) s.setItem('lam_reklam_kodu', k);
             if (document.referrer && !s.getItem('lam_ilk_referrer')) {
               var r = new URL(document.referrer);

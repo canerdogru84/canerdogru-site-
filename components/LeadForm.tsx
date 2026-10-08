@@ -15,7 +15,10 @@ type Status = "idle" | "submitting" | "success" | "error";
 function reklamKodu(): string {
   if (typeof window === "undefined") return "";
   const p = new URLSearchParams(window.location.search);
-  const simdi = p.get("utm_content") || p.get("utm_campaign") || "";
+  // Yalnız ücretli trafikte: organik/e-posta linklerindeki utm_campaign (bio, dm-bot,
+  // dizi1-g7) reklam kodu sayılırsa başvuru kanal görünümünde reklam-meta olur (sql/s23).
+  const ucretli = ["paid", "cpc", "ppc", "paid_social", "ads"].includes((p.get("utm_medium") || "").toLowerCase());
+  const simdi = ucretli ? p.get("utm_content") || p.get("utm_campaign") || "" : "";
   try {
     if (simdi) sessionStorage.setItem("lam_reklam_kodu", simdi);
     return simdi || sessionStorage.getItem("lam_reklam_kodu") || "";
