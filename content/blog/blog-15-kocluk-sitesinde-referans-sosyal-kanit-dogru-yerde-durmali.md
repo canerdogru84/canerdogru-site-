@@ -47,7 +47,7 @@ Tek bir yorum alınıp butonun hemen üstüne konsa: *"Birlikte çalışma yakla
 
 İkinci kanıt katmanı da aynı noktada işe yarar: kurumsal geçmiş ve program yapısı. ICF verisine göre danışanların **%50'den fazlası işveren sponsorlu** ([ICF](https://coachingfederation.org/blog/coaching-industry-continues-global-growth-with-5-34-billion-usd-revenue-new-research-reveals/)) — yani sayfayı okuyan kişi bireysel danışan olmayabilir, İK tarafından bakan biri olabilir. O kişinin tereddüdünü kıran şey duygusal bir yorum değil, seans sayısı, çıktı ve daha önce çalışılmış kurum tipidir. İki farklı kanıt, iki farklı butonun üstünde durmalıdır.
 
-Fiyat tarafı da tereddüdü büyütüyor: pazaryerlerinde yaşam koçu seans ücretleri 2026'da geniş bir bantta, **600-5.000 TL** aralığında görünüyor ([armut.com](https://armut.com/fiyatlari/yasam-kocu_211)). Bu kadar geniş bir bantta ziyaretçi fiyatı değil, **fiyatın gerekçesini** arar. Gerekçeyi en ucuz veren şey referanstır.
+Fiyat tarafı da tereddüdü büyütüyor: pazaryerlerinde yaşam koçu seans ücretleri 2026'da geniş bir bantta, **600-5.000 TL** aralığında görünüyor ([armut.com](https://armut.com/fiyatlari/yasam-kocu_211)). Bu kadar geniş bir bantta ziyaretçi fiyatı değil, **fiyatın gerekçesini** arar. Gerekçeyi en hızlı veren şey referanstır.
 
 ## Ne yapılır
 
