@@ -59,6 +59,14 @@ export async function POST(req: Request) {
       { status: 422 }
     );
   }
+  // Röntgen incelenecek varlık ister: web sitesi ya da Instagram'dan en az biri.
+  // İstemci de kontrol eder; burası doğrudan API çağrısı / eski sekme için son kapı.
+  if (!web_sitesi && !instagram) {
+    return NextResponse.json(
+      { error: "Web sitesi ya da Instagram kullanıcı adından en az birini yazın." },
+      { status: 422 }
+    );
+  }
   // Bütçe yalnızca bilgi amaçlı; hiçbir seçim reddedilmez.
 
   const supabase = getSupabaseServer();

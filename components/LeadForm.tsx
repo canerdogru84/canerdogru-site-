@@ -88,6 +88,15 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    // Röntgen incelenecek bir varlık ister: web sitesi ya da Instagram'dan en az biri.
+    // İkisi de boşsa başvuru gitmez, takvim de açılmaz (sunucu da aynı kuralı uygular).
+    const webGirildi = String(data.get("web_sitesi") || "").trim() !== "";
+    const igGirildi = String(data.get("instagram") || "").trim() !== "";
+    if (!webGirildi && !igGirildi) {
+      setStatus("error");
+      setError("Web sitesi ya da Instagram kullanıcı adından en az birini yazmanız gerekiyor; Röntgen'i o varlık üzerinden çıkarıyorum.");
+      return;
+    }
     // Tarayıcı olayı ile sunucu olayının (CAPI) AYNI kimliği taşıması gerekiyor;
     // Meta ikisini tek olay sayar, çift sayım olmaz. randomUUID yoksa yedek üretim.
     const eventId =
@@ -137,6 +146,8 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
           butce: payload.reklam_butcesi,
         });
       }
+      // Takvim (cal.com) yalnız bu noktada açılır: form eksiksiz gitti (web/IG kapısı
+      // yukarıda) ve bütçe 50K+. Link başka hiçbir yerden verilmez.
       setSonuc({
         yol: butceYolu(payload.reklam_butcesi),
         ad: payload.ad_soyad,
@@ -259,6 +270,7 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
           </div>
         </div>
 
+        {/* Web + Instagram: ikisinden en az biri zorunlu (kontrol handleSubmit + /api/lead) */}
         <div>
           <label htmlFor="web_sitesi" className="eyebrow-muted mb-2 block">
             Web Sitesi
@@ -267,7 +279,6 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
             id="web_sitesi"
             name="web_sitesi"
             type="text"
-            required
             inputMode="url"
             autoComplete="url"
             placeholder="firmaniz.com"
@@ -283,10 +294,12 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
             id="instagram"
             name="instagram"
             type="text"
-            required
             placeholder="@kullaniciadi"
             className={fieldBase}
           />
+          <p className="mt-1.5 text-xs text-muted">
+            Web sitesi ve Instagram&apos;dan en az birini yazın; Röntgen bu varlık üzerinden çıkar.
+          </p>
         </div>
 
         <div>
