@@ -156,7 +156,7 @@ Hayır. Reklam bütçesi bana değil, doğrudan reklam platformuna gider ve her 
 
 Sitenizi ve Instagram'ınızı dışarıdan bir gözle geçiyorum; şu anda hangi adımda kaç potansiyel danışanı kaybettiğinizi gösteriyorum. Teklif değil teşhis.
 
-Röntgen'i iki biçimde teslim ediyorum. **Her hafta 10 firmayla canlı görüşme yapıyorum** — ekranı birlikte açıp sitenizi ve Instagram'ınızı adım adım geçiyoruz. Diğer başvurulara aynı analizi yazılı rapor olarak gönderiyorum. Haftalık görüşme sayısı sabit; dolduğunda bir sonraki haftaya geçiyor.
+Röntgen'i canlı görüşmede teslim ediyorum. **Her hafta 10 firmayla canlı görüşme yapıyorum** — ekranı birlikte açıp sitenizi ve Instagram'ınızı adım adım geçiyoruz. Haftalık görüşme sayısı sabit; dolduğunda bir sonraki haftaya geçiyor.
 
 Formu doldurun; başvurunuza bakıp hangi biçimin uygun olduğunu size bildireyim.
 

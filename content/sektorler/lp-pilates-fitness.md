@@ -162,6 +162,6 @@ Tek bir adım var: **ücretsiz Dijital Büyüme Röntgeni.**
 
 Stüdyonuzun sitesini, Instagram hesabını ve Google İşletme Profili'ni dışarıdan bir gözle denetliyorum; üstüne deneme dersi hattınızı kullanıcı gibi test edip mesajla randevu arasındaki hattın tam olarak nerede koptuğunu gösteriyorum. Teşhis sizde kalır; birlikte çalışmasak bile.
 
-Her hafta **10 firmayla canlı Röntgen görüşmesi** yapıyorum; diğer başvurular yazılı rapor olarak teslim edilir. Başvurunuzu değerlendirip hangi biçimde uygun olduğunu bildiririm.
+Her hafta **10 firmayla canlı Röntgen görüşmesi** yapıyorum; takvim dolduğunda başvurular bir sonraki haftaya geçer.
 
 **[Röntgen başvurusunu doldur →](/rontgen)**

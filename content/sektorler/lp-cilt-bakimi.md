@@ -148,6 +148,6 @@ Sektörün ortak cümlesi "hijyen, kalite ve müşteri memnuniyeti önceliğimiz
 
 **Ücretsiz Dijital Büyüme Röntgeni ile başlayın.** Sitenize ve Instagram hesabınıza dışarıdan bakıp randevuya giden yolda nerede kayıp olduğunu gösteriyorum.
 
-Her hafta **10 firmayla** canlı Röntgen görüşmesi yapıyorum. Diğer başvurular **yazılı rapor** olarak teslim edilir. Başvurunuzu değerlendirip hangi biçimde uygun olduğunu bildiririm.
+Her hafta **10 firmayla canlı Röntgen görüşmesi** yapıyorum; takvim dolduğunda başvurular bir sonraki haftaya geçer.
 
 **→ [canerdogru.com/rontgen](/rontgen)**

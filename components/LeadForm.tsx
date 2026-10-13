@@ -177,10 +177,12 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
 
         {takvim ? (
           <>
-            {/* 50K+ : takvim hemen açılır — niyetin en yüksek anı bu */}
+            {/* 50K+ : takvim hemen açılır — niyetin en yüksek anı bu.
+                Tek yol görüşme: "yazılı rapor" seçeneği yok (13 Eki 2026), saat
+                seçmeden çıkan kişiye rapor gitmez. */}
             <p className="prose-body mx-auto mt-3 max-w-md text-[0.95rem]">
-              Röntgen görüşmesi için uygun bir saat seç. Ekranı birlikte açıp
-              sitenizi ve Instagram&apos;ınızı adım adım geçeceğiz.
+              Son adım: görüşme saatini seç. Röntgen&apos;i ekranda birlikte
+              yapıyoruz; saat seçilmeden başvuru tamamlanmış sayılmaz.
             </p>
             <Takvim ad={sonuc?.ad} eposta={sonuc?.eposta} kaynak={source} />
           </>
