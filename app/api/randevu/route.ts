@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createHmac, randomUUID, timingSafeEqual } from "node:crypto";
+import { createClient } from "@supabase/supabase-js";
 import { getSupabaseServer } from "@/lib/supabase";
 import { upsertContact } from "@/lib/brevo";
 import { e164TR } from "@/lib/telefon";
@@ -26,6 +27,25 @@ export const dynamic = "force-dynamic";
  * no-show" dinler; o Flowlattice asistan tablosu için, burada gerek yok.
  * Flowlattice'in n8n kancası (rapor-randevu) ayrı ve dokunulmadı.
  */
+
+/**
+ * Anon anahtar RLS gereği yalnız INSERT yapabilir (return=minimal); SELECT/UPDATE yok.
+ * Tekrar kontrolü ve yeniden planlama/iptal güncellemesi için servis anahtarı gerekir:
+ * Vercel env SUPABASE_SERVICE_ROLE_KEY (yalnız bu uçta, sunucuda; istemciye sızmaz).
+ * Yoksa insert anon'la gider, güncellemeler atlanır ve loglanır.
+ */
+function supabaseYazici() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const servis = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (url && servis) {
+    return {
+      sb: createClient(url, servis, { auth: { persistSession: false, autoRefreshToken: false } }),
+      tam: true,
+    };
+  }
+  const sb = getSupabaseServer();
+  return sb ? { sb, tam: false } : null;
+}
 
 function clean(v: unknown, max = 200): string {
   return typeof v === "string" ? v.trim().slice(0, max) : "";
@@ -70,8 +90,13 @@ export async function POST(req: Request) {
   // Yeniden planlama / iptal: var olan satırı güncelle (randevu_uid, yoksa e-posta ile).
   // Sütunlar sql/s24 ile açılır; yoksa 200 dön ama logla — kanca pasife düşmesin.
   if (olay === "BOOKING_RESCHEDULED" || olay === "BOOKING_CANCELLED") {
-    const supabase = getSupabaseServer();
-    if (!supabase) return NextResponse.json({ ok: true, atlandi: "supabase-yok" });
+    const y = supabaseYazici();
+    if (!y) return NextResponse.json({ ok: true, atlandi: "supabase-yok" });
+    if (!y.tam) {
+      console.error("[randevu güncelle] SUPABASE_SERVICE_ROLE_KEY yok — " + olay + " atlandı", p.uid);
+      return NextResponse.json({ ok: true, atlandi: "servis-anahtari-yok" });
+    }
+    const supabase = y.sb;
     const eskiUid = p.rescheduleUid || p.uid || "";
     const eposta = String(p.attendees?.[0]?.email || "").toLowerCase();
     const guncelle =
@@ -121,27 +146,30 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true, atlandi: "kimlik-eksik" });
   }
 
-  const supabase = getSupabaseServer();
-  if (!supabase) {
+  const y = supabaseYazici();
+  if (!y) {
     return NextResponse.json({ error: "Form altyapısı yapılandırılmadı." }, { status: 503 });
   }
+  const supabase = y.sb;
 
-  // cal.com kancayı yeniden deneyebilir: aynı rezervasyon (uid) ya da aynı e-posta
-  // son 10 dakikada takvim hattıyla yazıldıysa ikinci satır açma.
-  const esik = new Date(Date.now() - 10 * 60 * 1000).toISOString();
-  const { data: varOlan } = await supabase
-    .from("basvurular")
-    .select("id")
-    .eq("eposta", eposta)
-    .eq("rontgen_hat", "takvim")
-    .gte("created_at", esik)
-    .limit(1);
-  if (varOlan && varOlan.length) {
-    return NextResponse.json({ ok: true, tekrar: true, id: varOlan[0].id });
+  // cal.com kancayı yeniden deneyebilir (yalnız 2xx dışı yanıtta): aynı rezervasyon
+  // uid'si zaten yazıldıysa ikinci satır açma. SELECT için servis anahtarı gerekir.
+  if (y.tam && p.uid) {
+    const { data: varOlan } = await supabase
+      .from("basvurular")
+      .select("id")
+      .eq("randevu_uid", p.uid)
+      .limit(1);
+    if (varOlan && varOlan.length) {
+      return NextResponse.json({ ok: true, tekrar: true, id: varOlan[0].id });
+    }
   }
 
   const simdi = new Date().toISOString();
-  const { data: eklenen, error } = await supabase
+  // 14 Eki 2026: insert'ten sonra .select() YOK — anon rolünde SELECT politikası
+  // olmadığı için RETURNING "row-level security" hatasıyla tüm insert'i düşürüyordu
+  // (ilk canlı test). Randevu alanları satırla birlikte yazılır (sql/s24).
+  const { error } = await supabase
     .from("basvurular")
     .insert({
       ad_soyad,
@@ -164,22 +192,15 @@ export async function POST(req: Request) {
       rontgen_hat: "takvim",
       hat_karar_at: simdi,
       hat_karar_veren: "calcom",
-    })
-    .select("id")
-    .single();
+      randevu_at: p.startTime || simdi,
+      randevu_uid: p.uid || null,
+      randevu_durum: "olusturuldu",
+    });
 
   if (error) {
     console.error("[randevu insert]", error.message);
     return NextResponse.json({ error: "Kayıt sırasında sorun oluştu." }, { status: 500 });
   }
-
-  // Randevu saati/uid: sütunlar sql/s24-randevu-kolonlari.sql ile açılır; yoksa
-  // satır yine de durur, yalnız bu ek yazılamaz (hata yutulur, loglanır).
-  const { error: ekHata } = await supabase
-    .from("basvurular")
-    .update({ randevu_at: p.startTime || simdi, randevu_uid: p.uid || null, randevu_durum: "olusturuldu" })
-    .eq("id", eklenen.id);
-  if (ekHata) console.error("[randevu ek sütun]", ekHata.message);
 
   const listId = Number(process.env.BREVO_LIST_RONTGEN) || undefined;
   const [firstName, ...rest] = ad_soyad.split(" ");
@@ -193,5 +214,5 @@ export async function POST(req: Request) {
   if (!contact.ok && contact.error !== "disabled")
     console.error("[randevu brevo contact]", contact.error);
 
-  return NextResponse.json({ ok: true, id: eklenen.id }, { status: 201 });
+  return NextResponse.json({ ok: true, uid: p.uid || null }, { status: 201 });
 }
