@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { site, butceYolu } from "@/lib/site";
+import { e164TR } from "@/lib/telefon";
 import { IconCheck, IconAlert, IconArrow } from "./icons";
-import Takvim from "./Takvim";
+import Takvim, { type TakvimMeta } from "./Takvim";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -78,8 +79,18 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
   const [budget, setBudget] = useState("");
-  // Başarı ekranı için: hangi yola girdi + takvimi önceden doldurmak için ad/e-posta
-  const [sonuc, setSonuc] = useState<{ yol: "takvim" | "inceleme"; ad: string; eposta: string } | null>(null);
+  // Başarı ekranı için: hangi yola girdi + takvimi önceden doldurmak için kimlik + metadata
+  const [sonuc, setSonuc] = useState<{
+    yol: "takvim" | "inceleme";
+    ad: string;
+    eposta: string;
+    telefon: string;
+    butce: string;
+    eventId: string;
+    meta: TakvimMeta;
+  } | null>(null);
+  // 50K+ : cal.com'da saat seçildi (bookingSuccessfulV2) — başvuru ancak bu anda tamamlanır
+  const [randevu, setRandevu] = useState<{ startTime?: string } | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -117,6 +128,40 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
       ...gelisKanali(),
     };
 
+    // 50K+ : Supabase'e BURADA yazılmaz. Takvim açılır; kişi saat seçince cal.com
+    // webhook'u /api/randevu'ya düşer ve lead o anda oluşur (14 Eki 2026). Saat
+    // seçmeden çıkan başvuru sayılmaz. Form verisi metadata ile cal.com'a taşınır;
+    // anahtar adları app/api/randevu/route.ts ile birebir aynı.
+    if (butceYolu(payload.reklam_butcesi) === "takvim") {
+      const kanal = gelisKanali();
+      setSonuc({
+        yol: "takvim",
+        ad: payload.ad_soyad,
+        eposta: payload.eposta,
+        telefon: e164TR(payload.telefon),
+        butce: payload.reklam_butcesi,
+        eventId,
+        meta: {
+          web: payload.web_sitesi,
+          ig: payload.instagram,
+          butce: payload.reklam_butcesi,
+          kaynak: source,
+          izin: payload.pazarlama_izni ? "1" : "0",
+          reklam_kodu: payload.reklam_kodu,
+          utm_source: kanal.utm_source,
+          utm_medium: kanal.utm_medium,
+          utm_campaign: kanal.utm_campaign,
+          ilk_referrer: kanal.ilk_referrer,
+          event_id: eventId,
+          sayfa: typeof window !== "undefined" ? window.location.origin + window.location.pathname : "",
+        },
+      });
+      setStatus("success");
+      form.reset();
+      setBudget("");
+      return;
+    }
+
     try {
       const res = await fetch("/api/lead", {
         method: "POST",
@@ -146,12 +191,14 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
           butce: payload.reklam_butcesi,
         });
       }
-      // Takvim (cal.com) yalnız bu noktada açılır: form eksiksiz gitti (web/IG kapısı
-      // yukarıda) ve bütçe 50K+. Link başka hiçbir yerden verilmez.
       setSonuc({
-        yol: butceYolu(payload.reklam_butcesi),
+        yol: "inceleme",
         ad: payload.ad_soyad,
         eposta: payload.eposta,
+        telefon: "",
+        butce: payload.reklam_butcesi,
+        eventId,
+        meta: {},
       });
       setStatus("success");
       form.reset();
@@ -168,23 +215,65 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
 
   if (status === "success") {
     const takvim = sonuc?.yol === "takvim";
+    const randevuAlindi = takvim && !!randevu;
+
+    function randevuAlindiOldu(r: { uid?: string; startTime?: string }) {
+      setRandevu({ startTime: r.startTime });
+      // Analytics: Röntgen başvurusu = "Lead" — 50K+ için randevu anında, formda değil.
+      // eventID = cal.com metadata[event_id] → /api/randevu aynı kimlikle yazar → CAPI tekil.
+      if (typeof window !== "undefined" && sonuc) {
+        // @ts-expect-error fbq global yer tutucu
+        window.fbq?.("track", "Lead", { source, butce: sonuc.butce }, { eventID: sonuc.eventId });
+        // @ts-expect-error gtag global yer tutucu
+        window.gtag?.("event", "generate_lead", { source, butce: sonuc.butce });
+      }
+    }
+
+    const saat = randevu?.startTime
+      ? new Date(randevu.startTime).toLocaleString("tr-TR", {
+          timeZone: "Europe/Istanbul",
+          day: "numeric",
+          month: "long",
+          weekday: "long",
+          hour: "2-digit",
+          minute: "2-digit",
+        })
+      : "";
+
     return (
       <div className="bp-card tick-corners p-8 text-center sm:p-10">
         <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-signal/10 text-signal">
           <IconCheck className="h-7 w-7" />
         </span>
-        <h3 className="h3 mt-5">Başvurun alındı.</h3>
+        <h3 className="h3 mt-5">
+          {randevuAlindi
+            ? "Görüşmen ayarlandı."
+            : takvim
+              ? "Son adım: görüşme saatini seç."
+              : "Başvurun alındı."}
+        </h3>
 
-        {takvim ? (
+        {randevuAlindi ? (
+          <p className="prose-body mx-auto mt-3 max-w-md text-[0.95rem]">
+            {saat ? `${saat} — ` : ""}takvim daveti e-postana gitti. Röntgen&apos;i
+            görüşmede ekranda birlikte yapacağız.
+          </p>
+        ) : takvim ? (
           <>
             {/* 50K+ : takvim hemen açılır — niyetin en yüksek anı bu.
-                Tek yol görüşme: "yazılı rapor" seçeneği yok (13 Eki 2026), saat
-                seçmeden çıkan kişiye rapor gitmez. */}
+                Tek yol görüşme: "yazılı rapor" seçeneği yok (13 Eki 2026). Başvuru
+                Supabase'e saat seçilince düşer (/api/randevu); seçmeden çıkan sayılmaz. */}
             <p className="prose-body mx-auto mt-3 max-w-md text-[0.95rem]">
-              Son adım: görüşme saatini seç. Röntgen&apos;i ekranda birlikte
-              yapıyoruz; saat seçilmeden başvuru tamamlanmış sayılmaz.
+              Röntgen&apos;i ekranda birlikte yapıyoruz; saat seçilmeden başvuru
+              tamamlanmış sayılmaz.
             </p>
-            <Takvim ad={sonuc?.ad} eposta={sonuc?.eposta} kaynak={source} />
+            <Takvim
+              ad={sonuc?.ad}
+              eposta={sonuc?.eposta}
+              telefon={sonuc?.telefon}
+              meta={sonuc?.meta}
+              onRandevu={randevuAlindiOldu}
+            />
           </>
         ) : (
           <>
