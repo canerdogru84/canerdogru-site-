@@ -18,8 +18,12 @@ export const dynamic = "force-dynamic";
  * payload.metadata'dan okunur. Eşik altı yol değişmedi: /api/lead.
  *
  * cal.com tarafı: Ayarlar → Geliştirici → Web kancaları → yeni; abone URL
- * https://canerdogru.com/api/randevu, olay "Rezervasyon oluşturuldu", gizli anahtar
- * = Vercel env CALCOM_WEBHOOK_SECRET. İmza: x-cal-signature-256 = HMAC-SHA256(gövde).
+ * https://canerdogru.com/api/randevu, olaylar "Rezervasyon oluşturuldu / yeniden
+ * planlandı / iptal edildi", gizli anahtar = Vercel env CALCOM_WEBHOOK_SECRET.
+ * İmza: x-cal-signature-256 = HMAC-SHA256(gövde).
+ * Yeniden planlama → randevu_at güncellenir; iptal → randevu_durum='iptal' (lead
+ * silinmez, Caner panelde görür). Flowlattice'in kancası ayrıca "toplantı bitti /
+ * no-show" dinler; o Flowlattice asistan tablosu için, burada gerek yok.
  * Flowlattice'in n8n kancası (rapor-randevu) ayrı ve dokunulmadı.
  */
 
@@ -53,18 +57,38 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "Geçersiz gövde." }, { status: 400 });
   }
-  // cal.com "ping" testi ve diğer olaylar: 200 dön, yoksa kanca pasife düşer.
-  if (body.triggerEvent !== "BOOKING_CREATED" || !body.payload) {
-    return NextResponse.json({ ok: true, atlandi: body.triggerEvent || "bos" });
-  }
-
-  const p = body.payload as {
+  const olay = body.triggerEvent || "";
+  const p = (body.payload || {}) as {
     uid?: string;
+    rescheduleUid?: string;
     startTime?: string;
     attendees?: { name?: string; email?: string; phoneNumber?: string }[];
     responses?: Record<string, { value?: unknown }>;
     metadata?: Record<string, unknown>;
   };
+
+  // Yeniden planlama / iptal: var olan satırı güncelle (randevu_uid, yoksa e-posta ile).
+  // Sütunlar sql/s24 ile açılır; yoksa 200 dön ama logla — kanca pasife düşmesin.
+  if (olay === "BOOKING_RESCHEDULED" || olay === "BOOKING_CANCELLED") {
+    const supabase = getSupabaseServer();
+    if (!supabase) return NextResponse.json({ ok: true, atlandi: "supabase-yok" });
+    const eskiUid = p.rescheduleUid || p.uid || "";
+    const eposta = String(p.attendees?.[0]?.email || "").toLowerCase();
+    const guncelle =
+      olay === "BOOKING_RESCHEDULED"
+        ? { randevu_at: p.startTime || null, randevu_uid: p.uid || eskiUid, randevu_durum: "yeniden" }
+        : { randevu_durum: "iptal" };
+    let q = supabase.from("basvurular").update(guncelle);
+    q = eskiUid ? q.eq("randevu_uid", eskiUid) : q.eq("eposta", eposta).eq("rontgen_hat", "takvim");
+    const { error: gErr } = await q;
+    if (gErr) console.error("[randevu güncelle]", olay, gErr.message);
+    return NextResponse.json({ ok: true, olay, guncellendi: !gErr });
+  }
+
+  // cal.com "ping" testi ve diğer olaylar: 200 dön, yoksa kanca pasife düşer.
+  if (olay !== "BOOKING_CREATED" || !body.payload) {
+    return NextResponse.json({ ok: true, atlandi: olay || "bos" });
+  }
   const meta = (p.metadata || {}) as Record<string, unknown>;
   const yanit = (k: string) => {
     const v = p.responses?.[k]?.value;
@@ -153,7 +177,7 @@ export async function POST(req: Request) {
   // satır yine de durur, yalnız bu ek yazılamaz (hata yutulur, loglanır).
   const { error: ekHata } = await supabase
     .from("basvurular")
-    .update({ randevu_at: p.startTime || simdi, randevu_uid: p.uid || null })
+    .update({ randevu_at: p.startTime || simdi, randevu_uid: p.uid || null, randevu_durum: "olusturuldu" })
     .eq("id", eklenen.id);
   if (ekHata) console.error("[randevu ek sütun]", ekHata.message);
 
