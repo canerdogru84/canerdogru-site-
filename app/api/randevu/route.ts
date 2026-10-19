@@ -4,6 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 import { getSupabaseServer } from "@/lib/supabase";
 import { upsertContact } from "@/lib/brevo";
 import { e164TR } from "@/lib/telefon";
+import { site } from "@/lib/site";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -79,6 +80,7 @@ export async function POST(req: Request) {
   }
   const olay = body.triggerEvent || "";
   const p = (body.payload || {}) as {
+    type?: string;
     uid?: string;
     rescheduleUid?: string;
     startTime?: string;
@@ -86,6 +88,13 @@ export async function POST(req: Request) {
     responses?: Record<string, { value?: unknown }>;
     metadata?: Record<string, unknown>;
   };
+
+  // 20 Eki 2026 (Gün 4): yalnız Röntgen etkinliği başvuru açar/günceller. Caner'in elle açtığı
+  // diğer cal.com görüşmeleri (ör. ikinci satış görüşmesi) satış hattına girmez. Tür yoksa eski davranış.
+  const etkinlik = typeof p.type === "string" ? p.type : "";
+  if (etkinlik && etkinlik !== site.calcomEvent.split("/").pop()) {
+    return NextResponse.json({ ok: true, atlandi: "rontgen-disi-etkinlik" });
+  }
 
   // Yeniden planlama / iptal: var olan satırı güncelle (randevu_uid, yoksa e-posta ile).
   // Sütunlar sql/s24 ile açılır; yoksa 200 dön ama logla — kanca pasife düşmesin.
