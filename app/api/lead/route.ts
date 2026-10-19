@@ -28,6 +28,9 @@ export async function POST(req: Request) {
   const kaynak = clean(body.kaynak, 40) || "rontgen";
   // Ayrı, işaretsiz onay kutusu (TR-41). false ise pazarlama dizisine alınmaz (sql/s18).
   const pazarlama_izni = body.pazarlama_izni === true;
+  // Çerez reddi/seçimsiz: Meta eşleştirme sinyalleri (IP, UA, fbp, fbc) hiç yazılmaz,
+  // n8n 02 CAPI yalnız cerez_izni=true satırı gönderir (20 Eki 2026, KVKK).
+  const cerez_izni = body.cerez_izni === true;
   // utm_content — hangi reklam kreatifinin getirdiği (örn. TOFU-MOB-1).
   // Sektör `kaynak` alanında; bu alan sektörün İÇİNDEKİ açıyı ayırır.
   const reklam_kodu = clean(body.reklam_kodu, 60);
@@ -110,10 +113,11 @@ export async function POST(req: Request) {
     kanal_izlendi: true,
     event_id: event_id || null,
     event_source_url: req.headers.get("referer") || null,
-    client_ip_address: ip,
-    client_user_agent: req.headers.get("user-agent") || null,
-    fbp: cookieOku("_fbp"),
-    fbc: cookieOku("_fbc"),
+    cerez_izni,
+    client_ip_address: cerez_izni ? ip : null,
+    client_user_agent: cerez_izni ? req.headers.get("user-agent") || null : null,
+    fbp: cerez_izni ? cookieOku("_fbp") : null,
+    fbc: cerez_izni ? cookieOku("_fbc") : null,
   });
 
   if (error) {

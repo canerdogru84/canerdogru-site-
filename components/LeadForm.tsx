@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { site, butceYolu } from "@/lib/site";
+import { cerezIzniVar } from "./CerezPaneli";
 import { e164TR } from "@/lib/telefon";
 import { IconCheck, IconAlert, IconArrow } from "./icons";
 import Takvim, { type TakvimMeta } from "./Takvim";
@@ -118,6 +119,8 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
       event_id: eventId,
       ad_soyad: String(data.get("ad_soyad") || "").trim(),
       pazarlama_izni: data.get("pazarlama_izni") === "on",
+      // Ölçüm/reklam çerezine onay. false ise sunucu IP/UA/fbp/fbc yazmaz, CAPI gitmez (20 Eki 2026).
+      cerez_izni: cerezIzniVar(),
       telefon: String(data.get("telefon") || "").trim(),
       eposta: String(data.get("eposta") || "").trim(),
       web_sitesi: String(data.get("web_sitesi") || "").trim(),
@@ -147,6 +150,7 @@ export default function LeadForm({ source = "rontgen" }: { source?: string }) {
           butce: payload.reklam_butcesi,
           kaynak: source,
           izin: payload.pazarlama_izni ? "1" : "0",
+          cerez: payload.cerez_izni ? "1" : "0",
           reklam_kodu: payload.reklam_kodu,
           utm_source: kanal.utm_source,
           utm_medium: kanal.utm_medium,

@@ -7,6 +7,23 @@ import { site } from "@/lib/site";
 export const CEREZ_ANAHTAR = "lam_cerez";
 export const CEREZ_OLAY = "lam-cerez-degisti";
 
+export function cerezIzniVar(): boolean {
+  try {
+    return localStorage.getItem(CEREZ_ANAHTAR) === "kabul";
+  } catch {
+    return false;
+  }
+}
+
+// Ret: önceden kabul edilip kalmış Meta çerezleri sunucuya taşınmasın (20 Eki 2026).
+function metaCerezleriniSil() {
+  const alan = location.hostname.replace(/^www\./, "");
+  for (const ad of ["_fbp", "_fbc"]) {
+    document.cookie = `${ad}=; Max-Age=0; path=/`;
+    document.cookie = `${ad}=; Max-Age=0; path=/; domain=.${alan}`;
+  }
+}
+
 /**
  * Çerez paneli — ölçüm ve reklam çerezleri (GA4, Meta Pixel) yalnız "Kabul et"
  * sonrası yüklenir; "Reddet" seçilirse hiç yüklenmez. Seçim localStorage'da tutulur.
@@ -25,6 +42,7 @@ export default function CerezPaneli() {
     try {
       localStorage.setItem(CEREZ_ANAHTAR, deger);
     } catch {}
+    if (deger === "ret") metaCerezleriniSil();
     window.dispatchEvent(new Event(CEREZ_OLAY));
     setGoster(false);
   };

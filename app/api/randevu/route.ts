@@ -141,6 +141,8 @@ export async function POST(req: Request) {
   const reklam_butcesi = clean(meta.butce, 40) || "belirsiz";
   const kaynak = clean(meta.kaynak, 40) || "rontgen";
   const pazarlama_izni = meta.izin === "1" || meta.izin === "true";
+  // Çerez onayı form anındaki tercih; yoksa false → CAPI gitmez (20 Eki 2026).
+  const cerez_izni = meta.cerez === "1";
   const reklam_kodu = clean(meta.reklam_kodu, 60);
   const utm_source = clean(meta.utm_source, 60);
   const utm_medium = clean(meta.utm_medium, 60);
@@ -188,6 +190,7 @@ export async function POST(req: Request) {
       instagram: instagram || null,
       reklam_butcesi,
       pazarlama_izni,
+      cerez_izni,
       kaynak,
       reklam_kodu: reklam_kodu || null,
       utm_source: utm_source || null,
