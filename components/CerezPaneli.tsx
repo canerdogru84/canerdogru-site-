@@ -85,3 +85,19 @@ export default function CerezPaneli() {
     </div>
   );
 }
+
+/** Footer bağlantısı: tercihi sıfırlar, Meta çerezlerini siler, paneli yeniden açar (Codex tur 14, TR-44). */
+export function CerezTercihi({ className }: { className?: string }) {
+  const sifirla = () => {
+    try {
+      localStorage.removeItem(CEREZ_ANAHTAR);
+    } catch {}
+    metaCerezleriniSil();
+    location.reload();
+  };
+  return (
+    <button type="button" onClick={sifirla} className={className}>
+      Çerez Tercihleri
+    </button>
+  );
+}

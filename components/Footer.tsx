@@ -1,3 +1,4 @@
+import { CerezTercihi } from "./CerezPaneli";
 import Link from "next/link";
 import Logo from "./Logo";
 import { site } from "@/lib/site";
@@ -126,6 +127,9 @@ export default function Footer() {
                 >
                   Veri Silme
                 </Link>
+              </li>
+              <li>
+                <CerezTercihi className="text-ink-soft transition-colors hover:text-signal" />
               </li>
             </ul>
           </div>
