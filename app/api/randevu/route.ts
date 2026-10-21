@@ -210,6 +210,9 @@ export async function POST(req: Request) {
     });
 
   if (error) {
+    // 21 Eki 2026 (s44): randevu_uid UNIQUE. Uzlaştırma bekçisi ya da tekrar gelen kanca aynı anda yazdıysa
+    // bu "tekrar"dır; 500 dönüp cal.com'u (zaten yeniden denemeyen) yanıltma.
+    if (error.code === "23505") return NextResponse.json({ ok: true, tekrar: true, uid: p.uid || null });
     console.error("[randevu insert]", error.message);
     return NextResponse.json({ error: "Kayıt sırasında sorun oluştu." }, { status: 500 });
   }
