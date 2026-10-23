@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-const SON_GUNCELLEME = "25 Ağustos 2026";
+const SON_GUNCELLEME = "23 Ekim 2026";
 
 export default function VeriSilmePage() {
   return (
@@ -59,15 +59,6 @@ export default function VeriSilmePage() {
             <p>
               Bu bilgiler yalnızca size cevap verebilmek, aynı mesajı iki kez
               göndermemek ve sorularınızı yanıtlayabilmek için kullanılır.
-            </p>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="h3 text-ink">Bu bilgiler ne kadar süre saklanıyor?</h2>
-            <p>
-              Son mesajlaşmanızdan itibaren{" "}
-              <strong className="text-ink">12 ay</strong>. Bu sürenin sonunda
-              kayıtlar kendiliğinden silinir.
             </p>
           </section>
 
