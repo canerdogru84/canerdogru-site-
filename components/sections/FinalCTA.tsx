@@ -27,7 +27,7 @@ export default function FinalCTA() {
           <Reveal delay={0.1}>
             <p className="lead mx-auto mt-5 max-w-xl text-white/70">
               Ücretsiz Dijital Büyüme Röntgeni ile başla. 48 saat içinde 3 kayıp
-              noktanı gösteriyorum.
+              noktanı yazılı raporla gösteriyorum.
             </p>
           </Reveal>
           <Reveal delay={0.15}>

@@ -6,7 +6,7 @@ const steps = [
   {
     n: "1",
     title: "Röntgen",
-    body: "Ücretsiz başvuru yap. 48 saat içinde işletmenin 3 kayıp noktasını raporluyorum.",
+    body: "Ücretsiz başvuru yap. 48 saat içinde işletmenin 3 kayıp noktasını yazılı raporluyorum; 45 dk canlı görüşmede birlikte geçiyoruz (haftada 10 firma).",
     tag: "ücretsiz · 48 saat",
   },
   {

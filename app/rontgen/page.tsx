@@ -16,12 +16,12 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Ücretsiz Dijital Büyüme Röntgeni",
   description:
-    "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını gösteriyorum. Canlı görüşmede, ekranda birlikte; kişiye özel, ücretsiz.",
+    "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını yazılı raporla gösteriyorum; 45 dakikalık canlı görüşmede ekranda birlikte geçiyoruz. Kişiye özel, ücretsiz.",
   alternates: { canonical: "/rontgen" },
   openGraph: {
     title: "Ücretsiz Dijital Büyüme Röntgeni | Caner Doğru",
     description:
-      "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını gösteriyorum. Canlı görüşmede, ekranda birlikte; kişiye özel, ücretsiz.",
+      "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını yazılı raporla gösteriyorum; 45 dakikalık canlı görüşmede ekranda birlikte geçiyoruz. Kişiye özel, ücretsiz.",
     url: `${site.url}/rontgen`,
   },
 };
@@ -34,9 +34,9 @@ const checks = [
 ];
 
 const delivers = [
-  "3 kritik kayıp noktası — öncelik sırasıyla",
-  "Canlı Röntgen görüşmesi (30-45 dk, ekranda birlikte) — haftada 10 firma",
+  "Yazılı rapor: 3 kritik kayıp noktası, öncelik sırasıyla — görüşme saatini seçen her firmaya",
   "Hemen yapabileceğin 2-3 ücretsiz iyileştirme",
+  "Canlı Röntgen görüşmesi (45 dk, rapor ekranda birlikte) — haftada 10 firma",
 ];
 
 export default function RontgenPage() {
@@ -65,7 +65,7 @@ export default function RontgenPage() {
             <Reveal>
               <p className="eyebrow flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-signal" />
-                Ücretsiz · Haftada 10 görüşme · Kişiye özel
+                Ücretsiz · Yazılı rapor + canlı görüşme · Haftada 10 firma
               </p>
             </Reveal>
             <Reveal delay={0.05}>
@@ -78,7 +78,8 @@ export default function RontgenPage() {
             <Reveal delay={0.1}>
               <p className="lead mt-6 max-w-md">
                 İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını
-                gösteriyorum. Canlı görüşmede, ekranda birlikte; kişiye özel, ücretsiz.
+                yazılı raporla gösteriyorum. Canlı görüşmede raporu ekranda birlikte
+                geçiyoruz; kişiye özel, ücretsiz.
               </p>
             </Reveal>
 
@@ -141,8 +142,8 @@ export default function RontgenPage() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-4 text-center text-xs leading-relaxed text-muted">
-                Satış baskısı yok. Teşhis koyuyorum, karar sizin. Haftada 10 röntgen
-                yapıyorum.
+                Satış baskısı yok. Teşhis koyuyorum, karar sizin. Rapor, görüşme saatini
+                seçen firmaya gider; canlı görüşmeyi haftada 10 firmayla yapıyorum.
               </p>
             </Reveal>
           </div>

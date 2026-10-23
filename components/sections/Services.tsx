@@ -22,7 +22,7 @@ const offers: Offer[] = [
     title: "Dijital Büyüme Röntgeni",
     badge: "Ücretsiz",
     scope:
-      "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını gösteriyorum. 48 saat içinde kişiye özel video + rapor.",
+      "İşletmenin dijital varlığını tarayıp 3 kritik kayıp noktasını gösteriyorum. 48 saat içinde kişiye özel yazılı rapor; 45 dakikalık canlı görüşmede ekranda birlikte geçiyoruz (haftada 10 firma).",
     benefit:
       "Neyi düzeltirsen en hızlı kazanç geleceğini, hiçbir taahhüt vermeden öğrenirsin.",
     cta: { label: "Ücretsiz Başvur", href: "/rontgen", primary: true },
