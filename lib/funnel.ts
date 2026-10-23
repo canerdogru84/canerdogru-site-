@@ -68,7 +68,7 @@ export const SABIT = {
     altSatir: "İlk iki ana ölçüt reklam hesabından ve kurduğum takip hattından otomatik gelir. Son ikisi için her hafta sizden iki rakam alırım: kaç randevu geldi, kaçı satışa döndü. Haftalık görüşme tam bunun için var. Hedef rakamlar sayfada değil, görüşmede: sizin kapasitenize ve birim ekonominize göre konur.",
   },
   kitlik: "Her hafta 10 firmayla canlı Röntgen görüşmesi yapıyorum; takvim dolduğunda başvurular bir sonraki haftaya geçer.",
-  rontgendeSabit: "Hepsi kamuya açık kaynaklardan, görüşmeden önce hazırlanır — sizden ekran, şifre ya da hesap erişimi istenmez. Görüşme saatini seçtiğinizde 48 saat içinde yazılı rapor gelir: 3 kritik kayıp noktası ve hemen yapılabilecek 2-3 iyileştirme. Raporu 45 dakikalık canlı görüşmede ekranda birlikte geçeriz.",
+  rontgendeSabit: "Hepsi kamuya açık kaynaklardan, görüşmeden önce hazırlanır — sizden ekran, şifre ya da hesap erişimi istenmez. Başvurduğunuzda 48 saat içinde yazılı rapor gelir: 3 kritik kayıp noktası ve hemen yapılabilecek 2-3 iyileştirme. Canlı görüşmeye alınırsanız raporu 45 dakikada ekranda birlikte geçeriz.",
   sssGaranti: {
     soru: "Kaç müşteri geleceğini söyleyebiliyor musunuz?",
     cevap: "Hayır — söyleyen kimse de söyleyemez, çünkü sonucun yarısı sizin tarafınızda: kapasiteniz, gelen mesaja dönüş hızınız, fiyatınız. Benim tarafımda olan işin tamamını taahhüt ediyorum: kurulum 10 iş gününde biter, her hafta aynı tabloya birlikte bakarız, rakam düşerse sebebini bulmak benim işim.",

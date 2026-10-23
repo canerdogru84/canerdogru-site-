@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "“Röntgen” tam olarak ne? Gerçekten ücretsiz mi?",
-    a: "Evet, ücretsiz. Mevcut reklam, takip ve dönüşüm akışına bakıp paranın nerede sızdığını gösteriyorum: görüşme saatini seçen her firmaya 3 kritik kayıp noktası ve hemen yapılabilecek 2-3 iyileştirmeyi içeren yazılı rapor gider; 45 dakikalık canlı görüşmede raporu ekranda birlikte geçiyoruz. Canlı görüşmeyi haftada 10 firmayla yapıyorum. Yola devam etmek tamamen size kalmış; bağlayıcı taahhüt yok.",
+    a: "Evet, ücretsiz. Mevcut reklam, takip ve dönüşüm akışına bakıp paranın nerede sızdığını gösteriyorum: her başvurana 3 kritik kayıp noktası ve hemen yapılabilecek 2-3 iyileştirmeyi içeren yazılı rapor gider; 45 dakikalık canlı görüşmede raporu ekranda birlikte geçiyoruz. Canlı görüşmeyi haftada 10 firmayla yapıyorum. Yola devam etmek tamamen size kalmış; bağlayıcı taahhüt yok.",
   },
   {
     q: "WhatsApp YZ müşteri temsilcisi insan yerine mi geçiyor?",

@@ -34,7 +34,7 @@ const checks = [
 ];
 
 const delivers = [
-  "Yazılı rapor: 3 kritik kayıp noktası, öncelik sırasıyla — görüşme saatini seçen her firmaya",
+  "Yazılı rapor: 3 kritik kayıp noktası, öncelik sırasıyla — her başvurana",
   "Hemen yapabileceğin 2-3 ücretsiz iyileştirme",
   "Canlı Röntgen görüşmesi (45 dk, rapor ekranda birlikte) — haftada 10 firma",
 ];
@@ -65,7 +65,7 @@ export default function RontgenPage() {
             <Reveal>
               <p className="eyebrow flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-signal" />
-                Ücretsiz · Yazılı rapor + canlı görüşme · Haftada 10 firma
+                Ücretsiz · Her başvurana rapor · Haftada 10 canlı görüşme
               </p>
             </Reveal>
             <Reveal delay={0.05}>
@@ -142,8 +142,8 @@ export default function RontgenPage() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-4 text-center text-xs leading-relaxed text-muted">
-                Satış baskısı yok. Teşhis koyuyorum, karar sizin. Rapor, görüşme saatini
-                seçen firmaya gider; canlı görüşmeyi haftada 10 firmayla yapıyorum.
+                Satış baskısı yok. Teşhis koyuyorum, karar sizin. Rapor her başvurana
+                gider; canlı görüşmeyi haftada 10 firmayla yapıyorum.
               </p>
             </Reveal>
           </div>
